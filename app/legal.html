@@ -11,29 +11,6 @@
   <script src="js/handlebars-v4.0.5.js"></script>
   <script src="js/script.js"></script>
 </head>
-
 <body>
-
-  <div id="mainPage">
-    <section id="carousel">
-    </section>
-    <section id="xalerExclusive">
-    </section>
-    <section id="fullMenu">
-      <script id="menu" type="text/x-handlebars-template">
-        {{#each menu}}
-          {{> partialTemplate}}
-        {{/each}}
-      </script>
-      <script id="menuPartial" type="text/x-handlebars-template">
-        <div id="menuFormat">
-          <ul>
-            <li class="{{type}}">{{name}}<br>{{type}}</li>
-          </ul>
-        </div>
-      </script>
-    </section>
-  </div>
-
 </body>
 </html>

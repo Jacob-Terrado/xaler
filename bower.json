@@ -1,0 +1,20 @@
+{
+  "name": "xaler",
+  "homepage": "https://github.com/Jacob-Terrado/xaler",
+  "authors": [
+    "Lucky <luckyknguyen@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
