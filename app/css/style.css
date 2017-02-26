@@ -1,3 +1,8 @@
+/*Style for every page*/
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
 #menuFormat{
   padding: 20px 0px;
 }
@@ -95,4 +100,10 @@
 
 .addCart:hover{
   background-color: red !important;
+}
+
+/*Legal Page CSS*/
+#legal {
+  text-indent: 30px;
+  color: darkgray;
 }
