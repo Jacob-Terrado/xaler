@@ -1,3 +1,12 @@
+#menuFormat{
+  padding: 20px 0px;
+}
+
+.sectionTitle{
+  text-align: center;
+  font-size: 2.5em;
+}
+
 #item{
   box-shadow: 0px 0px 5px 1px #EEEEEE;
   width: 100%;
@@ -13,21 +22,77 @@
   width: 100%;
 }
 
-#itemQuantity{
-  list-style: none;
-  width: 100%;
+#itemName{
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 0px;
+  padding: 0px;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-#itemQuantity li{
-  display: inline-block;
+#itemType{
+  margin: 2px 0px;
+}
+
+.indica{
+  color: blue;
+}
+
+.sativa{
+  color: orange;
+}
+
+.hybrid{
+  color: green;
+}
+
+#itemQuantity{
+  align-items: center;
+  order: 4;
+  display: flex;
+}
+
+.measurements{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  height: 70px;
+  width: 85px;
   text-align: center;
-  margin: 0px 5px;
+  margin-bottom: 10px;
+  text-transform: lowercase;
+}
+
+.measurements:hover,
+#per:hover{
+  border: 1px solid blue;
+}
+
+#per{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border: 1px solid transparent;
+  height: 70px;
+  width: 85px;
+  text-align: center;
+  margin: 0px auto 10px auto;
+  text-transform: lowercase;
+  justify-content: center;
 }
 
 .addCart{
+  clear: both;
   display: block !important;
   margin: 0 auto;
   width: 90%;
   background-color: blue !important;
+}
+
+.addCart:hover{
+  background-color: red !important;
 }
