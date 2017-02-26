@@ -64,6 +64,7 @@
       <script id="menu" type="text/x-handlebars-template">
         <div class="container" id="menuFormat">
           <div class="row">
+            <h2 class="sectionTitle">Full Menu</h2>
             {{#each menu}}
             {{> partialTemplate}}
             {{/each}}
@@ -73,19 +74,19 @@
       <script id="menuPartial" type="text/x-handlebars-template">
         <div class="col l4 m6 s12">
           <div id="item">
-            <img id="itemImage" src="images/skywalker-og.jpg">
+            <img id="itemImage" src="images/skywalker-og.jpg" alt="itemImage">
             <div id="itemContent">
               <h5 id="itemName">{{name}}</h5>
-              <p id="itemType">{{type}}</p>
-              <ul id="itemQuantity">
-                <li><a class="quantity">{{eighth}}<br>{{eighthprice}}</a></li>
-                <li><a class="quantity">{{fourth}}<br>{{fourthprice}}</a></li>
-                <li><a class="quantity">{{half}}<br>{{halfprice}}</a></li>
-                <li><a class="quantity">{{oz}}<br>{{ozprice}}</a></li>
-                <li><a class="quantity">{{one}}<br>{{oneprice}}</a></li>
-                <li><a class="quantity">{{two}}<br>{{twoprice}}</a></li>
-                <li><a class="quantity">{{price}}</a></li>
-              </ul>
+              <p class="{{type}}" id="itemType">{{type}}</p>
+              <span id="itemQuantity">
+                <span class="quantity measurements">{{eighth}}<br>{{eighthprice}}</span>
+                <span class="quantity measurements">{{fourth}}<br>{{fourthprice}}</span>
+                <span class="quantity measurements">{{half}}<br>{{halfprice}}</span>
+                <span class="quantity measurements">{{oz}}<br>{{ozprice}}</span>
+                <span class="quantity measurements">{{one}}<br>{{oneprice}}</span>
+                <span class="quantity measurements">{{two}}<br>{{twoprice}}</span>
+                <span class="quantity" id="per">{{per}}<br>{{price}}</span>
+              </span>
               <a class="addCart btn"><i class="material-icons left">shopping_cart</i>Add to Cart</a>
             </div>
           </div>
