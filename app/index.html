@@ -7,7 +7,10 @@
   <meta name="author" content="Blue Dream Team">
   <title>XALER</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
   <script src="js/handlebars-v4.0.5.js"></script>
   <script src="js/script.js"></script>
 </head>
@@ -19,20 +22,40 @@
     </section>
     <section id="xalerExclusive">
     </section>
+
     <section id="fullMenu">
       <script id="menu" type="text/x-handlebars-template">
-        {{#each menu}}
-          {{> partialTemplate}}
-        {{/each}}
+        <div class="container" id="menuFormat">
+          <div class="row">
+            {{#each menu}}
+            {{> partialTemplate}}
+            {{/each}}
+          </div>
+        </div>
       </script>
       <script id="menuPartial" type="text/x-handlebars-template">
-        <div id="menuFormat">
-          <ul>
-            <li class="{{type}}">{{name}}<br>{{type}}</li>
-          </ul>
+        <div class="col l4 m6 s12">
+          <div id="item">
+            <img id="itemImage" src="images/skywalker-og.jpg">
+            <div id="itemContent">
+              <h5 id="itemName">{{name}}</h5>
+              <p id="itemType">{{type}}</p>
+              <ul id="itemQuantity">
+                <li><a class="quantity">{{eighth}}<br>{{eighthprice}}</a></li>
+                <li><a class="quantity">{{fourth}}<br>{{fourthprice}}</a></li>
+                <li><a class="quantity">{{half}}<br>{{halfprice}}</a></li>
+                <li><a class="quantity">{{oz}}<br>{{ozprice}}</a></li>
+                <li><a class="quantity">{{one}}<br>{{oneprice}}</a></li>
+                <li><a class="quantity">{{two}}<br>{{twoprice}}</a></li>
+                <li><a class="quantity">{{price}}</a></li>
+              </ul>
+              <a class="addCart btn"><i class="material-icons left">shopping_cart</i>Add to Cart</a>
+            </div>
+          </div>
         </div>
       </script>
     </section>
+
   </div>
 
 </body>
