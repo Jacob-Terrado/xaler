@@ -31,7 +31,7 @@
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
-      
+
       <!-- Actual images -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
@@ -44,7 +44,7 @@
           <img src="./images/skywalker-og.jpg" alt="Flower">
         </div>
       </div>
-      
+
       <!-- Left and right controls -->
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -74,24 +74,49 @@
       <script id="menuPartial" type="text/x-handlebars-template">
         <div class="col l4 m6 s12">
           <div id="item">
-            <img id="itemImage" src="images/skywalker-og.jpg" alt="itemImage">
-            <div id="itemContent">
-              <h5 id="itemName">{{name}}</h5>
-              <p class="{{type}}" id="itemType">{{type}}</p>
-              <span id="itemQuantity">
-                <span class="quantity measurements">{{eighth}}<br>{{eighthprice}}</span>
-                <span class="quantity measurements">{{fourth}}<br>{{fourthprice}}</span>
-                <span class="quantity measurements">{{half}}<br>{{halfprice}}</span>
-                <span class="quantity measurements">{{oz}}<br>{{ozprice}}</span>
-                <span class="quantity measurements">{{one}}<br>{{oneprice}}</span>
-                <span class="quantity measurements">{{two}}<br>{{twoprice}}</span>
-                <span class="quantity" id="per">{{per}}<br>{{price}}</span>
-              </span>
-              <a class="addCart btn"><i class="material-icons left">shopping_cart</i>Add to Cart</a>
-            </div>
+            <a class="modal-trigger" href="#modal1">
+              <img id="itemImage" src="images/skywalker-og.jpg" alt="itemImage">
+              <div id="itemContent">
+                <h5 id="itemName">{{name}}</h5>
+                <p class="{{type}}" id="itemType">{{type}}</p>
+                <span id="itemQuantity">
+                  <span class="quantity measurements">{{eighth}}<br>{{eighthprice}}</span>
+                  <span class="quantity measurements">{{fourth}}<br>{{fourthprice}}</span>
+                  <span class="quantity measurements">{{half}}<br>{{halfprice}}</span>
+                  <span class="quantity measurements">{{oz}}<br>{{ozprice}}</span>
+                  <span class="quantity measurements">{{one}}<br>{{oneprice}}</span>
+                  <span class="quantity measurements">{{two}}<br>{{twoprice}}</span>
+                  <span class="quantity" id="per">{{per}}<br>{{price}}</span>
+                </span>
+                <a class="addCart btn">Add to Cart</a>
+              </div>
+            </a>
           </div>
         </div>
       </script>
+
+      <!-- <script id="modal-template" type="text/x-handlebars-template">
+        <div id="modal1" class="modal">
+        	<div class="modal-content">
+            <img id="itemImage" src="images/skywalker-og.jpg" alt="itemImage">
+        		<h5>{{name}}</h5>
+            <p class="{{type}}" id="itemType">{{type}}</p>
+        		<p>{{description}}</p>
+            <span id="itemQuantity">
+              <span class="quantity measurements">{{eighth}}<br>{{eighthprice}}</span>
+              <span class="quantity measurements">{{fourth}}<br>{{fourthprice}}</span>
+              <span class="quantity measurements">{{half}}<br>{{halfprice}}</span>
+              <span class="quantity measurements">{{oz}}<br>{{ozprice}}</span>
+              <span class="quantity measurements">{{one}}<br>{{oneprice}}</span>
+              <span class="quantity measurements">{{two}}<br>{{twoprice}}</span>
+              <span class="quantity" id="per">{{per}}<br>{{price}}</span>
+            </span>
+        	</div>
+          <div class="modal-footer">
+            <a class="addCart btn">Add to Cart</a>
+          </div>
+        </div>
+      </script> -->
     </section>
 
   </div>

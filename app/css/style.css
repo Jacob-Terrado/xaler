@@ -3,6 +3,7 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+/* Menu Style */
 #menuFormat{
   padding: 20px 0px;
 }
@@ -55,7 +56,6 @@ body {
 
 #itemQuantity{
   align-items: center;
-  order: 4;
   display: flex;
 }
 

@@ -54,10 +54,9 @@ $(document).ready(function() {
   var html = templateScript(content);
 
   $(document.body).append(html);
-  
+
   // Remove blank labeled buttons
   var quantityButton = document.querySelectorAll('.quantity');
-
   for(i = 0; i < quantityButton.length; i++){
     quantityButton[i].addEventListener('click', selectQuantity);
     if(quantityButton[i].textContent == ''){
@@ -70,5 +69,4 @@ $(document).ready(function() {
     $(this).css({'background-color': 'blue', 'color': 'white'});
     $(this).siblings().css({'background-color': 'white', 'color': 'black'});
   }
-
 });
