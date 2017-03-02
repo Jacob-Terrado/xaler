@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-  $('#productModal').modal();
+  $('#productModal').modal({endingTop: '50%'});
+  $('#cartModal').modal({endingTop: '50%'});
 
   Handlebars.registerPartial(
     'fullTemplate', $('#fullPartial').html()

@@ -118,6 +118,25 @@ a{
   color: #000000 !important;
 }
 
+/* Modal */
+#cartModal{
+  width: 250px !important;
+  transform: translateY(-50%) !important;
+}
+
+#productModal{
+  transform: translateY(-50%) !important;
+}
+
+#cartModal i,
+#cartModal h5{
+  width: 200px;
+  text-align: center;
+}
+
+#cartModal i{
+  font-size: 4em;
+}
 /*Legal Page CSS*/
 #legal {
   text-indent: 30px;
