@@ -14,8 +14,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script src="js/handlebars-v4.0.5.js"></script>
-  <script src="js/script.js"></script>
-  
 </head>
 
 <body>
@@ -36,30 +34,65 @@
         </ul>
       </div>
     </section>
-    
-    <section id="xalerExclusive">
-    </section>
 
-    <section id="fullMenu">
-      <script id="menu" type="text/x-handlebars-template">
-        <div class="container" id="menuFormat">
+    <section id="xalerGrown">
+
+
+      <script id="grownTemplate" type="text/x-handlebars-template">
+        <div class="container grownFormat">
           <div class="row">
-            <h2 class="sectionTitle">Full Menu</h2>
-            {{#each menu}}
-            {{> partialTemplate}}
+            <h2 class="sectionTitle">XALER Grown</h2>
+            {{#each grownMenu}}
+            {{> grownTemplate}}
             {{/each}}
           </div>
         </div>
       </script>
-      <script id="menuPartial" type="text/x-handlebars-template">
-        <div class="col l4 m6 s12">
-          <div id="item">
-            <a class="modal-trigger" href="#modal1">
-              <img id="itemImage" src="images/skywalker-og.jpg" alt="itemImage">
-              <div id="itemContent">
-                <h5 id="itemName">{{name}}</h5>
+      <script id="grownPartial" type="text/x-handlebars-template">
+        <div class="col l3 m6 s12">
+          <div class="item">
+            <a href="#productModal">
+              <img class="itemImage" src="images/skywalker-og.jpg" alt="itemImage">
+              <div class="itemContent">
+                <h5 class="itemName">{{name}}</h5>
                 <p class="{{type}}" id="itemType">{{type}}</p>
-                <span id="itemQuantity">
+                <span class="itemQuantity">
+                  <span class="quantity measurements">{{eighth}}<br>{{eighthprice}}</span>
+                  <span class="quantity measurements">{{fourth}}<br>{{fourthprice}}</span>
+                  <span class="quantity measurements">{{half}}<br>{{halfprice}}</span>
+                  <span class="quantity measurements">{{oz}}<br>{{ozprice}}</span>
+                  <span class="quantity measurements">{{one}}<br>{{oneprice}}</span>
+                  <span class="quantity measurements">{{two}}<br>{{twoprice}}</span>
+                  <span class="quantity" id="per">{{per}}<br>{{price}}</span>
+                </span>
+                <a class="addCart btn">Add to Cart</a>
+              </div>
+            </a>
+          </div>
+        </div>
+      </script>
+    </section>
+
+    <section id="fullMenu">
+      <script id="fullTemplate" type="text/x-handlebars-template">
+        <div class="container menuFormat">
+          <div class="row">
+            <h2 class="sectionTitle">Full Menu</h2>
+            {{#each fullMenu}}
+            {{> fullTemplate}}
+            {{/each}}
+          </div>
+        </div>
+      </script>
+      <script id="fullPartial" type="text/x-handlebars-template">
+        <div class="col l3 m6 s12">
+          <div class="item">
+            <a href="#productModal">
+              <img class="itemImage" src="images/skywalker-og.jpg" alt="itemImage">
+              <div class="itemContent">
+                <h5 class="itemName">{{name}}</h5>
+                <p class="{{type}}" id="itemType">{{type}}</p>
+                <span class="itemQuantity">
                   <span class="quantity measurements">{{eighth}}<br>{{eighthprice}}</span>
                   <span class="quantity measurements">{{fourth}}<br>{{fourthprice}}</span>
                   <span class="quantity measurements">{{half}}<br>{{halfprice}}</span>
@@ -75,41 +108,27 @@
         </div>
       </script>
 
-      <!-- <script id="modal-template" type="text/x-handlebars-template">
-        <div id="modal1" class="modal">
-        	<div class="modal-content">
-            <img id="itemImage" src="images/skywalker-og.jpg" alt="itemImage">
-        		<h5>{{name}}</h5>
-            <p class="{{type}}" id="itemType">{{type}}</p>
-        		<p>{{description}}</p>
-            <span id="itemQuantity">
-              <span class="quantity measurements">{{eighth}}<br>{{eighthprice}}</span>
-              <span class="quantity measurements">{{fourth}}<br>{{fourthprice}}</span>
-              <span class="quantity measurements">{{half}}<br>{{halfprice}}</span>
-              <span class="quantity measurements">{{oz}}<br>{{ozprice}}</span>
-              <span class="quantity measurements">{{one}}<br>{{oneprice}}</span>
-              <span class="quantity measurements">{{two}}<br>{{twoprice}}</span>
-              <span class="quantity" id="per">{{per}}<br>{{price}}</span>
-            </span>
-        	</div>
-          <div class="modal-footer">
-            <a class="addCart btn">Add to Cart</a>
-          </div>
+      <div id="productModal" class="modal">
+        <div class="modal-content">
+          <h5 class="itemName">{{name}}</h5>
+          <p class="{{type}}" id="itemType">{{type}}</p>
+          <p>{{description}}</p>
+          <span class="itemQuantity">
+            <span class="quantity measurements">{{eighth}}<br>{{eighthprice}}</span>
+            <span class="quantity measurements">{{fourth}}<br>{{fourthprice}}</span>
+            <span class="quantity measurements">{{half}}<br>{{halfprice}}</span>
+            <span class="quantity measurements">{{oz}}<br>{{ozprice}}</span>
+            <span class="quantity measurements">{{one}}<br>{{oneprice}}</span>
+            <span class="quantity measurements">{{two}}<br>{{twoprice}}</span>
+            <span class="quantity" id="per">{{per}}<br>{{price}}</span>
+          </span>
+          <a class="addCart btn">Add to Cart</a>
         </div>
-      </script> -->
+      </div>
     </section>
 
   </div>
+  <script src="js/script.js"></script>
 
 </body>
-<script>
-  $(document).ready(function(){
-      $('.slider').slider();
-  });
-$('.slider').slider('pause');
-$('.slider').slider('start');
-$('.slider').slider('next');
-$('.slider').slider('prev');
-</script>
-  
 </html>
