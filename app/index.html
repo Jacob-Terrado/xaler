@@ -50,8 +50,8 @@
       </script>
       <script id="grownPartial" type="text/x-handlebars-template">
         <div class="col l3 m6 s12">
+          <a class="grownModal" href="#productModal" id="{{id}}">
           <div class="item">
-            <a href="#productModal">
               <img class="itemImage" src="images/skywalker-og.jpg" alt="itemImage">
               <div class="itemContent">
                 <h5 class="itemName">{{name}}</h5>
@@ -67,8 +67,8 @@
                 </span>
                 <a class="addCart btn" href="#cartModal">Add to Cart</a>
               </div>
-            </a>
           </div>
+        </a>
         </div>
       </script>
     </section>
@@ -86,8 +86,8 @@
       </script>
       <script id="fullPartial" type="text/x-handlebars-template">
         <div class="col l3 m6 s12">
+          <a class="fullModal" href="#productModal" id="{{id}}">
           <div class="item">
-            <a href="#productModal">
               <img class="itemImage" src="images/skywalker-og.jpg" alt="itemImage">
               <div class="itemContent">
                 <h5 class="itemName">{{name}}</h5>
@@ -103,11 +103,40 @@
                 </span>
                 <a class="addCart btn" href="#cartModal">Add to Cart</a>
               </div>
-            </a>
           </div>
+        </a>
         </div>
       </script>
 
+      <!-- <div id="productModal" class="modal">
+        <div class="modal-content">
+          <h5 class="itemName">{{name}}</h5>
+          <p class="{{type}}" id="itemType">{{type}}</p>
+          <p>{{description}}</p>
+          <span class="itemQuantity">
+            <span class="quantity measurements">{{eighth}}<br>{{eighthprice}}</span>
+            <span class="quantity measurements">{{fourth}}<br>{{fourthprice}}</span>
+            <span class="quantity measurements">{{half}}<br>{{halfprice}}</span>
+            <span class="quantity measurements">{{oz}}<br>{{ozprice}}</span>
+            <span class="quantity measurements">{{one}}<br>{{oneprice}}</span>
+            <span class="quantity measurements">{{two}}<br>{{twoprice}}</span>
+            <span class="quantity" id="per">{{per}}<br>{{price}}</span>
+          </span>
+          <a class="addCart btn">Add to Cart</a>
+        </div>
+      </div> -->
+      <div id="cartModal" class="modal">
+        <div class="modal-content">
+          <i class="material-icons">done</i>
+          <h5 class="itemName">ADDED TO CART!</h5>
+        </div>
+      </div>
+    </section>
+
+    <script id="productTemplate" type="text/x-handlebars-template">
+      {{> productTemplate}}
+    </script>
+    <script id="productPartial" type="text/x-handlebars-template">
       <div id="productModal" class="modal">
         <div class="modal-content">
           <h5 class="itemName">{{name}}</h5>
@@ -125,14 +154,7 @@
           <a class="addCart btn">Add to Cart</a>
         </div>
       </div>
-      <div id="cartModal" class="modal">
-        <div class="modal-content">
-          <i class="material-icons">done</i>
-          <h5 class="itemName">ADDED TO CART!</h5>
-        </div>
-      </div>
-    </section>
-
+    </script>
   </div>
   <script src="js/script.js"></script>
 
