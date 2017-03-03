@@ -137,8 +137,16 @@ a{
 #cartModal i{
   font-size: 4em;
 }
+
 /*Legal Page CSS*/
+
 #legal {
   text-indent: 30px;
   color: darkgray;
+}
+
+/* FTP Page CSS*/
+
+.FTP {
+  text-align: center
 }

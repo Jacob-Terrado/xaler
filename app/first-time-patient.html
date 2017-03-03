@@ -7,11 +7,75 @@
   <meta name="author" content="Blue Dream Team">
   <title>XALER</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
   <script src="js/handlebars-v4.0.5.js"></script>
-  <script src="js/script.js"></script>
 </head>
 <body>
+  <!-- When the Navigation bar is implemented, put here -->
+  <div class="container">
+    <h2 class="FTP"> Welcome to XALER</h2>
+    <div class="divider"></div>
+    <h5 class="FTP"> ALL FIRST TIME PATIENTS WILL RECEIVE 10% OFF YOUR ENTIRE ORDER!</h5>
+    <p class="FTP"> *Promotions cannot be stacked.</p>
+    <p class="FTP"> Please fill out the form below, so we can verify your records.</p>
+    
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="first_name" type="text" class="validate">
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="phone" type="text" class="validate">
+            <label for="email">Phone Number</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="file-field input-field">
+            <div class="btn">
+              <span>ID</span>
+              <input type="file">
+            </div>
+            <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="file-field input-field">
+            <div class="btn">
+              <span>Prescription</span>
+              <input type="file">
+            </div>
+            <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  
+  
+ 
 </body>
 </html>
