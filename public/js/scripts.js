@@ -13,4 +13,10 @@ $(document).ready(function () {
             draggable: true
         }
     );
+
+    $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true,
+        duration: 300
+    });
 });
