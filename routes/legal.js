@@ -1,3 +1,3 @@
-exports.viewIndex = function(req, res){
+exports.viewLegal = function(req, res){
     res.render("legal");
 };
