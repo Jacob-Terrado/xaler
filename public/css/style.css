@@ -1,5 +1,21 @@
-.body {
-    font-family: 'Nunito', sans-serif;
+footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: 0 !important;
+}
+
+nav {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+hr {
+    margin: 0 !important;
+}
+
+.container {
+    width: 90% !important;
 }
 
 .display-text {
@@ -42,6 +58,10 @@
     font-style: normal !important;
     font-weight: 300;
     font-size: 20pt !important;
+    margin: 0 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .prices-text {
@@ -60,16 +80,8 @@
     padding: 5px;
 }
 
-footer {
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    margin-top: 0 !important;
-}
-
-nav {
-    padding-left: 15px;
-    padding-right: 15px;
+.main-content {
+    background-color: #F8F8F8;
 }
 
 .cart-heading {
@@ -143,7 +155,8 @@ nav {
 }
 
 #xaler-carousel {
-    height: 500px;
+    min-height: 400px;
+    max-height: 500px;
 }
 
 #xaler-carousel img {
@@ -168,69 +181,39 @@ nav {
     padding: 5px !important;
 }
 
-/* Other XALER Repo */
+.card-action {
+    border: none !important;
+    padding: 0 1em 1em 1em !important;
+}
+
+.card-content {
+    padding: 1em !important;
+}
+
 /* Menu Style */
-.menuFormat {
-    padding: 20px 0px;
-}
-
-.container {
-    width: 85% !important;
-}
-
-.sectionTitle {
-    text-align: center;
-    font-size: 2.5em;
-}
-
-.item {
-    box-shadow: 0px 0px 5px 1px #EEEEEE;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.itemContent {
-    padding: 10px;
+.item-content {
     text-transform: capitalize;
 }
 
-.itemImage {
-    width: 100%;
-}
-
-.itemName {
-    font-size: 1.2em;
-    font-weight: 500;
-    margin: 0px;
-    padding: 0px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-#itemType {
-    margin: 2px 0px;
-}
-
 .indica {
-    color: blue;
+    color: blue !important;
 }
 
 .sativa {
-    color: orange;
+    color: orange !important;
 }
 
 .hybrid {
-    color: green;
+    color: green !important;
 }
 
-.itemQuantity {
-    align-items: center;
-    display: flex;
+.item-quantity {
+    align-items: center !important;
+    display: flex !important;
 }
 
-.measurements {
-    display: flex;
+.measurements{
+    display: inline-block;
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
@@ -238,16 +221,29 @@ nav {
     height: 70px;
     width: 85px;
     text-align: center;
-    margin-bottom: 10px;
+    position: relative;
+    margin: auto;
     text-transform: lowercase;
+    padding: 5px;
 }
 
 .measurements:hover,
-#per:hover {
-    border: 1px solid blue;
+#per:hover{
+    border: 1px solid #0076BD;
 }
 
-#per {
+.add-cart-btn {
+    clear: both;
+    display: block !important;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 0;
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+    border: 2px solid #000000 !important;
+}
+
+#per{
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -260,43 +256,11 @@ nav {
     justify-content: center;
 }
 
-.addCart {
-    clear: both;
-    display: block !important;
-    margin: 0 auto;
-    width: 90%;
-    border-radius: 0;
-    background-color: #000000 !important;
-    color: #FFFFFF !important;
-    border: 2px solid #000000 !important;
-}
-
-.btn {
+.btn{
     box-shadow: 0 0 0 0 !important;
 }
 
-.addCart:hover {
+.add-cart-btn:hover{
     background-color: #FFFFFF !important;
     color: #000000 !important;
-}
-
-/* Modal */
-#cartModal {
-    width: 250px !important;
-    transform: translateY(-50%) !important;
-}
-
-#productModal {
-    width: 350px !important;
-    transform: translateY(-50%) !important;
-}
-
-#cartModal i,
-#cartModal h5 {
-    width: 200px;
-    text-align: center;
-}
-
-#cartModal i {
-    font-size: 4em;
 }

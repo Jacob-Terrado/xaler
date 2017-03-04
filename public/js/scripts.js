@@ -474,7 +474,7 @@ $(document).ready(function () {
         inDuration: 300,
         outDuration: 200,
         ready: function (modal) {
-            setTimeout(function() {$('#cart-modal').modal('close');}, 800);
+            setTimeout(function() {$('#cart-modal').modal('close');}, 800); // slightly buggy, click add to cart, then click out, then click another one; it'll be hidden
         }
     });
 });
@@ -488,4 +488,8 @@ $(function () {
 
 function home() {
     window.location.href = "/";
+}
+
+function openProductModal(name) {
+    console.log(name);
 }

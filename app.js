@@ -2,6 +2,7 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars');
+var handlebar = require('handlebars');
 
 var index = require('./routes/index');
 var legal = require('./routes/legal');
@@ -36,3 +37,8 @@ app.get('/ftp', ftp.viewFtp);
 http.createServer(app).listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));
 });
+
+// handlebar.registerHelper('json', function(data) {
+//     console.log("Hello");
+//     return JSON.stringify(data);
+// });
