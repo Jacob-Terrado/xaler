@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>XALER</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS for Materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="/css/materialize.min.css"/>
+  <link type="text/css" rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+{{> navbar}}
+
+<div class="container">
+  <h2 class="center title-text"> Welcome to XALER</h2>
+  <hr>
+  <h5 class="center header-text"> ALL FIRST TIME PATIENTS WILL RECEIVE 10% OFF YOUR ENTIRE ORDER!</h5>
+  <p class="center sub-header-text"> *Promotions cannot be stacked.</p>
+  <p class="center sub-header-text"> Please fill out the form below, so we can verify your records.</p>
+
+  <div class="row body-text" style="margin: 10px;">
+    <form id="ftp-form" novalidate="novalidate" onsubmit="console.log(3);" class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <label for="firstName">First Name</label>
+          <input id="firstName" name="firstName" type="text" data-error=".firstNameError">
+          <div class="firstNameError"></div>
+        </div>
+        <div class="input-field col s6">
+          <label for="lastName">Last Name</label>
+          <input id="lastName" name="lastName" type="text" data-error=".lastNameError">
+          <div class="lastNameError"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <label for="phoneNumber">Phone Number</label>
+          <input id="phoneNumber" name="phoneNumber" type="text" data-error=".phoneNumberError">
+          <div class="phoneNumberError"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" data-error=".emailError">
+          <div class="emailError"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="file-field input-field">
+          <div class="btn ">
+            <span>ID</span>
+            <input type="file">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="file-field input-field">
+          <div class="btn">
+            <span>Prescription</span>
+            <input type="file">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+          </div>
+        </div>
+      </div>
+      <button id="ftp-submit-button" class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+    </form>
+  </div>
+</div>
+
+{{> footer}}
+
+{{> scripts}}
+
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script>
+  $("#ftp-form").validate({
+    rules: {
+      firstName: {
+        required: true,
+        minlength: 3
+      },
+      lastName: {
+        required: true,
+        minlength: 3
+      },
+      phoneNumber: {
+        required: true,
+        minlength: 10
+      },
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      firstName: {
+        required: "Please enter your first name"
+      },
+      lastName: {
+        required: "Please enter your last name"
+      },
+      phoneNumber: {
+        required: "Please enter your phone number"
+      },
+      email: {
+        required: "Please enter your email",
+        email: "Please enter a valid email"
+      }
+    },
+    errorElement: 'div',
+    errorPlacement: function (error, element) {
+      var placement = $(element).data('error');
+      if (placement) {
+        $(placement).append(error)
+      } else {
+        error.insertAfter(element);
+      }
+    }
+  });
+</script>
+<style>
+  .firstNameError, .lastNameError, .emailError, .phoneNumberError {
+    color: red;
+    font-size: 12px;
+  }
+</style>
+</body>
+</html>

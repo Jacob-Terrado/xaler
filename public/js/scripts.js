@@ -13,10 +13,16 @@ $(document).ready(function () {
             draggable: true
         }
     );
+});
 
+$(function () {
     $('.carousel.carousel-slider').carousel({
-        fullWidth: true,
-        indicators: true,
-        duration: 300
+        full_width: true,
+        indicator: true,
+
     });
 });
+
+function home() {
+    window.location.href = "/";
+}
