@@ -1,0 +1,26 @@
+<!--Product Modal -->
+<div id="product-modal" class="modal">
+  <div class="modal-content">
+    <div class="container">
+      <div class="card">
+        <div class="card-image">
+          <img class="responsive-img" src="images/skywalker-og.jpg" alt="itemImage">
+        </div>
+        <div class="card-content item-content">
+          <h5 class="product-names-text">{{name}}</h5>
+          <p class="{{type}} strains-text">{{type}}</p>
+          <p class="body-text">{{description}}</p>
+          <div class="item-quantity">
+            <span class="quantity measurements prices-text">{{eighth}}<br>{{eighthprice}}</span>
+            <span class="quantity measurements prices-text">{{fourth}}<br>{{fourthprice}}</span>
+            <span class="quantity measurements prices-text">{{half}}<br>{{halfprice}}</span>
+            <span class="quantity measurements prices-text">{{oz}}<br>{{ozprice}}</span>
+          </div>
+        </div>
+        <div class="card-action">
+          <a class="add-cart-btn btn" href="#cart-modal">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

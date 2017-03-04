@@ -474,7 +474,9 @@ $(document).ready(function () {
         inDuration: 300,
         outDuration: 200,
         ready: function (modal) {
-            setTimeout(function() {$('#cart-modal').modal('close');}, 800); // slightly buggy, click add to cart, then click out, then click another one; it'll be hidden
+            setTimeout(function () {
+                $('#cart-modal').modal('close');
+            }, 800); // slightly buggy, click add to cart, then click out, then click another one; it'll be hidden
         }
     });
 });
@@ -482,7 +484,8 @@ $(document).ready(function () {
 $(function () {
     $('.carousel.carousel-slider').carousel({
         full_width: true,
-        indicator: true
+        indicator: true,
+        duration: 1000
     });
 });
 
@@ -492,4 +495,5 @@ function home() {
 
 function openProductModal(name) {
     console.log(name);
+    $(name).modal('open');
 }
