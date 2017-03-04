@@ -462,6 +462,21 @@ $(document).ready(function () {
             draggable: true
         }
     );
+
+    $('.modal').modal({
+        dismissible: true,
+        inDuration: 300,
+        outDuration: 200
+    });
+
+    $('#cart-modal').modal({
+        dismissible: true,
+        inDuration: 300,
+        outDuration: 200,
+        ready: function (modal) {
+            setTimeout(function() {$('#cart-modal').modal('close');}, 800);
+        }
+    });
 });
 
 $(function () {
@@ -469,21 +484,6 @@ $(function () {
         full_width: true,
         indicator: true
     });
-    //
-    // $('.modal').modal({
-    //     dismissible: true,
-    //     inDuration: 300,
-    //     outDuration: 200
-    // });
-    //
-    // $('#cart-modal').modal({
-    //     dismissible: true,
-    //     inDuration: 300,
-    //     outDuration: 200,
-    //     ready: function (modal) {
-    //         setTimeout(function() {$('#cart-modal').modal('close');}, 800);
-    //     }
-    // });
 });
 
 function home() {

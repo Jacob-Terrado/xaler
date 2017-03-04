@@ -16,12 +16,101 @@
 
 <!-- Carousel --> <!-- doesn't work on mobile? -->
 <div id="xaler-carousel" class="carousel carousel-slider center" data-indicators="true">
-  <a class="carousel-item" href="#one!"><img class="responsive-img" src="../images/corgi_friendler.png"></a>
-  <a class="carousel-item" href="#two!"><img class="responsive-img" src="../images/corgi_friendler.png"></a>
-  <a class="carousel-item" href="#three!"><img class="responsive-img" src="../images/corgi_friendler.png"></a>
-  <a class="carousel-item" href="#four!"><img class="responsive-img" src="../images/corgi_friendler.png"></a>
+  <a class="carousel-item" href="#"><img class="responsive-img" src="../images/corgi_friendler.png"></a>
+  <a class="carousel-item" href="#"><img class="responsive-img" src="../images/corgi_friendler.png"></a>
+  <a class="carousel-item" href="#"><img class="responsive-img" src="../images/corgi_friendler.png"></a>
+  <a class="carousel-item" href="#"><img class="responsive-img" src="../images/corgi_friendler.png"></a>
 </div>
 <hr>
+
+<div class="container">
+  <!-- Xaler Grown -->
+  <div class="row">
+    <h2 class="display-text center" id="xaler-grown">XALER Grown</h2>
+    {{#each grown}}
+      <div class="col l3 m6 s12">
+        <div class="item" onclick="openProductModal({{{@index}}});">
+          <img class="itemImage" src="images/skywalker-og.jpg" alt="itemImage">
+          <div class="itemContent">
+            <h5 class="itemName">{{name}}</h5>
+            <p class="{{type}}" id="itemType">{{type}}</p>
+            <span class="itemQuantity">
+                  <span class="quantity measurements">{{eighth}}<br>{{eighthprice}}</span>
+                  <span class="quantity measurements">{{fourth}}<br>{{fourthprice}}</span>
+                  <span class="quantity measurements">{{half}}<br>{{halfprice}}</span>
+                  <span class="quantity measurements">{{oz}}<br>{{ozprice}}</span>
+                  <span class="quantity measurements">{{one}}<br>{{oneprice}}</span>
+                  <span class="quantity measurements">{{two}}<br>{{twoprice}}</span>
+                  <span class="quantity" id="per">{{per}}<br>{{price}}</span>
+              </span>
+            <a class="addCart btn" href="#cart-modal">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+
+  <!--Menu-->
+  <div class="menuFormat">
+    <div class="row">
+      <h2 class="display-text center" id="menu">Menu</h2>
+      {{#each menu}}
+        <div class="col l3 m6 s12">
+          <div class="item" onclick="openProductModal({{{@index}}});">
+            <img class="itemImage" src="images/skywalker-og.jpg" alt="itemImage">
+            <div class="itemContent">
+              <h5 class="itemName">{{name}}</h5>
+              <p class="{{type}}" id="itemType">{{type}}</p>
+              <span class="itemQuantity">
+                  <span class="quantity measurements">{{eighth}}<br>{{eighthprice}}</span>
+                  <span class="quantity measurements">{{fourth}}<br>{{fourthprice}}</span>
+                  <span class="quantity measurements">{{half}}<br>{{halfprice}}</span>
+                  <span class="quantity measurements">{{oz}}<br>{{ozprice}}</span>
+                  <span class="quantity measurements">{{one}}<br>{{oneprice}}</span>
+                  <span class="quantity measurements">{{two}}<br>{{twoprice}}</span>
+                  <span class="quantity" id="per">{{per}}<br>{{price}}</span>
+              </span>
+              <a class="addCart btn" href="#cart-modal">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+</div>
+
+<!--Product Modal -->
+<div id="product-modal" class="modal">
+  <div class="modal-content">
+    <div class="container">
+      <img class="itemImage" src="images/skywalker-og.jpg" alt="itemImage">
+      <div class="itemContent">
+        <h5 class="itemName">{{name}}</h5>
+        <p class="{{type}}" id="itemType">{{type}}</p>
+        <p>{{description}}</p>
+        </a>
+        <span class="itemQuantity">
+<span class="quantity measurements">{{eighth}}<br>{{eighthprice}}</span>
+<span class="quantity measurements">{{fourth}}<br>{{fourthprice}}</span>
+<span class="quantity measurements">{{half}}<br>{{halfprice}}</span>
+<span class="quantity measurements">{{oz}}<br>{{ozprice}}</span>
+<span class="quantity measurements">{{one}}<br>{{oneprice}}</span>
+<span class="quantity measurements">{{two}}<br>{{twoprice}}</span>
+<span class="quantity" id="per">{{per}}<br>{{price}}</span>
+</span>
+        <a class="addCart btn" href="#cartModal">Add to Cart</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Cart Modal -->
+<div id="cart-modal" class="modal"> <!-- in the future, pass in product info -->
+  <div class="modal-content">
+    <div class="container">
+      <h5 class="header-text black-text center">Added to Cart!</h5>
+    </div>
+  </div>
+</div>
 
 {{> contactus}}
 {{> footer}}
