@@ -1,0 +1,29 @@
+<nav class="nav-extended grey darken-4">
+  <div class="nav-wrapper">
+    <img src="../images/xaler.png" alt="logo" class="brand-logo hide-on-med-and-down"/>
+    <!-- use css to limit size of logo -->
+    <img src="../images/xaler.png" alt="logo2" class="brand-logo center hide-on-large-only"/>
+    <a href="#" data-activates="mobile-nav" class="button-collapse menu-button"><i class="material-icons">menu</i></a>
+
+    <ul id="nav-mobile" class="left hide-on-med-and-down" style="margin-left: 80px;">
+      <!-- use same size in logo for left margin -->
+      <li><a class="nav-links" href="#deals">DEALS</a></li>
+      <li><a class="nav-links" href="#menu">MENU</a></li>
+      <li><a class="nav-links" href="#xaler-grown">XALER GROWN</a></li>
+      <li><a class="nav-links" href="#ftp">FIRST TIME PATIENT</a></li>
+      <!-- need to use JS to make this active when clicked -->
+      <li><a class="nav-links" href="#delivery-area">DELIVERY AREA</a></li>
+      <li><a class="nav-links" href="#delivery-area">LEGAL</a></li>
+    </ul>
+    {{> sidenav}}
+
+    <!-- Cart -->
+    <ul class="right">
+      <li>
+        <a href="#" data-activates="cart-nav" class="button-collapse cart-button"><i class="material-icons">shopping_cart</i></a>
+        <a href="#" data-activates="cart-nav" class="hide-on-med-and-down cart-button"><i class="material-icons">shopping_cart</i></a>
+      </li>
+    </ul>
+    {{> cart}}
+  </div>
+</nav>
