@@ -10,14 +10,12 @@
 <body>
 {{> navbar}}
 <div class="main-content">
-  <!-- Carousel --> <!-- buggy when switching from mobile -> desktop -->
-  <div id="xaler-carousel" class="carousel carousel-slider center" data-indicators="true">
-    <a class="carousel-item" href="#"><img class="responsive-img" src="../images/corgi_friendler.png"></a>
-    <a class="carousel-item" href="#"><img class="responsive-img" src="../images/corgi_friendler.png"></a>
-    <a class="carousel-item" href="#"><img class="responsive-img" src="../images/corgi_friendler.png"></a>
-    <a class="carousel-item" href="#"><img class="responsive-img" src="../images/corgi_friendler.png"></a>
+  <div class="carousel carousel-slider" data-indicators="true" height="100">
+    <a class="carousel-item" href="#one!"><img src="../images/discounts.jpeg"></a>
+    <a class="carousel-item" href="#one!"><img src="../images/discounts.jpeg"></a>
+    <a class="carousel-item" href="#one!"><img src="../images/discounts.jpeg"></a>
+    <a class="carousel-item" href="#one!"><img src="../images/discounts.jpeg"></a>
   </div>
-  <hr>
 
   <div class="container">
     <!-- XALER Grown -->
@@ -25,20 +23,22 @@
       <h2 class="display-text center" id="xaler-grown">XALER Grown</h2>
       {{#each grown}}
         <div class="col l3 m6 s12">
-          <div class="card product" onclick="openProductModal({{{id}}})">
+          <a class="opensModal" onclick="openProductModal({{{id}}})">
+          <div class="card product">
             <div class="card-image">
               <img class="responsive-img" src="images/skywalker-og.jpg" alt="itemImage">
             </div>
             <div class="card-content item-content">
               <h5 class="product-names-text">{{name}}</h5>
               <p class="{{type}} strains-text">{{type}}</p>
+            </a>
               <div class="item-quantity">
-                {{#if eighth}}<span class="quantity measurements prices-text">{{eighth}}<br>{{eighthprice}}</span> {{/if}}
-                {{#if fourth}}<span class="quantity measurements prices-text">{{fourth}}<br>{{fourthprice}}</span> {{/if}}
-                {{#if half}} <span class="quantity measurements prices-text">{{half}}<br>{{halfprice}}</span> {{/if}}
-                {{#if oz}} <span class="quantity measurements prices-text">{{oz}}<br>{{ozprice}}</span> {{/if}}
-                {{#if two}} <span class="quantity measurements prices-text">{{two}}<br>{{twoprice}}</span> {{/if}}
-                {{#if per}} <span class="quantity prices-text" id="per">{{per}}<br>{{price}}</span> {{/if}}
+                {{#if eighth}}<span class="quantity measurements">{{eighth}}<br>{{eighthprice}}</span> {{/if}}
+                {{#if fourth}}<span class="quantity measurements">{{fourth}}<br>{{fourthprice}}</span> {{/if}}
+                {{#if half}} <span class="quantity measurements">{{half}}<br>{{halfprice}}</span> {{/if}}
+                {{#if one}} <span class="quantity measurements">{{one}}<br>{{oneprice}}</span> {{/if}}
+                {{#if two}} <span class="quantity measurements">{{two}}<br>{{twoprice}}</span> {{/if}}
+                {{#if per}} <span class="quantity" id="per">{{per}}<br>{{price}}</span> {{/if}}
               </div>
             </div>
             <div class="card-action">
@@ -54,20 +54,22 @@
       <h2 class="display-text center" id="menu">Menu</h2>
       {{#each menu}}
         <div class="col l3 m6 s12">
-          <div class="card product" onclick="openProductModal({{{id}}})">
+          <a class="opensModal" onclick="openProductModal({{{id}}})">
+          <div class="card product">
             <div class="card-image">
               <img class="responsive-img" src="images/skywalker-og.jpg" alt="itemImage">
             </div>
             <div class="card-content item-content">
               <h5 class="product-names-text">{{name}}</h5>
               <p class="{{type}} strains-text">{{type}}</p>
+            </a>
               <div class="item-quantity">
-                {{#if eighth}}<span class="quantity measurements prices-text">{{eighth}}<br>{{eighthprice}}</span> {{/if}}
-                {{#if fourth}}<span class="quantity measurements prices-text">{{fourth}}<br>{{fourthprice}}</span> {{/if}}
-                {{#if half}} <span class="quantity measurements prices-text">{{half}}<br>{{halfprice}}</span> {{/if}}
-                {{#if oz}} <span class="quantity measurements prices-text">{{oz}}<br>{{ozprice}}</span> {{/if}}
-                {{#if two}} <span class="quantity measurements prices-text">{{two}}<br>{{twoprice}}</span> {{/if}}
-                {{#if per}} <span class="quantity prices-text" id="per">{{per}}<br>{{price}}</span> {{/if}}
+                {{#if eighth}}<span class="quantity measurements">{{eighth}}<br>{{eighthprice}}</span> {{/if}}
+                {{#if fourth}}<span class="quantity measurements">{{fourth}}<br>{{fourthprice}}</span> {{/if}}
+                {{#if half}} <span class="quantity measurements">{{half}}<br>{{halfprice}}</span> {{/if}}
+                {{#if one}} <span class="quantity measurements">{{one}}<br>{{oneprice}}</span> {{/if}}
+                {{#if two}} <span class="quantity measurements">{{two}}<br>{{twoprice}}</span> {{/if}}
+                {{#if per}} <span class="quantity" id="per">{{per}}<br>{{price}}</span> {{/if}}
               </div>
             </div>
             <div class="card-action">

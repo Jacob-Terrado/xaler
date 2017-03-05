@@ -1,3 +1,4 @@
+/* Menu array */
 var menu = [
     {
         "id": "0",
@@ -505,7 +506,77 @@ var menu = [
     }
 ];
 
+/* Opens home */
+function home() {
+    window.location.href = "/";
+}
+
+/* Opens Product Modal */
+function openProductModal(id) {
+    var item = menu[id];
+    var name = $('#product-modal-name');
+    var itemOptions = $('#item-options');
+
+    name.html(item.name);
+
+    if (item.description) {
+        var i = "<p id=\"product-modal-desc\" class=\"body-modal-text\">" + item.description + "</p>";
+        name.after(i);
+    }
+
+    if (item.type) {
+        var h = "<p id=\"product-modal-strain\" class=\"strains-modal-text " + item.type + "\">" + item.type + "</p>";
+        name.after(h);
+    }
+
+    if (item.eighth) {
+        var a = "<span id=\"product-modal-eighth\" class=\"quantity measurements prices-text\">" + item.eighth + "<br>" + item.eighthprice + "</span>";
+        itemOptions.replaceAll(a,a);
+    }
+
+    if (item.fourth) {
+        var b = "<span id=\"product-modal-fourth\" class=\"quantity measurements prices-text\">" + item.fourth + "<br>" + item.fourthprice + "</span>";
+        itemOptions.replace(b);
+    }
+
+    if (item.half) {
+        var c = "<span id=\"product-modal-half\" class=\"quantity measurements prices-text\">" + item.half + "<br>" + item.halfprice + "</span>";
+        itemOptions.replace(c);
+    }
+
+    if (item.oz) {
+        var d = "<span id=\"product-modal-oz\" class=\"quantity measurements prices-text\">" + item.oz + "<br>" + item.ozprice + "</span>";
+        itemOptions.replace(d);
+    }
+
+    if (item.one) {
+        var e = "<span id=\"product-modal-one\" class=\"quantity measurements prices-text\">" + item.one + "<br>" + item.oneprice + "</span>";
+        itemOptions.replace(e);
+    }
+
+    if (item.two) {
+        var f = "<span id=\"product-modal-two\" class=\"quantity measurements prices-text\">" + item.two + "<br>" + item.twoprice + "</span>";
+        itemOptions.replace(f);
+    }
+
+    if (item.per) {
+        var g = "<span id=\"per\" class=\"quantity measurements prices-text\">" + item.per + "<br>" + item.price + "</span>";
+        itemOptions.replace(g);
+    }
+
+    $('#product-modal').modal('open');
+}
+
+// show selection of quantity
+function selectQuantity(){
+  $(this).css({'background-color': '#AAAAAA', 'color': 'white'});
+  $(this).siblings().css({'background-color': '#FFFFFF', 'color': 'black'});
+}
+
 $(document).ready(function () {
+    /* Carousel */
+    $('.carousel.carousel-slider').carousel({fullWidth: true});
+
     $(".menu-button").sideNav({
         menuWidth: 300,
         edge: 'left',
@@ -543,6 +614,7 @@ $(document).ready(function () {
         dismissible: true,
         inDuration: 300,
         outDuration: 200,
+        endingTop: '50%',
         ready: function (modal) {
             setTimeout(function () {
                 $('#cart-modal').modal('close');
@@ -565,90 +637,23 @@ $(document).ready(function () {
         startingTop: '5%',
         endingTop: '5%'
     });
-});
 
-$(function () {
-    $('.carousel.carousel-slider').carousel({
-        full_width: true,
-        indicator: true,
-        duration: 1000
+    $("#xaler-nav").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#xaler-grown").offset().top - 40
+        }, 500);
     });
+
+    $("#menu-nav").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#menu").offset().top - 40
+        }, 500);
+    });
+
+    // Remove blank labeled buttons
+  var quantityButton = document.querySelectorAll('.quantity');
+  for(i = 0; i < quantityButton.length; i++){
+    quantityButton[i].addEventListener('click', selectQuantity);
+  }
+
 });
-
-/* Smooth Scrolls */ // Buggy on Mobile
-$("#deals-nav").click(function () {
-    $('html, body').animate({
-        scrollTop: $("#xaler-carousel").offset().top
-    }, 500);
-});
-
-$("#xaler-nav").click(function () {
-    $('html, body').animate({
-        scrollTop: $("#xaler-grown").offset().top - 40
-    }, 500);
-});
-
-$("#menu-nav").click(function () {
-    $('html, body').animate({
-        scrollTop: $("#menu").offset().top - 40
-    }, 500);
-});
-
-function home() {
-    window.location.href = "/";
-}
-
-function openProductModal(id) {
-    var item = menu[id];
-    var name = $('#product-modal-name');
-    var itemOptions = $('#item-options');
-
-    name.html(item.name);
-
-    if (item.description) {
-        var i = "<p id=\"product-modal-desc\" class=\"body-modal-text\">" + item.description + "</p>";
-        name.after(i);
-    }
-
-    if (item.type) {
-        var h = "<p id=\"product-modal-strain\" class=\"strains-modal-text " + item.type + "\">" + item.type + "</p>";
-        name.after(h);
-    }
-
-    if (item.eighth) {
-        var a = "<span id=\"product-modal-eighth\" class=\"quantity measurements prices-text\">" + item.eighth + "<br>" + item.eighthprice + "</span>";
-        itemOptions.append(a);
-    }
-
-    if (item.fourth) {
-        var b = "<span id=\"product-modal-fourth\" class=\"quantity measurements prices-text\">" + item.fourth + "<br>" + item.fourthprice + "</span>";
-        itemOptions.append(b);
-    }
-
-    if (item.half) {
-        var c = "<span id=\"product-modal-half\" class=\"quantity measurements prices-text\">" + item.half + "<br>" + item.halfprice + "</span>";
-        itemOptions.append(c);
-    }
-
-    if (item.oz) {
-        var d = "<span id=\"product-modal-oz\" class=\"quantity measurements prices-text\">" + item.oz + "<br>" + item.ozprice + "</span>";
-        itemOptions.append(d);
-    }
-
-    if (item.one) {
-        var e = "<span id=\"product-modal-one\" class=\"quantity measurements prices-text\">" + item.one + "<br>" + item.oneprice + "</span>";
-        itemOptions.append(e);
-    }
-
-    if (item.two) {
-        var f = "<span id=\"product-modal-two\" class=\"quantity measurements prices-text\">" + item.two + "<br>" + item.twoprice + "</span>";
-        itemOptions.append(f);
-    }
-
-    if (item.per) {
-        var g = "<span id=\"per\" class=\"quantity measurements prices-text\">" + item.per + "<br>" + item.price + "</span>";
-        itemOptions.append(g);
-    }
-
-    $('#product-modal').modal('open');
-}
