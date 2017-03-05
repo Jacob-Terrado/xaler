@@ -531,37 +531,37 @@ function openProductModal(id) {
 
     if (item.eighth) {
         var a = "<span id=\"product-modal-eighth\" class=\"quantity measurements prices-text\">" + item.eighth + "<br>" + item.eighthprice + "</span>";
-        itemOptions.replaceAll(a,a);
+        itemOptions.append(a,a);
     }
 
     if (item.fourth) {
         var b = "<span id=\"product-modal-fourth\" class=\"quantity measurements prices-text\">" + item.fourth + "<br>" + item.fourthprice + "</span>";
-        itemOptions.replace(b);
+        itemOptions.append(b);
     }
 
     if (item.half) {
         var c = "<span id=\"product-modal-half\" class=\"quantity measurements prices-text\">" + item.half + "<br>" + item.halfprice + "</span>";
-        itemOptions.replace(c);
+        itemOptions.append(c);
     }
 
     if (item.oz) {
         var d = "<span id=\"product-modal-oz\" class=\"quantity measurements prices-text\">" + item.oz + "<br>" + item.ozprice + "</span>";
-        itemOptions.replace(d);
+        itemOptions.append(d);
     }
 
     if (item.one) {
         var e = "<span id=\"product-modal-one\" class=\"quantity measurements prices-text\">" + item.one + "<br>" + item.oneprice + "</span>";
-        itemOptions.replace(e);
+        itemOptions.append(e);
     }
 
     if (item.two) {
         var f = "<span id=\"product-modal-two\" class=\"quantity measurements prices-text\">" + item.two + "<br>" + item.twoprice + "</span>";
-        itemOptions.replace(f);
+        itemOptions.append(f);
     }
 
     if (item.per) {
         var g = "<span id=\"per\" class=\"quantity measurements prices-text\">" + item.per + "<br>" + item.price + "</span>";
-        itemOptions.replace(g);
+        itemOptions.append(g);
     }
 
     $('#product-modal').modal('open');
@@ -571,6 +571,12 @@ function openProductModal(id) {
 function selectQuantity(){
   $(this).css({'background-color': '#AAAAAA', 'color': 'white'});
   $(this).siblings().css({'background-color': '#FFFFFF', 'color': 'black'});
+}
+
+// close product modal when open cart modal
+function closeModal(){
+  $('#product-modal').modal('close');
+  $('#cart-modal').modal('open');
 }
 
 $(document).ready(function () {
@@ -595,8 +601,8 @@ $(document).ready(function () {
         dismissible: true,
         inDuration: 300,
         outDuration: 200,
-        startingTop: '5%',
-        endingTop: '5%',
+        // startingTop: '5%',
+        endingTop: '50%',
         complete: function () {
             $('#product-modal-strain').remove();
             $('#product-modal-desc').remove();
@@ -655,5 +661,8 @@ $(document).ready(function () {
   for(i = 0; i < quantityButton.length; i++){
     quantityButton[i].addEventListener('click', selectQuantity);
   }
+
+  //close Modal when add to cart
+  $('#product-modal .add-cart-btn').click(closeModal);
 
 });

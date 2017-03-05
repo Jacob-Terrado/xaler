@@ -99,25 +99,8 @@ hr {
     font-family: 'Nunito', sans-serif !important;;
     font-style: normal !important;
     font-weight: 500;
-    font-size: 30pt !important;
-}
-
-.strains-text {
-    font-family: 'Open Sans', sans-serif !important;;
-    font-style: normal !important;
-    font-weight: 700;
-    font-size: 14pt !important;
-}
-
-.product-names-text {
-    font-family: 'Nunito', sans-serif !important;;
-    font-style: normal !important;
-    font-weight: 300;
-    font-size: 20pt !important;
-    margin: 0 !important;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 18pt !important;
+    text-transform: uppercase;
 }
 
 /* Index & Product Modal*/
@@ -194,6 +177,18 @@ hr {
 }
 
 /* Product Modal */
+#product-modal{
+  /*width: 600px !important;*/
+  max-height: 75%;
+  transform: translateY(-50%) !important;
+  padding: 0px !important;
+}
+
+#product-modal img{
+  width: 100%;
+  height: 80%;
+}
+
 .xaler-modal-image {
     max-height: 300px !important;
 }
@@ -226,6 +221,23 @@ hr {
 }
 
 /* Menu Style */
+.strains-text {
+    font-family: 'Open Sans', sans-serif !important;;
+    font-style: normal !important;
+    font-weight: 700;
+    font-size: 12pt !important;
+}
+
+.product-names-text {
+    font-family: 'Nunito', sans-serif !important;
+    font-weight: lighter;
+    font-size: 18pt !important;
+    margin: 0 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .item-content {
     text-transform: capitalize;
 }
@@ -296,13 +308,6 @@ hr {
 
 /* Mobile */
 @media (max-width: 700px) {
-    #product-modal {
-        width: 90% !important;
-        height: 500px !important;
-        max-height: 70% !important;
-        overflow-y: hidden !important;
-    }
-
     #delivery-area-modal {
         width: 375px !important;
         height: 60% !important;
@@ -319,20 +324,13 @@ hr {
         overflow-x: hidden !important;
     }
 
-    #delivery-area-modal img, #product-modal img {
+    #delivery-area-modal img{
         width: 400px !important;
         max-width: 95% !important;
     }
 }
 
 @media (min-width: 701px) {
-    #product-modal {
-        width: 600px !important;
-        height: 600px !important;
-        max-height: 95% !important;
-        overflow-y: hidden !important;
-    }
-
     #delivery-area-modal {
         width: 500px !important;
         height: 500px !important;
@@ -341,7 +339,7 @@ hr {
         overflow-x: hidden !important;
     }
 
-    #delivery-area-modal img, #product-modal img {
+    #delivery-area-modal img{
         width: 500px !important;
         max-width: 95% !important;
     }
