@@ -190,6 +190,41 @@ hr {
     padding: 1em !important;
 }
 
+.modal-footer {
+    border: 0 !important;
+}
+
+.xaler-modal-image {
+    max-height: 300px !important;
+}
+
+.strains-modal-text {
+    font-family: 'Open Sans', sans-serif !important;;
+    font-style: normal !important;
+    font-weight: 700;
+    font-size: 16pt !important;
+    margin: 0 !important;
+}
+
+.product-names-modal-text {
+    font-family: 'Nunito', sans-serif !important;;
+    font-style: normal !important;
+    font-weight: 300;
+    font-size: 22pt !important;
+    margin: 0 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.body-modal-text {
+    font-family: 'Open Sans', sans-serif !important;;
+    font-style: normal !important;
+    font-weight: 400;
+    font-size: 14pt !important;
+    margin: 0 !important;
+}
+
 /* Menu Style */
 .item-content {
     text-transform: capitalize;
@@ -212,7 +247,7 @@ hr {
     display: flex !important;
 }
 
-.measurements{
+.measurements {
     display: inline-block;
     flex-direction: column;
     justify-content: center;
@@ -228,7 +263,7 @@ hr {
 }
 
 .measurements:hover,
-#per:hover{
+#per:hover {
     border: 1px solid #0076BD;
 }
 
@@ -243,7 +278,7 @@ hr {
     border: 2px solid #000000 !important;
 }
 
-#per{
+#per {
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -256,11 +291,69 @@ hr {
     justify-content: center;
 }
 
-.btn{
+.btn {
     box-shadow: 0 0 0 0 !important;
 }
 
-.add-cart-btn:hover{
+.add-cart-btn:hover {
     background-color: #FFFFFF !important;
     color: #000000 !important;
+}
+
+@media (max-width: 700px) {
+    #product-modal {
+        width: 90% !important;
+        height: 500px !important;
+        max-height: 70% !important;
+        overflow-y: hidden !important;
+    }
+
+    #delivery-area-modal {
+        width: 375px !important;
+        height: 60% !important;
+        max-height: 100% !important;
+        overflow-y: hidden !important;
+        overflow-x: hidden !important;
+    }
+
+    #email-sub-modal {
+        width: 375px !important;
+        height: 275px !important;
+        max-height: 100% !important;
+        overflow-y: hidden !important;
+        overflow-x: hidden !important;
+    }
+
+    #delivery-area-modal img, #product-modal img {
+        width: 400px !important;
+        max-width: 95% !important;
+    }
+}
+
+@media (min-width: 701px) {
+    #product-modal {
+        width: 600px !important;
+        height: 600px !important;
+        max-height: 95% !important;
+        overflow-y: hidden !important;
+    }
+
+    #delivery-area-modal {
+        width: 500px !important;
+        height: 500px !important;
+        max-height: 100% !important;
+        overflow-y: hidden !important;
+        overflow-x: hidden !important;
+    }
+
+    #delivery-area-modal img, #product-modal img {
+        width: 500px !important;
+        max-width: 95% !important;
+    }
+}
+
+.delivery-area-image {
+    position: absolute !important;
+    width: 100% !important;;
+    bottom: 0 !important;;
 }

@@ -5,11 +5,7 @@
   <title>XALER</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS for Materialize -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-  <link type="text/css" rel="stylesheet" href="/css/style.css"/>
+  {{> head-imports}}
 </head>
 <body>
 {{> navbar}}
@@ -23,13 +19,13 @@
   </div>
   <hr>
 
-  <!-- XALER Grown -->
   <div class="container">
+    <!-- XALER Grown -->
     <div class="row">
       <h2 class="display-text center" id="xaler-grown">XALER Grown</h2>
       {{#each grown}}
         <div class="col l3 m6 s12">
-          <div class="card" onclick="openProductModal({{id}});">
+          <div class="card product" onclick="openProductModal({{{id}}})">
             <div class="card-image">
               <img class="responsive-img" src="images/skywalker-og.jpg" alt="itemImage">
             </div>
@@ -37,10 +33,12 @@
               <h5 class="product-names-text">{{name}}</h5>
               <p class="{{type}} strains-text">{{type}}</p>
               <div class="item-quantity">
-                <span class="quantity measurements prices-text">{{eighth}}<br>{{eighthprice}}</span>
-                <span class="quantity measurements prices-text">{{fourth}}<br>{{fourthprice}}</span>
-                <span class="quantity measurements prices-text">{{half}}<br>{{halfprice}}</span>
-                <span class="quantity measurements prices-text">{{oz}}<br>{{ozprice}}</span>
+                {{#if eighth}}<span class="quantity measurements prices-text">{{eighth}}<br>{{eighthprice}}</span> {{/if}}
+                {{#if fourth}}<span class="quantity measurements prices-text">{{fourth}}<br>{{fourthprice}}</span> {{/if}}
+                {{#if half}} <span class="quantity measurements prices-text">{{half}}<br>{{halfprice}}</span> {{/if}}
+                {{#if oz}} <span class="quantity measurements prices-text">{{oz}}<br>{{ozprice}}</span> {{/if}}
+                {{#if two}} <span class="quantity measurements prices-text">{{two}}<br>{{twoprice}}</span> {{/if}}
+                {{#if per}} <span class="quantity prices-text" id="per">{{per}}<br>{{price}}</span> {{/if}}
               </div>
             </div>
             <div class="card-action">
@@ -50,15 +48,13 @@
         </div>
       {{/each}}
     </div>
-  </div>
 
-  <!-- Menu -->
-  <div class="container">
+    <!-- Menu -->
     <div class="row">
       <h2 class="display-text center" id="menu">Menu</h2>
       {{#each menu}}
         <div class="col l3 m6 s12">
-          <div class="card">
+          <div class="card product" onclick="openProductModal({{{id}}})">
             <div class="card-image">
               <img class="responsive-img" src="images/skywalker-og.jpg" alt="itemImage">
             </div>
@@ -66,10 +62,8 @@
               <h5 class="product-names-text">{{name}}</h5>
               <p class="{{type}} strains-text">{{type}}</p>
               <div class="item-quantity">
-                {{#if eighth}}
-                  <span class="quantity measurements prices-text">{{eighth}}<br>{{eighthprice}}</span> {{/if}}
-                {{#if fourth}}
-                  <span class="quantity measurements prices-text">{{fourth}}<br>{{fourthprice}}</span> {{/if}}
+                {{#if eighth}}<span class="quantity measurements prices-text">{{eighth}}<br>{{eighthprice}}</span> {{/if}}
+                {{#if fourth}}<span class="quantity measurements prices-text">{{fourth}}<br>{{fourthprice}}</span> {{/if}}
                 {{#if half}} <span class="quantity measurements prices-text">{{half}}<br>{{halfprice}}</span> {{/if}}
                 {{#if oz}} <span class="quantity measurements prices-text">{{oz}}<br>{{ozprice}}</span> {{/if}}
                 {{#if two}} <span class="quantity measurements prices-text">{{two}}<br>{{twoprice}}</span> {{/if}}
@@ -86,7 +80,10 @@
   </div>
 </div>
 
+{{> product-modal}}
 {{> cart-modal}}
+{{> email-sub-modal}}
+{{> delivery-area-modal}}
 {{> contactus}}
 {{> footer}}
 

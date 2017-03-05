@@ -1,0 +1,58 @@
+<div id="email-sub-modal" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <h5 class="header-text">EMAIL SUBSCRIPTION</h5>
+    <h5 class="body-text grey-text">Subscribe to our email subscriptions to get updated on our deals, specials, and new
+      products!</h5>
+
+    <form id="email-sub-form" class="col s12">
+      <div class="input-field col s12">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" data-error=".emailError">
+        <div class="emailError"></div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button href="#" class="modal-action modal-close waves-effect waves-black btn-flat" type="submit" name="action">
+      Submit
+    </button>
+    <button href="#" class="modal-action modal-close waves-effect waves-black btn-flat" type="submit" name="action">
+      Cancel
+    </button>
+  </div>
+</div>
+
+<!-- currently not working...make it not dismissible, and only close when they click cancel -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script>
+  $("#email-sub-form").validate({
+    rules: {
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      email: {
+        required: "Please enter your email",
+        email: "Please enter a valid email"
+      }
+    },
+    errorElement: 'div',
+    errorPlacement: function (error, element) {
+      var placement = $(element).data('error');
+      if (placement) {
+        $(placement).append(error)
+      } else {
+        error.insertAfter(element);
+      }
+    }
+  });
+</script>
+<style>
+  .emailError {
+    color: red;
+    font-size: 12px;
+  }
+</style>
