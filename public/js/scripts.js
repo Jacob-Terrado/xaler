@@ -12,7 +12,7 @@ var menu = [
         "fourthprice": "$110",
         "halfprice": "- - -",
         "ozprice": "- - -",
-        "description": "hella dank"
+        "description": "dank"
     },
     {
         "id": "1",
@@ -39,7 +39,8 @@ var menu = [
         "eighthprice": "$40",
         "fourthprice": "$80",
         "halfprice": "- - -",
-        "ozprice": "- - -"
+        "ozprice": "- - -",
+        "description": "hella dank"
     },
     {
         "id": "3",
@@ -52,7 +53,8 @@ var menu = [
         "eighthprice": "$35",
         "fourthprice": "$65",
         "halfprice": "$120",
-        "ozprice": "$200"
+        "ozprice": "$200",
+        "description": "hella dank"
     },
     {
         "id": "4",
@@ -65,7 +67,8 @@ var menu = [
         "eighthprice": "$45",
         "fourthprice": "$90",
         "halfprice": "$160",
-        "ozprice": "- - -"
+        "ozprice": "- - -",
+        "description": "hella dank"
     },
     {
         "id": "5",
@@ -78,7 +81,8 @@ var menu = [
         "eighthprice": "$45",
         "fourthprice": "$90",
         "halfprice": "$160",
-        "ozprice": "$260"
+        "ozprice": "$260",
+        "description": "hella dank"
     },
     {
         "id": "6",
@@ -91,7 +95,8 @@ var menu = [
         "eighthprice": "$45",
         "fourthprice": "$90",
         "halfprice": "- - -",
-        "ozprice": "- - -"
+        "ozprice": "- - -",
+        "description": "hella dank"
     },
     {
         "id": "7",
@@ -104,7 +109,8 @@ var menu = [
         "eighthprice": "$40",
         "fourthprice": "$80",
         "halfprice": "$150",
-        "ozprice": "- - -"
+        "ozprice": "- - -",
+        "description": "hella dank"
     },
     {
         "id": "8",
@@ -117,7 +123,8 @@ var menu = [
         "eighthprice": "$40",
         "fourthprice": "$80",
         "halfprice": "$140",
-        "ozprice": "$260"
+        "ozprice": "$260",
+        "description": "hella dank"
     },
     {
         "id": "9",
@@ -130,7 +137,8 @@ var menu = [
         "eighthprice": "$40",
         "fourthprice": "$80",
         "halfprice": "$140",
-        "ozprice": "- - -"
+        "ozprice": "- - -",
+        "description": "hella dank"
     },
     {
         "id": "10",
@@ -143,7 +151,8 @@ var menu = [
         "eighthprice": "$40",
         "fourthprice": "$80",
         "halfprice": "$140",
-        "ozprice": "- - -"
+        "ozprice": "- - -",
+        "description": "hella dank"
     },
     {
         "id": "11",
@@ -156,7 +165,8 @@ var menu = [
         "eighthprice": "$40",
         "fourthprice": "$80",
         "halfprice": "$150",
-        "ozprice": "$260"
+        "ozprice": "$260",
+        "description": "hella dank"
     },
     {
         "id": "12",
@@ -167,7 +177,8 @@ var menu = [
         "two": "2 g",
         "halfprice": "$26",
         "oneprice": "$48",
-        "twoprice": "$92"
+        "twoprice": "$92",
+        "description": "hella dank"
     },
     {
         "id": "13",
@@ -178,7 +189,8 @@ var menu = [
         "two": "2 g",
         "halfprice": "$25",
         "oneprice": "$45",
-        "twoprice": "$85"
+        "twoprice": "$85",
+        "description": "hella dank"
     },
     {
         "id": "14",
@@ -189,7 +201,8 @@ var menu = [
         "two": "2 g",
         "halfprice": "$25",
         "oneprice": "$45",
-        "twoprice": "$85"
+        "twoprice": "$85",
+        "description": "hella dank"
     },
     {
         "id": "15",
@@ -200,7 +213,8 @@ var menu = [
         "two": "2 g",
         "halfprice": "$25",
         "oneprice": "$40",
-        "twoprice": "$92"
+        "twoprice": "$92",
+        "description": "hella dank"
     },
     {
         "id": "16",
@@ -211,7 +225,8 @@ var menu = [
         "two": "2 g",
         "halfprice": "$25",
         "oneprice": "$40",
-        "twoprice": "- - -"
+        "twoprice": "- - -",
+        "description": "hella dank"
     },
     {
         "id": "17",
@@ -222,7 +237,8 @@ var menu = [
         "two": "2 g",
         "halfprice": "$25",
         "oneprice": "$40",
-        "twoprice": "$80"
+        "twoprice": "$80",
+        "description": "hella dank"
     },
     {
         "id": "18",
@@ -233,7 +249,8 @@ var menu = [
         "two": "2 g",
         "halfprice": "$25",
         "oneprice": "$45",
-        "twoprice": "$85"
+        "twoprice": "$85",
+        "description": "hella dank"
     },
     {
         "id": "19",
@@ -244,7 +261,8 @@ var menu = [
         "two": "2 g",
         "halfprice": "- - -",
         "oneprice": "$60",
-        "twoprice": "- - -"
+        "twoprice": "- - -",
+        "description": "hella dank"
     },
     {
         "id": "20",
@@ -255,7 +273,8 @@ var menu = [
         "two": "2 g",
         "halfprice": "- - -",
         "oneprice": "$60",
-        "twoprice": "- - -"
+        "twoprice": "- - -",
+        "description": "hella dank"
     },
     {
         "id": "21",
@@ -266,7 +285,8 @@ var menu = [
         "two": "2 g",
         "halfprice": "- - -",
         "oneprice": "$60",
-        "twoprice": "- - -"
+        "twoprice": "- - -",
+        "description": "hella dank"
     },
     {
         "id": "22",
@@ -277,7 +297,8 @@ var menu = [
         "two": "2 g",
         "halfprice": "- - -",
         "oneprice": "$60",
-        "twoprice": "- - -"
+        "twoprice": "- - -",
+        "description": "hella dank"
     },
     {
         "id": "23",
@@ -288,7 +309,8 @@ var menu = [
         "two": "2 g",
         "halfprice": "- - -",
         "oneprice": "$60",
-        "twoprice": "- - -"
+        "twoprice": "- - -",
+        "description": "hella dank"
     },
     {
         "id": "24",
@@ -299,7 +321,8 @@ var menu = [
         "two": "2 g",
         "halfprice": "- - -",
         "oneprice": "$60",
-        "twoprice": "- - -"
+        "twoprice": "- - -",
+        "description": "hella dank"
     },
     {
         "id": "25",
@@ -310,7 +333,8 @@ var menu = [
         "two": "2 g",
         "halfprice": "- - -",
         "oneprice": "$60",
-        "twoprice": "- - -"
+        "twoprice": "- - -",
+        "description": "hella dank"
     },
     {
         "id": "26",
@@ -321,7 +345,8 @@ var menu = [
         "two": "2 g",
         "halfprice": "- - -",
         "oneprice": "$60",
-        "twoprice": "- - -"
+        "twoprice": "- - -",
+        "description": "hella dank"
     },
     {
         "id": "27",
@@ -332,7 +357,8 @@ var menu = [
         "two": "2 g",
         "halfprice": "- - -",
         "oneprice": "$60",
-        "twoprice": "- - -"
+        "twoprice": "- - -",
+        "description": "hella dank"
     },
     {
         "id": "28",
@@ -343,7 +369,8 @@ var menu = [
         "two": "2 g",
         "halfprice": "- - -",
         "oneprice": "$60",
-        "twoprice": "- - -"
+        "twoprice": "- - -",
+        "description": "hella dank"
     },
     {
         "id": "29",
@@ -354,7 +381,8 @@ var menu = [
         "two": "2 g",
         "halfprice": "- - -",
         "oneprice": "$60",
-        "twoprice": "- - -"
+        "twoprice": "- - -",
+        "description": "hella dank"
     },
     {
         "id": "30",
@@ -365,7 +393,8 @@ var menu = [
         "two": "2 g",
         "halfprice": "- - -",
         "oneprice": "$60",
-        "twoprice": "- - -"
+        "twoprice": "- - -",
+        "description": "hella dank"
     },
     {
         "id": "31",
@@ -376,77 +405,88 @@ var menu = [
         "two": "2 g",
         "halfprice": "- - -",
         "oneprice": "$60",
-        "twoprice": "- - -"
+        "twoprice": "- - -",
+        "description": "hella dank"
     },
     {
         "id": "32",
         "name": "Kiva - Ginger Dark Chocolate",
         "type": "edible",
         "per": "each",
-        "price": "$32"
+        "price": "$32",
+        "description": "hella dank"
     },
     {
         "id": "33",
         "name": "Kiva Bar - 4 Flavors",
         "type": "edible",
         "per": "each",
-        "price": "$20"
+        "price": "$20",
+        "description": "hella dank"
     },
     {
         "id": "34",
         "name": "Kiva - Expresso Dark Chocolate",
         "type": "edible",
         "per": "each",
-        "price": "$20"
+        "price": "$20",
+        "description": "hella dank"
     },
     {
         "id": "35",
         "name": "Kiva - Terra Bites - Expresso Beans",
         "type": "edible",
         "per": "each",
-        "price": "$18"
+        "price": "$18",
+        "description": "hella dank"
     },
     {
         "id": "36",
         "name": "Kiva - Terra Bites - Blueberries",
         "type": "edible",
         "per": "each",
-        "price": "$18"
+        "price": "$18",
+        "description": "hella dank"
     },
     {
         "id": "37",
         "name": "Kiva Bar",
         "type": "edible",
         "per": "each",
-        "price": "$18"
+        "price": "$18",
+        "description": "hella dank"
     },
     {
         "id": "38",
         "name": "HealthCare Bar - Vegan",
         "type": "edible",
         "per": "each",
-        "price": "$10"
+        "price": "$10",
+        "description": "hella dank"
     },
     {
         "id": "39",
         "name": "Brass Knuckes - Adjustable Voltage Gold Battery",
         "type": "gear",
         "per": "each",
-        "price": "$30"
+        "price": "$30",
+        "description": "hella dank"
     },
     {
         "id": "40",
         "name": "Brass Knuckes - Gold Vape Battery",
         "type": "gear",
         "per": "each",
-        "price": "$25"
+        "price": "$25",
+        "description": "hella dank"
     },
     {
         "id": "41",
         "name": "Brass Knuckes - Woodgrain Battery",
         "type": "gear",
         "per": "each",
-        "price": "$25"
+        "price": "$25",
+        "description": "hella dank"
     },
     {
         "id": "42",
@@ -460,7 +500,7 @@ var menu = [
         "fourthprice": "$110",
         "halfprice": "- - -",
         "ozprice": "- - -",
-        "description": "hella dank"
+        "description": "hella dank",
     },
     {
         "id": "43",
@@ -515,56 +555,74 @@ function home() {
 function openProductModal(id) {
     var item = menu[id];
     var name = $('#product-modal-name');
-    var itemOptions = $('#item-options');
 
     name.html(item.name);
 
     if (item.description) {
-        var i = "<p id=\"product-modal-desc\" class=\"body-modal-text\">" + item.description + "</p>";
-        name.after(i);
+        $('#product-modal-desc').html(item.description);
     }
 
     if (item.type) {
-        var h = "<p id=\"product-modal-strain\" class=\"strains-modal-text " + item.type + "\">" + item.type + "</p>";
-        name.after(h);
+        $('#product-modal-strain').html(item.type);
     }
 
-    if (item.eighth) {
-        var a = "<span id=\"product-modal-eighth\" class=\"quantity measurements prices-text\">" + item.eighth + "<br>" + item.eighthprice + "</span>";
-        itemOptions.append(a,a);
+    if (!(item.eighth)) {
+        $('#product-modal-eighth').addClass('hide');
+    }else{
+        $('#product-modal-eighth').removeClass('hide');
+        $('#product-modal-eighth').html(item.eighth + '<br>' + item.eighthprice);
     }
 
-    if (item.fourth) {
-        var b = "<span id=\"product-modal-fourth\" class=\"quantity measurements prices-text\">" + item.fourth + "<br>" + item.fourthprice + "</span>";
-        itemOptions.append(b);
+    if (!(item.fourth)) {
+        $('#product-modal-fourth').addClass('hide');
+    }else{
+        $('#product-modal-fourth').removeClass('hide');
+        $('#product-modal-fourth').html(item.fourth + "<br>" + item.fourthprice);
     }
 
-    if (item.half) {
-        var c = "<span id=\"product-modal-half\" class=\"quantity measurements prices-text\">" + item.half + "<br>" + item.halfprice + "</span>";
-        itemOptions.append(c);
+    if (!(item.half)) {
+        $('#product-modal-half').addClass('hide');
+    }else{
+        $('#product-modal-half').removeClass('hide');
+        $('#product-modal-half').html(item.half + "<br>" + item.halfprice);
     }
 
-    if (item.oz) {
-        var d = "<span id=\"product-modal-oz\" class=\"quantity measurements prices-text\">" + item.oz + "<br>" + item.ozprice + "</span>";
-        itemOptions.append(d);
+    if (!(item.oz)){
+        $('#product-modal-oz').addClass('hide');
+    }
+    else{
+        $('#product-modal-oz').removeClass('hide');
+        $('#product-modal-oz').html(item.oz + "<br>" + item.ozprice);
     }
 
-    if (item.one) {
-        var e = "<span id=\"product-modal-one\" class=\"quantity measurements prices-text\">" + item.one + "<br>" + item.oneprice + "</span>";
-        itemOptions.append(e);
+    if (!(item.one)){
+        $('#product-modal-one').addClass('hide');
+    }
+    else{
+        $('#product-modal-one').removeClass('hide');
+        $('#product-modal-one').html(item.one + "<br>" + item.oneprice);
     }
 
-    if (item.two) {
-        var f = "<span id=\"product-modal-two\" class=\"quantity measurements prices-text\">" + item.two + "<br>" + item.twoprice + "</span>";
-        itemOptions.append(f);
+    if (!(item.two)){
+        $('#product-modal-two').addClass('hide');
+    } else{
+        $('#product-modal-two').removeClass('hide');
+        $('#product-modal-two').html(item.two + "<br>" + item.twoprice);
     }
 
-    if (item.per) {
-        var g = "<span id=\"per\" class=\"quantity measurements prices-text\">" + item.per + "<br>" + item.price + "</span>";
-        itemOptions.append(g);
+    if (!(item.per)){
+        $('#product-modal-per').addClass('hide');
+    } else{
+        $('#product-modal-per').removeClass('hide');
+        $('#product-modal-per').html(item.per + "<br>" + item.price);
     }
 
     $('#product-modal').modal('open');
+
+    var quantityButton = document.querySelectorAll('#product-modal .quantity');
+    for(i = 0; i < quantityButton.length; i++){
+      quantityButton[i].addEventListener('click', selectQuantity);
+    }
 }
 
 // show selection of quantity
@@ -601,18 +659,17 @@ $(document).ready(function () {
         dismissible: true,
         inDuration: 300,
         outDuration: 200,
-        // startingTop: '5%',
         endingTop: '50%',
         complete: function () {
-            $('#product-modal-strain').remove();
-            $('#product-modal-desc').remove();
-            $('#product-modal-eighth').remove();
-            $('#product-modal-fourth').remove();
-            $('#product-modal-half').remove();
-            $('#product-modal-oz').remove();
-            $('#product-modal-one').remove();
-            $('#product-modal-two').remove();
-            $('#per').remove();
+            // $('#product-modal-strain').remove();
+            // $('#product-modal-desc').remove();
+            // $('#product-modal-eighth').remove();
+            // $('#product-modal-fourth').remove();
+            // $('#product-modal-half').remove();
+            // $('#product-modal-oz').remove();
+            // $('#product-modal-one').remove();
+            // $('#product-modal-two').remove();
+            // $('#product-modal-per').remove();
         }
     });
 
@@ -657,10 +714,16 @@ $(document).ready(function () {
     });
 
     // Remove blank labeled buttons
-  var quantityButton = document.querySelectorAll('.quantity');
-  for(i = 0; i < quantityButton.length; i++){
-    quantityButton[i].addEventListener('click', selectQuantity);
-  }
+    var quantityButton = document.querySelectorAll('#indexProduct .quantity');
+    for(i = 0; i < quantityButton.length; i++){
+      quantityButton[i].addEventListener('click', selectQuantity);
+      // if(quantityButton[i].textContent == ''){
+      //   quantityButton[i].style.display = 'none';
+      // }
+    }
+
+
+
 
   //close Modal when add to cart
   $('#product-modal .add-cart-btn').click(closeModal);

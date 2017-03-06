@@ -17,7 +17,7 @@
     <a class="carousel-item" href="#one!"><img src="../images/discounts.jpeg"></a>
   </div>
 
-  <div class="container">
+  <div class="container" id="indexProduct">
     <!-- XALER Grown -->
     <div class="row">
       <h2 class="display-text center" id="xaler-grown">XALER Grown</h2>
@@ -67,6 +67,7 @@
                 {{#if eighth}}<span class="quantity measurements">{{eighth}}<br>{{eighthprice}}</span> {{/if}}
                 {{#if fourth}}<span class="quantity measurements">{{fourth}}<br>{{fourthprice}}</span> {{/if}}
                 {{#if half}} <span class="quantity measurements">{{half}}<br>{{halfprice}}</span> {{/if}}
+                {{#if oz}} <span class="quantity measurements">{{oz}}<br>{{ozprice}}</span> {{/if}}
                 {{#if one}} <span class="quantity measurements">{{one}}<br>{{oneprice}}</span> {{/if}}
                 {{#if two}} <span class="quantity measurements">{{two}}<br>{{twoprice}}</span> {{/if}}
                 {{#if per}} <span class="quantity" id="per">{{per}}<br>{{price}}</span> {{/if}}

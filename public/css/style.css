@@ -189,6 +189,10 @@ hr {
   height: 80%;
 }
 
+.hide{
+  display: none;
+}
+
 .xaler-modal-image {
     max-height: 300px !important;
 }
@@ -281,7 +285,8 @@ hr {
     border: 2px solid #000000 !important;
 }
 
-#per {
+#product-modal-per,
+#per{
     display: flex;
     flex-direction: column;
     cursor: pointer;
