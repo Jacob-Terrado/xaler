@@ -13,6 +13,10 @@ nav {
     padding: 5px;
 }
 
+.nav-extended {
+    padding: 0 !important;
+}
+
 .nav-bar-footer {
     position: fixed;
     bottom: 0;
@@ -148,6 +152,7 @@ hr {
 
 /* Contact Us Modal */
 .contact-us-footer {
+    /* position: relative; to fixed*/
     margin-bottom: 0 !important;
     padding: 0 !important;
     height: 50px;
@@ -181,7 +186,7 @@ hr {
   /*width: 600px !important;*/
   max-height: 75%;
   transform: translateY(-50%) !important;
-  padding: 0px !important;
+  padding: 0 !important;
 }
 
 #product-modal img{
@@ -348,4 +353,12 @@ hr {
         width: 500px !important;
         max-width: 95% !important;
     }
+}
+
+#cart-icon-mobile {
+    padding: 0 !important;
+}
+
+.xaler-blue {
+    background-color: #0076BD !important;
 }

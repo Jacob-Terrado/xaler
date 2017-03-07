@@ -659,18 +659,7 @@ $(document).ready(function () {
         dismissible: true,
         inDuration: 300,
         outDuration: 200,
-        endingTop: '50%',
-        complete: function () {
-            // $('#product-modal-strain').remove();
-            // $('#product-modal-desc').remove();
-            // $('#product-modal-eighth').remove();
-            // $('#product-modal-fourth').remove();
-            // $('#product-modal-half').remove();
-            // $('#product-modal-oz').remove();
-            // $('#product-modal-one').remove();
-            // $('#product-modal-two').remove();
-            // $('#product-modal-per').remove();
-        }
+        endingTop: '50%'
     });
 
     $('#cart-modal').modal({
