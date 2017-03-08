@@ -332,12 +332,21 @@ hr {
 }
 
 /* Discounts Modals */
-#student-discount-modal,
-#ftp-discount-modal,
-#referral-discount-modal,
-#military-discount-modal{
+.discount-modals{
   transform: translateY(-50%) !important;
+  max-height: 90%;
 }
+
+.discount-modals p{
+  text-align: center;
+  font-size: 14pt;
+}
+
+.discount-modals img{
+  width: 100%;
+}
+
+
 
 /* Mobile */
 @media (max-width: 700px) {
