@@ -11,8 +11,7 @@ var menu = [
         "eighthprice": "$55",
         "fourthprice": "$110",
         "halfprice": "- - -",
-        "ozprice": "- - -",
-        "description": "dank"
+        "ozprice": "- - -"
     },
     {
         "id": "1",
@@ -25,8 +24,7 @@ var menu = [
         "eighthprice": "$45",
         "fourthprice": "$90",
         "halfprice": "- - -",
-        "ozprice": "- - -",
-        "description": "hella dank"
+        "ozprice": "- - -"
     },
     {
         "id": "2",
@@ -39,8 +37,7 @@ var menu = [
         "eighthprice": "$40",
         "fourthprice": "$80",
         "halfprice": "- - -",
-        "ozprice": "- - -",
-        "description": "hella dank"
+        "ozprice": "- - -"
     },
     {
         "id": "3",
@@ -54,7 +51,7 @@ var menu = [
         "fourthprice": "$65",
         "halfprice": "$120",
         "ozprice": "$200",
-        "description": "hella dank"
+
     },
     {
         "id": "4",
@@ -67,8 +64,8 @@ var menu = [
         "eighthprice": "$45",
         "fourthprice": "$90",
         "halfprice": "$160",
-        "ozprice": "- - -",
-        "description": "hella dank"
+        "ozprice": "- - -"
+
     },
     {
         "id": "5",
@@ -82,7 +79,7 @@ var menu = [
         "fourthprice": "$90",
         "halfprice": "$160",
         "ozprice": "$260",
-        "description": "hella dank"
+
     },
     {
         "id": "6",
@@ -95,8 +92,8 @@ var menu = [
         "eighthprice": "$45",
         "fourthprice": "$90",
         "halfprice": "- - -",
-        "ozprice": "- - -",
-        "description": "hella dank"
+        "ozprice": "- - -"
+
     },
     {
         "id": "7",
@@ -109,8 +106,8 @@ var menu = [
         "eighthprice": "$40",
         "fourthprice": "$80",
         "halfprice": "$150",
-        "ozprice": "- - -",
-        "description": "hella dank"
+        "ozprice": "- - -"
+
     },
     {
         "id": "8",
@@ -124,7 +121,7 @@ var menu = [
         "fourthprice": "$80",
         "halfprice": "$140",
         "ozprice": "$260",
-        "description": "hella dank"
+
     },
     {
         "id": "9",
@@ -137,8 +134,8 @@ var menu = [
         "eighthprice": "$40",
         "fourthprice": "$80",
         "halfprice": "$140",
-        "ozprice": "- - -",
-        "description": "hella dank"
+        "ozprice": "- - -"
+
     },
     {
         "id": "10",
@@ -151,8 +148,8 @@ var menu = [
         "eighthprice": "$40",
         "fourthprice": "$80",
         "halfprice": "$140",
-        "ozprice": "- - -",
-        "description": "hella dank"
+        "ozprice": "- - -"
+
     },
     {
         "id": "11",
@@ -166,7 +163,7 @@ var menu = [
         "fourthprice": "$80",
         "halfprice": "$150",
         "ozprice": "$260",
-        "description": "hella dank"
+
     },
     {
         "id": "12",
@@ -178,7 +175,7 @@ var menu = [
         "halfprice": "$26",
         "oneprice": "$48",
         "twoprice": "$92",
-        "description": "hella dank"
+
     },
     {
         "id": "13",
@@ -190,7 +187,7 @@ var menu = [
         "halfprice": "$25",
         "oneprice": "$45",
         "twoprice": "$85",
-        "description": "hella dank"
+
     },
     {
         "id": "14",
@@ -202,7 +199,7 @@ var menu = [
         "halfprice": "$25",
         "oneprice": "$45",
         "twoprice": "$85",
-        "description": "hella dank"
+
     },
     {
         "id": "15",
@@ -214,7 +211,7 @@ var menu = [
         "halfprice": "$25",
         "oneprice": "$40",
         "twoprice": "$92",
-        "description": "hella dank"
+
     },
     {
         "id": "16",
@@ -226,7 +223,7 @@ var menu = [
         "halfprice": "$25",
         "oneprice": "$40",
         "twoprice": "- - -",
-        "description": "hella dank"
+
     },
     {
         "id": "17",
@@ -238,7 +235,7 @@ var menu = [
         "halfprice": "$25",
         "oneprice": "$40",
         "twoprice": "$80",
-        "description": "hella dank"
+
     },
     {
         "id": "18",
@@ -250,7 +247,7 @@ var menu = [
         "halfprice": "$25",
         "oneprice": "$45",
         "twoprice": "$85",
-        "description": "hella dank"
+
     },
     {
         "id": "19",
@@ -262,7 +259,7 @@ var menu = [
         "halfprice": "- - -",
         "oneprice": "$60",
         "twoprice": "- - -",
-        "description": "hella dank"
+
     },
     {
         "id": "20",
@@ -274,7 +271,7 @@ var menu = [
         "halfprice": "- - -",
         "oneprice": "$60",
         "twoprice": "- - -",
-        "description": "hella dank"
+
     },
     {
         "id": "21",
@@ -286,7 +283,7 @@ var menu = [
         "halfprice": "- - -",
         "oneprice": "$60",
         "twoprice": "- - -",
-        "description": "hella dank"
+
     },
     {
         "id": "22",
@@ -298,7 +295,7 @@ var menu = [
         "halfprice": "- - -",
         "oneprice": "$60",
         "twoprice": "- - -",
-        "description": "hella dank"
+
     },
     {
         "id": "23",
@@ -310,7 +307,7 @@ var menu = [
         "halfprice": "- - -",
         "oneprice": "$60",
         "twoprice": "- - -",
-        "description": "hella dank"
+
     },
     {
         "id": "24",
@@ -322,7 +319,7 @@ var menu = [
         "halfprice": "- - -",
         "oneprice": "$60",
         "twoprice": "- - -",
-        "description": "hella dank"
+
     },
     {
         "id": "25",
@@ -334,7 +331,7 @@ var menu = [
         "halfprice": "- - -",
         "oneprice": "$60",
         "twoprice": "- - -",
-        "description": "hella dank"
+
     },
     {
         "id": "26",
@@ -346,7 +343,7 @@ var menu = [
         "halfprice": "- - -",
         "oneprice": "$60",
         "twoprice": "- - -",
-        "description": "hella dank"
+
     },
     {
         "id": "27",
@@ -358,7 +355,7 @@ var menu = [
         "halfprice": "- - -",
         "oneprice": "$60",
         "twoprice": "- - -",
-        "description": "hella dank"
+
     },
     {
         "id": "28",
@@ -370,7 +367,7 @@ var menu = [
         "halfprice": "- - -",
         "oneprice": "$60",
         "twoprice": "- - -",
-        "description": "hella dank"
+
     },
     {
         "id": "29",
@@ -382,7 +379,7 @@ var menu = [
         "halfprice": "- - -",
         "oneprice": "$60",
         "twoprice": "- - -",
-        "description": "hella dank"
+
     },
     {
         "id": "30",
@@ -394,7 +391,7 @@ var menu = [
         "halfprice": "- - -",
         "oneprice": "$60",
         "twoprice": "- - -",
-        "description": "hella dank"
+
     },
     {
         "id": "31",
@@ -406,7 +403,7 @@ var menu = [
         "halfprice": "- - -",
         "oneprice": "$60",
         "twoprice": "- - -",
-        "description": "hella dank"
+
     },
     {
         "id": "32",
@@ -414,7 +411,7 @@ var menu = [
         "type": "edible",
         "per": "each",
         "price": "$32",
-        "description": "hella dank"
+
     },
     {
         "id": "33",
@@ -422,7 +419,7 @@ var menu = [
         "type": "edible",
         "per": "each",
         "price": "$20",
-        "description": "hella dank"
+
     },
     {
         "id": "34",
@@ -430,7 +427,7 @@ var menu = [
         "type": "edible",
         "per": "each",
         "price": "$20",
-        "description": "hella dank"
+
     },
     {
         "id": "35",
@@ -438,7 +435,7 @@ var menu = [
         "type": "edible",
         "per": "each",
         "price": "$18",
-        "description": "hella dank"
+
     },
     {
         "id": "36",
@@ -446,7 +443,7 @@ var menu = [
         "type": "edible",
         "per": "each",
         "price": "$18",
-        "description": "hella dank"
+
     },
     {
         "id": "37",
@@ -454,7 +451,7 @@ var menu = [
         "type": "edible",
         "per": "each",
         "price": "$18",
-        "description": "hella dank"
+
     },
     {
         "id": "38",
@@ -462,7 +459,7 @@ var menu = [
         "type": "edible",
         "per": "each",
         "price": "$10",
-        "description": "hella dank"
+
     },
     {
         "id": "39",
@@ -470,7 +467,7 @@ var menu = [
         "type": "gear",
         "per": "each",
         "price": "$30",
-        "description": "hella dank"
+
     },
     {
         "id": "40",
@@ -478,7 +475,7 @@ var menu = [
         "type": "gear",
         "per": "each",
         "price": "$25",
-        "description": "hella dank"
+
     },
     {
         "id": "41",
@@ -486,7 +483,7 @@ var menu = [
         "type": "gear",
         "per": "each",
         "price": "$25",
-        "description": "hella dank"
+
     },
     {
         "id": "42",
@@ -499,8 +496,8 @@ var menu = [
         "eighthprice": "$55",
         "fourthprice": "$110",
         "halfprice": "- - -",
-        "ozprice": "- - -",
-        "description": "hella dank",
+        "ozprice": "- - -"
+        ,
     },
     {
         "id": "43",
@@ -513,8 +510,8 @@ var menu = [
         "eighthprice": "$45",
         "fourthprice": "$90",
         "halfprice": "- - -",
-        "ozprice": "- - -",
-        "description": "hella dank"
+        "ozprice": "- - -"
+
     },
     {
         "id": "44",
@@ -527,8 +524,8 @@ var menu = [
         "eighthprice": "$40",
         "fourthprice": "$80",
         "halfprice": "- - -",
-        "ozprice": "- - -",
-        "description": "hella dank"
+        "ozprice": "- - -"
+
     },
     {
         "id": "45",
@@ -542,7 +539,7 @@ var menu = [
         "fourthprice": "$65",
         "halfprice": "$120",
         "ozprice": "$200",
-        "description": "hella dank"
+
     }
 ];
 
@@ -623,7 +620,26 @@ function openProductModal(id) {
     for(i = 0; i < quantityButton.length; i++){
       quantityButton[i].addEventListener('click', selectQuantity);
     }
-}
+
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+      $('#product-modal').addClass(' bottom-sheet');
+      $('#product-modal').css({'max-height': '90%', 'padding': '0 !important', 'transform': 'none !important'});
+      $('#product-modal').modal({
+        dismissible: true,
+        inDuration: 300,
+        outDuration: 200
+      });
+    }else{
+      $('#product-modal').removeClass(' bottom-sheet');
+      $('#product-modal').css({'max-height': '80%', 'padding': '0 !important', 'transform': 'translateY(-50%) !important'});
+      $('#product-modal').modal({
+        dismissible: true,
+        inDuration: 300,
+        outDuration: 200,
+        endingTop: '10%'
+      });
+    }
+  }
 
 // show selection of quantity
 function selectQuantity(){
@@ -660,13 +676,6 @@ $(document).ready(function () {
         draggable: true
     });
 
-    $('#product-modal').modal({
-        dismissible: true,
-        inDuration: 300,
-        outDuration: 200,
-        endingTop: '50%'
-    });
-
     $('#cart-modal').modal({
         dismissible: true,
         inDuration: 300,
@@ -683,16 +692,42 @@ $(document).ready(function () {
         dismissible: true,
         inDuration: 300,
         outDuration: 200,
-        startingTop: '5%',
-        endingTop: '5%'
+        endingTop: '50%'
     });
 
     $('#email-sub-modal').modal({
         dismissible: true,
         inDuration: 300,
         outDuration: 200,
-        startingTop: '5%',
-        endingTop: '5%'
+        endingTop: '50%'
+    });
+
+    $('#student-discount-modal').modal({
+        dismissible: true,
+        inDuration: 300,
+        outDuration: 200,
+        endingTop: '50%'
+    });
+
+    $('#ftp-discount-modal').modal({
+        dismissible: true,
+        inDuration: 300,
+        outDuration: 200,
+        endingTop: '50%'
+    });
+
+    $('#military-discount-modal').modal({
+        dismissible: true,
+        inDuration: 300,
+        outDuration: 200,
+        endingTop: '50%'
+    });
+
+    $('#referral-discount-modal').modal({
+        dismissible: true,
+        inDuration: 300,
+        outDuration: 200,
+        endingTop: '50%'
     });
 
     $("#xaler-nav").click(function () {
@@ -711,15 +746,9 @@ $(document).ready(function () {
     var quantityButton = document.querySelectorAll('#indexProduct .quantity');
     for(i = 0; i < quantityButton.length; i++){
       quantityButton[i].addEventListener('click', selectQuantity);
-      // if(quantityButton[i].textContent == ''){
-      //   quantityButton[i].style.display = 'none';
-      // }
     }
 
-
-
-
-  //close Modal when add to cart
-  $('#product-modal .add-cart-btn').click(closeModal);
+    //close Modal when add to cart
+    $('#product-modal .add-cart-btn').click(closeModal);
 
 });

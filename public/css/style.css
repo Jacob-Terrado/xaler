@@ -180,11 +180,19 @@ hr {
 }
 
 /* Email Modal */
+#email-sub-modal{
+  transform: translateY(-50%) !important;
+}
+
 .modal-footer {
     border: 0 !important;
 }
 
 /* Delivery Area Modal*/
+#delivery-area-modal{
+  transform: translateY(-50%) !important;
+}
+
 .delivery-area-image {
     position: absolute !important;
     width: 100% !important;;
@@ -192,11 +200,6 @@ hr {
 }
 
 /* Product Modal */
-#product-modal{
-  max-height: 75%;
-  transform: translateY(-50%) !important;
-  padding: 0 !important;
-}
 
 #product-modal img{
   width: 100%;
@@ -326,6 +329,14 @@ hr {
 .add-cart-btn:hover {
     background-color: #FFFFFF !important;
     color: #000000 !important;
+}
+
+/* Discounts Modals */
+#student-discount-modal,
+#ftp-discount-modal,
+#referral-discount-modal,
+#military-discount-modal{
+  transform: translateY(-50%) !important;
 }
 
 /* Mobile */
