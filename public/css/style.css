@@ -135,6 +135,10 @@ hr {
     vertical-align: middle;
 }
 
+#cart-icon-mobile {
+    padding: 0 !important;
+}
+
 .line-break {
     height: 20px;
     visibility: hidden;
@@ -150,6 +154,7 @@ hr {
     line-height: 20px;
 }
 
+/* Add to Cart Modal */
 #cart-modal {
   width: 250px !important;
   transform: translateY(-50%) !important;
@@ -177,6 +182,10 @@ hr {
     vertical-align: middle;
     margin: 0 !important;
     padding: 5px !important;
+}
+
+.xaler-blue {
+    background-color: #0076BD !important;
 }
 
 /* Email Modal */
@@ -227,9 +236,9 @@ hr {
     font-weight: 200;
     font-size: 17pt !important;
     margin: 0 !important;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /*white-space: wrap;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
     text-transform: uppercase;
 }
 
@@ -347,7 +356,6 @@ hr {
 }
 
 
-
 /* Mobile */
 @media (max-width: 700px) {
     #delivery-area-modal {
@@ -387,10 +395,24 @@ hr {
     }
 }
 
-#cart-icon-mobile {
-    padding: 0 !important;
-}
+@media (min-width: 300px){
 
-.xaler-blue {
-    background-color: #0076BD !important;
+      .add-cart-btn{
+        width: 100%;
+        font-size: 7.5pt;
+      }
+
+      .measurements {
+          font-size: 9pt;
+      }
+
+      .product-names-text {
+          font-size: 15pt !important;
+      }
+
+      #per{
+          font-size: 7.5pt;
+      }
+
+
 }
