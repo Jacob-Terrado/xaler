@@ -9,13 +9,17 @@
 </head>
 <body>
 {{> navbar}}
+  
 <div class="main-content">
-  <div class="carousel carousel-slider" data-indicators="true">
-    <a class="carousel-item" href="#one!"><img src="../images/discounts.jpeg"></a>
-    <a class="carousel-item" href="#one!"><img src="../images/discounts.jpeg"></a>
-    <a class="carousel-item" href="#one!"><img src="../images/discounts.jpeg"></a>
-    <a class="carousel-item" href="#one!"><img src="../images/discounts.jpeg"></a>
+  <div class="slider">
+    <ul class="slides">
+      <li> <img src="../images/discounts.jpeg"> </li>
+      <li> <img src="../images/discounts.jpeg"> </li>
+      <li> <img src="../images/discounts.jpeg"> </li>
+      <li> <img src="../images/discounts.jpeg"> </li>
+    </ul>
   </div>
+</div>
 
   <div class="container" id="indexProduct">
     <!-- Menu -->
@@ -58,7 +62,8 @@
 {{> delivery-area-modal}}
 {{> contactus}}
 {{> footer}}
-
 {{> scripts}}
+{{> slide}}
+  
 </body>
 </html>
