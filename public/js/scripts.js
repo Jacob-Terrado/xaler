@@ -627,8 +627,14 @@ function openProductModal(id) {
 
 // show selection of quantity
 function selectQuantity(){
-  $(this).css({'background-color': '#AAAAAA', 'color': 'white'});
-  $(this).siblings().css({'background-color': '#FFFFFF', 'color': 'black'});
+  $(this).css({'background-color': '#EAF6FF', 'color': '#000000'});
+  $(this).siblings().css({'background-color': '#FFFFFF', 'color': '#000000'});
+  $(this).siblings().mouseover(function(){
+    $(this).css({'background-color': '#F6FBFE', 'color': '#000000'});
+  })
+  $(this).siblings().mouseleave(function(){
+    $(this).css({'background-color': '#FFFFFF', 'color': '#000000'});
+  })
 }
 
 // close product modal when open cart modal
