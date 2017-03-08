@@ -123,6 +123,7 @@ hr {
 
 .card-content {
     padding: 1em !important;
+    background-color: #FFFFFF;
 }
 
 /* Cart Page*/
@@ -192,11 +193,9 @@ hr {
 
 /* Product Modal */
 #product-modal{
-  /*width: 600px !important;*/
   max-height: 75%;
   transform: translateY(-50%) !important;
   padding: 0 !important;
-
 }
 
 #product-modal img{
@@ -214,21 +213,21 @@ hr {
 
 .strains-modal-text {
     font-family: 'Open Sans', sans-serif !important;;
-    font-style: normal !important;
     font-weight: 700;
-    font-size: 16pt !important;
-    margin: 0 !important;
+    font-size: 10pt !important;
+    color: #5B5B5B !important;
+    margin-top: 2px !important;
 }
 
 .product-names-modal-text {
     font-family: 'Nunito', sans-serif !important;;
-    font-style: normal !important;
-    font-weight: 300;
-    font-size: 22pt !important;
+    font-weight: 200;
+    font-size: 17pt !important;
     margin: 0 !important;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-transform: uppercase;
 }
 
 .body-modal-text {
@@ -245,7 +244,6 @@ hr {
     font-style: normal !important;
     font-weight: 700;
     font-size: 9pt !important;
-    /*text-transform: uppercase;*/
     margin-top: 2px !important;
     color: #5B5B5B !important;
 }
