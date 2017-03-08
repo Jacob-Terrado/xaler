@@ -4,6 +4,10 @@ nav {
     padding-right: 15px;
 }
 
+body{
+  background-color: #F0F0F0;
+}
+
 .nav-bar-icon {
     position: absolute !important;
     top: 10px;
