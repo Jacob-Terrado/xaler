@@ -103,6 +103,14 @@ hr {
     font-family: 'Nunito', sans-serif !important;;
     font-style: normal !important;
     font-weight: 500;
+    font-size: 20pt !important;
+    text-transform: uppercase;
+}
+
+.menu-header-text {
+    font-family: 'Nunito', sans-serif !important;;
+    font-style: normal !important;
+    font-weight: 500;
     font-size: 18pt !important;
     text-transform: uppercase;
 }
@@ -152,10 +160,17 @@ hr {
 
 /* Contact Us Modal */
 .contact-us-footer {
-    /* position: relative; to fixed*/
     margin-bottom: 0 !important;
     padding: 0 !important;
     height: 50px;
+}
+
+.sticky {
+    position: fixed;
+}
+
+.not-sticky {
+    position: relative;
 }
 
 .contact-us-text {
@@ -361,4 +376,9 @@ hr {
 
 .xaler-blue {
     background-color: #0076BD !important;
+}
+
+.tabs .indicator {
+    background-color: #0076BD !important;
+    height: 8px;
 }

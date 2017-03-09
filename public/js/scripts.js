@@ -1,6 +1,5 @@
 /* Menu array */
-var menu = [
-    {
+var menu = {
         "indica": [
             {
                 "id": "0",
@@ -112,9 +111,7 @@ var menu = [
                 "halfprice": "$120",
                 "ozprice": "$200"
             }
-        ]
-    },
-    {
+        ],
         "sativa": [
             {
                 "id": "0",
@@ -181,9 +178,7 @@ var menu = [
                 "halfprice": "$140",
                 "ozprice": "$260"
             }
-        ]
-    },
-    {
+        ],
         "hybrid": [
             {
                 "id": "0",
@@ -224,9 +219,7 @@ var menu = [
                 "halfprice": "$150",
                 "ozprice": "$260"
             }
-        ]
-    },
-    {
+        ],
         "concentrate": [
             {
                 "id": "0",
@@ -448,9 +441,7 @@ var menu = [
                 "oneprice": "$60",
                 "twoprice": "- - -"
             }
-        ]
-    },
-    {
+        ],
         "edible": [
             {
                 "id": "0",
@@ -501,9 +492,7 @@ var menu = [
                 "per": "each",
                 "price": "$10"
             }
-        ]
-    },
-    {
+        ],
         "gear": [
             {
                 "id": "0",
@@ -527,22 +516,18 @@ var menu = [
                 "price": "$25"
             }
         ]
-    }
-];
+    };
 
 /* Opens home */
 function home() {
     window.location.href = "/";
 }
 
-/* Opens Product Modal */ // TODO: CURRENTLY BROKEN, NEED TO FIX
+/* Opens Product Modal */
 function openProductModal(id) {
-    console.log(id);
+    var type = $('.strains-text').html();
+    var item = menu[type][id];
 
-    console.log((''))
-    return;
-
-    var item = menu[id];
     var name = $('#product-modal-name');
 
     name.html(item.name);
@@ -630,16 +615,27 @@ function stickyContactUs() {
     var windowBottom = $(window).scrollTop() + $(window).height();
     var divBottom = $('#footer-anchor').offset().top;
     var footer = $('.contact-us-footer');
-    console.log("sticky contact us");
-    console.log("window Bottom = " + windowBottom);
-    console.log(divBottom);
 
     if (windowBottom < divBottom) {
-        footer.addClass('contact-us-sticky');
-        footer.removeClass('contact-us-not-sticky');
+        footer.addClass('sticky');
+        footer.removeClass('not-sticky');
     } else {
-        footer.addClass('contact-us-not-sticky');
-        footer.removeClass('contact-us-sticky');
+        footer.addClass('not-sticky');
+        footer.removeClass('sticky');
+    }
+}
+
+function stickyMenuBar() {
+    var windowTop= $(window).scrollTop();
+    var divTop= $('#tabs-anchor').offset().top;
+    var tabs = $('#xaler-menu-tabs');
+
+    if (windowTop > divTop) {
+        tabs.addClass('sticky');
+        tabs.removeClass('not-sticky');
+    } else {
+        tabs.addClass('not-sticky');
+        tabs.removeClass('sticky');
     }
 }
 
@@ -727,4 +723,8 @@ $(document).ready(function () {
     // Contact Us Stickied
     $(window).scroll(stickyContactUs);
     stickyContactUs();
+
+    // Menu Tab Stickied
+    // $(window).scroll(stickyMenuBar);
+    // stickyMenuBar();
 });
