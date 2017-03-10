@@ -713,6 +713,13 @@ $(document).ready(function () {
         endingTop: '50%'
     });
 
+    $('#contact-us-modal').modal({
+        dismissible: true,
+        inDuration: 300,
+        outDuration: 200,
+        endingTop: '50%'
+    });
+
     $('#email-sub-modal').modal({
         dismissible: true,
         inDuration: 300,
