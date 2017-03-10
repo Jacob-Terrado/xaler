@@ -387,6 +387,19 @@ hr {
     transform: translateY(-50%) !important;
 }
 
+#contact-us-modal #call-btn{
+  text-align: center;
+  float: none !important;
+  display: block;
+  margin: auto;
+  line-height: 50px;
+
+}
+
+#contact-us-modal .modal-footer{
+  background: gray;
+}
+
 .xaler-blue {
     background-color: #0076BD !important;
 }
