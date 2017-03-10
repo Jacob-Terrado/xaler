@@ -194,7 +194,7 @@
         {
           "id": "0",
           "name": "Thin Mint",
-          "type": "Hybrid",
+          "type": "hybrid",
           "eighth": "1/8 oz",
           "fourth": "1/4 oz",
           "half": "1/2 oz",
@@ -207,7 +207,7 @@
         {
           "id": "1",
           "name": "Forum Cookies",
-          "type": "Hybrid",
+          "type": "hybrid",
           "eighth": "1/8 oz",
           "fourth": "1/4 oz",
           "half": "1/2 oz",
@@ -220,7 +220,7 @@
         {
           "id": "2",
           "name": "Purple Kryptonite",
-          "type": "Hybrid",
+          "type": "hybrid",
           "eighth": "1/8 oz",
           "fourth": "1/4 oz",
           "half": "1/2 oz",

@@ -524,8 +524,16 @@ function home() {
 }
 
 /* Opens Product Modal */
-function openProductModal(id) {
-    var type = $('.strains-text').html();
+function openProductModal(id, event) {
+    var classNames = event.target.className.split(" ");
+    var type;
+
+    if (classNames.length > 2) {
+        type = classNames[2];
+    } else {
+        type = classNames[1];
+    }
+
     var item = menu[type][id];
     var name = $('#product-modal-name');
 
@@ -624,7 +632,6 @@ function openProductModal(id) {
 // show selection of quantity
 function selectQuantity() {
     if ($(this).css('background-color') == 'rgb(234, 246, 255)') {
-        console.log('hello');
         $(this).css('background-color', '#FFFFFF');
     } else {
         $(this).css({'background-color': '#EAF6FF', 'color': '#000000'});
@@ -772,4 +779,8 @@ $(document).ready(function () {
     // Menu Tab Stickied
     // $(window).scroll(stickyMenuBar);
     // stickyMenuBar();
+
+    $('.item-quantity').click(function(e) {
+        e.stopPropagation();
+    });
 });
