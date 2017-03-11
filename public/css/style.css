@@ -67,6 +67,10 @@ footer {
   font-size: 14px;
 }
 
+#FTPBut {
+  font-size: 14px;
+}
+
 #ftp-submit-button {
     width: 300px;
     position: absolute;
@@ -74,6 +78,7 @@ footer {
     transform: translateX(-50%) translateY(-50%);
     text-align: center;
     vertical-align: middle;
+    font-size: 14px;
 }
 
 /* Carousel */
