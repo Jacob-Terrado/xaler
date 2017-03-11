@@ -4,8 +4,8 @@ nav {
     padding-right: 15px;
 }
 
-body{
-  background-color: #F0F0F0;
+body {
+    background-color: #F0F0F0;
 }
 
 .nav-bar-icon {
@@ -76,6 +76,14 @@ footer {
     vertical-align: middle;
 }
 
+/* Carousel */
+.desktop{
+  display: block;
+}
+.mobile{
+  display: none;
+}
+
 /* All but index */
 .header-text {
     font-family: 'Nunito', sans-serif !important;;
@@ -85,10 +93,10 @@ footer {
 }
 
 .sub-header-text {
-    font-family: 'Nunito', sans-serif !important;;
+    /*font-family: 'Open Sans', sans-serif !important;;*/
     font-style: normal !important;
-    font-weight: 500;
-    font-size: 16pt !important;
+    /*font-weight: 400;*/
+    font-size: 13pt !important;
 }
 
 .body-text {
@@ -103,8 +111,8 @@ footer {
     width: 90% !important;
 }
 
-.opensModal{
-  color: #000000;
+.opensModal {
+    color: #000000;
 }
 
 .main-content {
@@ -114,13 +122,21 @@ footer {
 .display-text {
     font-family: 'Nunito', sans-serif !important;;
     font-style: normal !important;
-    font-weight: 500;
-    font-size: 18pt !important;
+    font-weight: 200;
+    font-size: 20pt !important;
     text-transform: uppercase;
 }
 
-.card{
-  box-shadow: 0 0 0 0 !important;
+.menu-header-text {
+    font-family: 'Nunito', sans-serif !important;;
+    font-style: normal !important;
+    font-weight: 500;
+    font-size: 14pt !important;
+    text-transform: uppercase;
+}
+
+.card {
+    box-shadow: 0 0 0 0 !important;
 }
 
 /* Index & Product Modal*/
@@ -164,8 +180,8 @@ footer {
 
 /* Add to Cart Modal */
 #cart-modal {
-  width: 250px !important;
-  transform: translateY(-50%) !important;
+    width: 250px !important;
+    transform: translateY(-50%) !important;
 }
 
 /* Legal Page */
@@ -175,21 +191,31 @@ footer {
 
 /* Contact Us Modal */
 .contact-us-footer {
-    /* position: relative; to fixed*/
     margin-bottom: 0 !important;
     padding: 0 !important;
     height: 50px;
 }
 
+.sticky {
+    position: fixed;
+}
+
+.not-sticky {
+    position: relative;
+}
+
 .contact-us-text {
-    position: absolute;
-    left: 50%;
+    font-family: 'Nunito', sans-serif !important;
+    font-weight: 200;
+    /*position: absolute;*/
+    /*left: 50%;
     top: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);*/
     text-align: center;
-    vertical-align: middle;
-    margin: 0 !important;
-    padding: 5px !important;
+    /*vertical-align: middle;*/
+    margin: 0 auto !important;
+    /*padding: 5px !important;*/
+    line-height: 50px;
 }
 
 .xaler-blue {
@@ -197,8 +223,8 @@ footer {
 }
 
 /* Email Modal */
-#email-sub-modal{
-  transform: translateY(-50%) !important;
+#email-sub-modal {
+    transform: translateY(-50%) !important;
 }
 
 .modal-footer {
@@ -206,8 +232,8 @@ footer {
 }
 
 /* Delivery Area Modal*/
-#delivery-area-modal{
-  transform: translateY(-50%) !important;
+#delivery-area-modal {
+    transform: translateY(-50%) !important;
 }
 
 .delivery-area-image {
@@ -217,14 +243,13 @@ footer {
 }
 
 /* Product Modal */
-
-#product-modal img{
-  width: 100%;
-  height: 80%;
+#product-modal img {
+    width: 50%;
+    height: 80%;
 }
 
-.hide{
-  display: none;
+.hide {
+    display: none;
 }
 
 .xaler-modal-image {
@@ -256,6 +281,22 @@ footer {
     font-weight: 400;
     font-size: 14pt !important;
     margin: 0 !important;
+}
+
+#product-modal .add-cart-btn {
+    clear: both;
+    display: block !important;
+    margin: 0 auto;
+    width: 40%;
+    border-radius: 0;
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+    border: 2px solid #000000 !important;
+}
+
+#product-modal .add-cart-btn:hover {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
 }
 
 /* Menu Style */
@@ -322,8 +363,13 @@ footer {
     border: 2px solid #000000 !important;
 }
 
+.add-cart-btn:hover {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+}
+
 #product-modal-per,
-#per{
+#per {
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -343,29 +389,60 @@ footer {
     box-shadow: 0 0 0 0 !important;
 }
 
-.add-cart-btn:hover {
-    background-color: #FFFFFF !important;
-    color: #000000 !important;
+
+/* Contact Us Modal */
+#contact-us-modal {
+    transform: translateY(-50%) !important;
 }
 
-/* Discounts Modals */
-.discount-modals{
-  transform: translateY(-50%) !important;
-  max-height: 90%;
-}
-
-.discount-modals p{
+#contact-us-modal #call-btn{
   text-align: center;
-  font-size: 14pt;
+  float: none !important;
+  display: block;
+  margin: auto;
+  line-height: 50px;
+
 }
 
-.discount-modals img{
-  width: 100%;
+#contact-us-modal .modal-footer{
+  background: gray;
 }
 
+.xaler-blue {
+    background-color: #0076BD !important;
+}
+
+.tabs .indicator {
+    background-color: #0076BD !important;
+    height: 8px;
+}
 
 /* Mobile */
 @media (max-width: 700px) {
+    /* Carousel */
+    .desktop{
+      display: none;
+    }
+    .mobile{
+      display: block;
+    }
+
+    #product-modal img {
+        width: 100%;
+        height: 80%;
+    }
+
+    #product-modal .add-cart-btn {
+        clear: both;
+        display: block !important;
+        margin: 0 auto;
+        width: 90%;
+        border-radius: 0;
+        background-color: #000000 !important;
+        color: #FFFFFF !important;
+        border: 2px solid #000000 !important;
+    }
+
     #delivery-area-modal {
         width: 375px !important;
         height: 60% !important;
@@ -382,7 +459,7 @@ footer {
         overflow-x: hidden !important;
     }
 
-    #delivery-area-modal img{
+    #delivery-area-modal img {
         width: 400px !important;
         max-width: 95% !important;
     }
@@ -397,30 +474,28 @@ footer {
         overflow-x: hidden !important;
     }
 
-    #delivery-area-modal img{
+    #delivery-area-modal img {
         width: 500px !important;
         max-width: 95% !important;
     }
 }
 
-@media (min-width: 300px){
-
-      .add-cart-btn{
+@media (min-width: 300px) {
+    .add-cart-btn {
         width: 100%;
         font-size: 7.5pt;
-      }
+    }
 
-      .measurements {
-          font-size: 9pt;
-      }
+    .measurements {
+        font-size: 9pt;
+    }
 
-      .product-names-text {
-          font-size: 15pt !important;
-      }
+    .product-names-text {
+        font-size: 15pt !important;
+    }
 
-      #per{
-          font-size: 7.5pt;
-      }
-
+    #per {
+        font-size: 7.5pt;
+    }
 
 }

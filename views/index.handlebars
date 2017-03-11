@@ -11,31 +11,34 @@
 {{> navbar}}
 
 <div class="main-content">
-  <div class="slider">
-    <ul class="slides">
-      <li><a href="#student-discount-modal"><img src="../images/discounts.jpeg"></a></li>
-      <li><a href="#referral-discount-modal"><img src="../images/discounts.jpeg"></a></li>
-      <li><a href="#military-discount-modal"><img src="../images/discounts.jpeg"></a></li>
-      <li><a href="#ftp-discount-modal"><img src="../images/discounts.jpeg"></a></li>
-    </ul>
+  <div class="carousel carousel-slider desktop" data-indicators="true">
+    <a class="carousel-item" href="#one!"><img src="../images/FTP Deal Banner.png"></a>
+    <a class="carousel-item" href="#two!"><img src="../images/Referral Program Banner.png"></a>
+    <a class="carousel-item" href="#three!"><img src="../images/Military and Student Banner.png"></a>
+  </div>
+
+  <div class="carousel carousel-slider mobile" data-indicators="true">
+    <a class="carousel-item" href="#one!"><img src="../images/FTP iPhone Version.png"></a>
+    <a class="carousel-item" href="#two!"><img src="../images/Referral iPhone Version.png"></a>
+    <a class="carousel-item" href="#three!"><img src="../images/MilitaryStudent iPhone Version.png"></a>
   </div>
 </div>
 
-  <div class="container" id="indexProduct">
-    <!-- Menu -->
+<div class="container" id="indexProduct">
+  <h2 class="display-text center" id="menu">Menu</h2>
+  {{#each menu}}
     <div class="row">
-      <h2 class="display-text center" id="menu">Menu</h2>
-      {{#each menu}}
-        <div class="col l3 m6 s6">
-          <a class="opensModal" onclick="openProductModal({{{id}}})">
-          <div class="card product">
+      <h3 id="{{type}}" class="menu-header-text center">{{type}}</h3>
+      <h4 class="sub-header-text center">{{description}}</h4>
+      {{#each item}}
+        <div class="col l4 m8 s12">
+          <div class="card product" onclick="openProductModal({{id}}, event)">
             <div class="card-image">
-              <img class="responsive-img" src="images/skywalker-og.jpg" alt="itemImage">
+              <img class="responsive-img {{type}}" src="images/skywalker-og.jpg" alt="itemImage">
             </div>
             <div class="card-content item-content">
-              <h5 class="product-names-text">{{name}}</h5>
-              <p class="{{type}} strains-text">{{type}}</p>
-            </a>
+              <h5 class="product-names-text {{type}}">{{name}}</h5>
+              <p id="{{id}}-{{type}}" class="strains-text {{type}}">{{type}}</p>
               <div class="item-quantity">
                 {{#if eighth}}<span class="quantity measurements">{{eighth}}<br>{{eighthprice}}</span> {{/if}}
                 {{#if fourth}}<span class="quantity measurements">{{fourth}}<br>{{fourthprice}}</span> {{/if}}
@@ -45,26 +48,23 @@
                 {{#if two}} <span class="quantity measurements">{{two}}<br>{{twoprice}}</span> {{/if}}
                 {{#if per}} <span class="quantity" id="per">{{per}}<br>{{price}}</span> {{/if}}
               </div>
-            </div>
-            <div class="card-action">
-              <a class="add-cart-btn btn" href="#cart-modal">Add to Cart</a>
+              <div class="card-action">
+                <a class="add-cart-btn btn" href="#cart-modal">Add to Cart</a>
+              </div>
             </div>
           </div>
         </div>
       {{/each}}
     </div>
-  </div>
+  {{/each}}
 </div>
 
 {{> product-modal}}
 {{> cart-modal}}
-{{> student-discount-modal}}
-{{> referral-discount-modal}}
-{{> military-discount-modal}}
-{{> ftp-discount-modal}}
 {{> email-sub-modal}}
 {{> delivery-area-modal}}
 {{> contactus}}
+{{> contact-us-modal}}
 {{> footer}}
 {{> scripts}}
 {{> slide}}
