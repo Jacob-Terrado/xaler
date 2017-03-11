@@ -9,16 +9,17 @@
 </head>
 <body>
 {{> navbar}}
-
-<div class="container">
-  <h2 class="center title-text"> Welcome to XALER</h2>
-  <hr>
-  <h5 class="center header-text"> ALL FIRST TIME PATIENTS WILL RECEIVE 10% OFF YOUR ENTIRE ORDER!</h5>
-  <p class="center sub-header-text"> *Promotions cannot be stacked.</p>
-  <p class="center sub-header-text"> Please fill out the form below, so we can verify your records.</p>
-
+  
+<div class="container" style="display:block">
+  <div class="col s8 offset-s2">
+    <h3 class="center title-text" id="FTPH"> FIRST-TIME PATIENT INFORMATION</h3>
+    <h5 class="center" id="FTPSub"> ALL FIRST TIME PATIENTS WILL RECEIVE 10% OFF YOUR ENTIRE ORDER!</h5>
+    <p class="center" id="FTPSub"> *Promotions cannot be stacked.</p> 
+    <p class="center" id="FTPSub"> Please fill out the form below, so we can verify your records.</p>
+  </div>
+  
   <div class="row body-text" style="margin: 10px;">
-    <form id="ftp-form" novalidate="novalidate" onsubmit="console.log(3);" class="col s12">
+    <form id="ftp-form" novalidate="novalidate" onsubmit="console.log(3);" class="col s8 offset-s2">
       <div class="row">
         <div class="input-field col s6">
           <label for="firstName">First Name</label>
@@ -47,8 +48,8 @@
       </div>
       <div class="row">
         <div class="file-field input-field">
-          <div class="btn ">
-            <span>ID</span>
+          <div class="btn add-cart-btn">
+            <span>UPLOAD ID</span>
             <input type="file">
           </div>
           <div class="file-path-wrapper">
@@ -58,8 +59,8 @@
       </div>
       <div class="row">
         <div class="file-field input-field">
-          <div class="btn">
-            <span>Prescription</span>
+          <div class="btn add-cart-btn">
+            <span>UPLOAD Prescription</span>
             <input type="file">
           </div>
           <div class="file-path-wrapper">
@@ -67,7 +68,9 @@
           </div>
         </div>
       </div>
-      <button id="ftp-submit-button" class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+      <div class="row">
+        <button id="ftp-submit-button" class="btn waves-effect waves-light add-cart-btn" type="submit" name="action">Submit</button>
+      </div>
     </form>
   </div>
 </div>

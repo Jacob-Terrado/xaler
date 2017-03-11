@@ -55,8 +55,16 @@ footer {
 }
 
 /* FTP */
-hr {
-    margin: 0 !important;
+#FTPH {
+  font: 'Nunito';
+  font-size: 18px;
+  font-weight: 200;
+  font-style: normal !important;
+}
+
+#FTPSub {
+  font: 'Open Sans';
+  font-size: 14px;
 }
 
 #ftp-submit-button {
