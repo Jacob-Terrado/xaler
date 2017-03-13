@@ -244,7 +244,14 @@ footer {
 .delivery-area-image {
     position: absolute !important;
     width: 100% !important;;
+    height: 300px;
     bottom: 0 !important;;
+}
+
+.column {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
 }
 
 /* Product Modal */
