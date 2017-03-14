@@ -660,15 +660,20 @@ function stickyContactUs() {
 }
 
 function stickyMenuBar() {
-    var windowTop = $(window).scrollTop();
+    var windowTop = $(window).scrollTop() + 80;
     var divTop = $('#tabs-anchor').offset().top;
     var tabs = $('#xaler-menu-tabs');
 
+    // console.log("windowTop = " + windowTop);
+    // console.log("divTop = " + divTop);
+
     if (windowTop > divTop) {
         tabs.addClass('sticky');
+        tabs.addClass('xaler-menu-top');
         tabs.removeClass('not-sticky');
     } else {
         tabs.addClass('not-sticky');
+        tabs.removeClass('xaler-menu-top');
         tabs.removeClass('sticky');
     }
 }
@@ -704,13 +709,6 @@ $(document).ready(function () {
                 $('#cart-modal').modal('close');
             }, 800); // slightly buggy, click add to cart, then click out, then click another one; it'll be hidden
         }
-    });
-
-    $('#delivery-area-modal').modal({
-        dismissible: true,
-        inDuration: 300,
-        outDuration: 200,
-        endingTop: '50%'
     });
 
     $('#contact-us-modal').modal({
@@ -767,6 +765,42 @@ $(document).ready(function () {
         }, 500);
     });
 
+    $("#indica-label").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#indica").offset().top - 120
+        }, 500);
+    });
+
+    $("#sativa-label").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#sativa").offset().top - 120
+        }, 500);
+    });
+
+    $("#hybrid-label").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#hybrid").offset().top - 120
+        }, 500);
+    });
+
+    $("#concentrate-label").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#concentrate").offset().top - 120
+        }, 500);
+    });
+
+    $("#edible-label").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#edible").offset().top - 120
+        }, 500);
+    });
+
+    $("#gear-label").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#gear").offset().top - 120
+        }, 500);
+    });
+
     // Remove blank labeled buttons
     var quantityButton = document.querySelectorAll('#indexProduct .quantity');
     for (var i = 0; i < quantityButton.length; i++) {
@@ -784,8 +818,8 @@ $(document).ready(function () {
     stickyContactUs();
 
     // Menu Tab Stickied
-    // $(window).scroll(stickyMenuBar);
-    // stickyMenuBar();
+    $(window).scroll(stickyMenuBar);
+    stickyMenuBar();
 
     $('.item-quantity').click(function(e) {
         e.stopPropagation();

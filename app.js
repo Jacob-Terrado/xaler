@@ -6,6 +6,7 @@ var handlebars = require('express3-handlebars');
 var index = require('./routes/index');
 var legal = require('./routes/legal');
 var ftp = require('./routes/ftp');
+var service = require('./routes/service');
 var app = express();
 
 // all environments
@@ -32,6 +33,7 @@ if ('development' == app.get('env')) {
 app.get('/', index.viewIndex);
 app.get('/legal', legal.viewLegal);
 app.get('/ftp', ftp.viewFtp);
+app.get('/service', service.viewService);
 
 http.createServer(app).listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));
