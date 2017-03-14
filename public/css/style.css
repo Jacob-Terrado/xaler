@@ -54,21 +54,25 @@ footer {
     margin-top: 0 !important;
 }
 
+.footer-header-text {
+    font-family: 'Nunito', sans-serif !important;;
+    font-style: normal !important;
+    font-weight: 200;
+    font-size: 18pt !important;
+}
+
+footer a{
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  color: #FFFFFF;
+}
+
 /* FTP */
 #FTPH {
   font: 'Nunito';
   font-size: 18px;
   font-weight: 200;
   font-style: normal !important;
-}
-
-#FTPSub {
-  font: 'Open Sans';
-  font-size: 14px;
-}
-
-#FTPBut {
-  font-size: 14px;
 }
 
 #ftp-submit-button {
@@ -496,11 +500,11 @@ footer {
 @media (min-width: 300px) {
     .add-cart-btn {
         width: 100%;
-        font-size: 7.5pt;
+        font-size: 12pt;
     }
 
     .measurements {
-        font-size: 9pt;
+        font-size: 12pt;
     }
 
     .product-names-text {
@@ -508,7 +512,7 @@ footer {
     }
 
     #per {
-        font-size: 7.5pt;
+        font-size: 12pt;
     }
 
 }

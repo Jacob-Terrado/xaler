@@ -3,7 +3,7 @@ var menu = {
     "indica": [
         {
             "id": "0",
-            "name": "Mulholland OG",
+            "name": "MO",
             "type": "indica",
             "eighth": "1/8 oz",
             "fourth": "1/4 oz",

@@ -9,69 +9,84 @@
 </head>
 <body>
 {{> navbar}}
-  
-<div class="container" style="display:block">
-  <div class="col s8 offset-s2">
-    <h3 class="center title-text" id="FTPH"> FIRST-TIME PATIENT INFORMATION</h3>
-    <h5 class="center" id="FTPSub"> ALL FIRST TIME PATIENTS WILL RECEIVE 10% OFF YOUR ENTIRE ORDER!</h5>
-    <p class="center" id="FTPSub"> *Promotions cannot be stacked.</p> 
-    <p class="center" id="FTPSub"> Please fill out the form below, so we can verify your records.</p>
-  </div>
-  
-  <div class="row body-text" style="margin: 10px;">
-    <form id="ftp-form" novalidate="novalidate" onsubmit="console.log(3);" class="col s8 offset-s2">
-      <div class="row">
-        <div class="input-field col s6">
-          <label for="firstName">First Name</label>
+
+<div class="container">
+  <div class="row">
+    <div class="col l6 s12">
+      <h3 class="center title-text" id="FTPH"> FIRST-TIME PATIENT GUIDELINES</h3>
+      <ul>
+        <li>1. Explore the menu!</li>
+        <li>2. Contact us to place your order
+          <ul>
+            <li>*Feel free to call/text/email us about any questions or comments. We are here to serve you!</li>
+            <li>a. Please text us a picture of your California ID and doctor’s recommendation</li>
+            <li>b. In a separate text message - please send us your delivery address.</li>
+            <li>**Alternatively to steps a and b, fill out and submit the form below**</li>
+            <li>c. We will confirm our receipt of your messages. If you don't hear from us - please call because technology is not perfect.</li>
+            <li>d. We will ask you for your order and help you along the way!</li>
+          </ul>
+        </li>
+        <li>3. Time for your delivery!<br>We will give you an accurate ETA time and we'll update you along the process at your request.
+        If you would like to see our products before you donate, let us know! We offer a full presentation or a simple product viewing, the choice is yours!</li>
+        <li>4. Enjoy your cannabis products!<br>*If there are products that you would like that are not on the menu - please help us by texting us to let us know what it is so we can try to carry it in the future!</li>
+      </ul>
+      <h3 class="center title-text" id="FTPH"> FIRST-TIME PATIENT DEAL</h3>
+      <ul>
+        <li>1. FTP will receive a gift box:
+          <ul>
+            <li>a. XALER Hemp Wick</li>
+            <li>b. Raw cone (unfilled)</li>
+          </ul>
+        </li>
+        <li>2. 10% off entire order</li>
+        <li>3. FTP deal cannot be combined with any other deal or credits.</li>
+        <li>4. Minimum donation: $35</li>
+      </ul>
+    </div>
+    <div class="col l6 s12">
+      <h3 class="center title-text" id="FTPH"> FIRST-TIME PATIENT FORM</h3>
+      <form id="ftp-form" novalidate="novalidate" onsubmit="console.log(3);">
+        <div class="input-field">
+          <label for="firstName">Your First Name</label>
           <input id="firstName" name="firstName" type="text" data-error=".firstNameError">
           <div class="firstNameError"></div>
         </div>
-        <div class="input-field col s6">
-          <label for="lastName">Last Name</label>
+        <div class="input-field">
+          <label for="lastName">Your Last Name</label>
           <input id="lastName" name="lastName" type="text" data-error=".lastNameError">
           <div class="lastNameError"></div>
         </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <label for="phoneNumber">Phone Number</label>
+        <div class="input-field">
+          <label for="phoneNumber">Your Phone Number</label>
           <input id="phoneNumber" name="phoneNumber" type="text" data-error=".phoneNumberError">
           <div class="phoneNumberError"></div>
         </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <label for="email">Email</label>
+        <div class="input-field">
+          <label for="email">Your Email</label>
           <input id="email" name="email" type="email" data-error=".emailError">
           <div class="emailError"></div>
         </div>
-      </div>
-      <div class="row">
-        <div class="file-field input-field">
-          <div class="btn add-cart-btn">
-            <span id='FTPBut'>UPLOAD ID</span>
-            <input type="file">
-          </div>
-          <div class="file-path-wrapper">
-            <input class="file-path validate" type="text">
-          </div>
+        <div class="input-field">
+          <label for="email">Your Delivery Address</label>
+          <input id="email" name="email" type="email" data-error=".emailError">
+          <div class="emailError"></div>
         </div>
-      </div>
-      <div class="row">
         <div class="file-field input-field">
-          <div class="btn add-cart-btn">
-            <span id='FTPBut'>UPLOAD Prescription</span>
-            <input type="file">
-          </div>
-          <div class="file-path-wrapper">
-            <input class="file-path validate" type="text">
-          </div>
-        </div>
+           <div class="btn">
+             <span>UPLOAD IDENTIFICATION</span>
+             <input type="file">
+           </div>
+           <p>*Only Accepts Passport or Driver’s License</p>
+         </div>
+         <div class="file-field input-field">
+           <div class="btn">
+             <span>UPLOAD DOCTOR'S RECOMMENDATION</span>
+             <input type="file">
+           </div>
+         </div>
+          <button id="ftp-submit-button" class="btn" type="submit" name="action">Submit</button>
+        </form>
       </div>
-      <div class="row">
-        <button id="ftp-submit-button" class="btn waves-effect waves-light add-cart-btn" type="submit" name="action">Submit</button>
-      </div>
-    </form>
   </div>
 </div>
 
@@ -79,7 +94,6 @@
 {{> delivery-area-modal}}
 {{> contactus}}
 {{> footer}}
-
 {{> scripts}}
 
 <script type="text/javascript" src="js/jquery.validate.js"></script>
