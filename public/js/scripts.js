@@ -761,9 +761,15 @@ $(document).ready(function () {
         endingTop: '50%'
     });
 
-    $("#xaler-nav").click(function () {
+    $("#deals-side-nav").click(function () {
         $('html, body').animate({
-            scrollTop: $("#xaler-grown").offset().top - 40
+            scrollTop: $("#deals").offset().top - 60
+        }, 500);
+    });
+
+    $("#deals-nav").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#deals").offset().top - 60
         }, 500);
     });
 

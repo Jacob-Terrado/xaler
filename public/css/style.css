@@ -1,6 +1,3 @@
-#test{
-  padding: 100px 0;
-}
 /* Navigation Bar */
 nav {
     padding-left: 15px;
@@ -97,6 +94,13 @@ footer {
     font-family: 'Nunito', sans-serif !important;;
     font-style: normal !important;
     font-weight: 500;
+    font-size: 18pt !important;
+}
+
+.email-header-text {
+    font-family: 'Nunito', sans-serif !important;;
+    font-style: normal !important;
+    font-weight: 300;
     font-size: 18pt !important;
 }
 
@@ -471,7 +475,7 @@ footer {
 
     #email-sub-modal {
         width: 375px !important;
-        height: 300px !important;
+        height: 350px !important;
         max-height: 100% !important;
         overflow-y: hidden !important;
         overflow-x: hidden !important;
