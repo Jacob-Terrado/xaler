@@ -1,11 +1,11 @@
 /* Menu array */
 var menu = {
-    "Indica": [
+    "indica": [
         {
             "id": "0",
-            "url": "../images/PlatinumGirlScoutCookies.jpg",
+            "url": "images/PlatinumGirlScoutCookies.png",
             "name": "Mulholland OG",
-            "type": "Indica",
+            "type": "indica",
             "eighth": "1/8 oz",
             "fourth": "1/4 oz",
             "half": "1/2 oz",
@@ -18,9 +18,9 @@ var menu = {
         },
         {
             "id": "1",
-            "url": "../images/KushcoOG.png",
+            "url": "images/KushcoOG.png",
             "name": "KushCo OG",
-            "type": "Indica",
+            "type": "indica",
             "eighth": "1/8 oz",
             "fourth": "1/4 oz",
             "half": "1/2 oz",
@@ -33,9 +33,9 @@ var menu = {
         },
         {
             "id": "2",
-            "url": "../images/PureOG.png",
+            "url": "images/PureOG.png",
             "name": "Pure OG",
-            "type": "Indica",
+            "type": "indica",
             "eighth": "1/8 oz",
             "fourth": "1/4 oz",
             "half": "1/2 oz",
@@ -48,9 +48,9 @@ var menu = {
         },
         {
             "id": "3",
-            "url": "../images/SkywalkerOG.png",
+            "url": "images/SkywalkerOG.png",
             "name": "Skywalker OG",
-            "type": "Indica",
+            "type": "indica",
             "eighth": "1/8 oz",
             "fourth": "1/4 oz",
             "half": "1/2 oz",
@@ -62,12 +62,12 @@ var menu = {
             "description": "Skywalker OG is a potent indica-dominant hybrid strain that may just take you to a galaxy far, far away. No Sith genetics here—this plant is a cross between Skywalker and OG Kush and has the strong aroma characteristic to kush strains that includes a spicy herbal scent tinged with jet fuel. This strain makes relaxation your only mission, and some users report strong body effects that include mild tingling and numbness. If pain and physical limitations are the issue, Skywalker OG is here to rescue you. The galaxy also holds a sativa dominant variety of Skywalker that is also often referred to as Skywalker OG or Sativa OG. (Source: Leafly.com)"
         }
     ],
-    "Sativa": [
+    "sativa": [
         {
             "id": "0",
-            "url": "../images/PineappleExpress.png",
+            "url": "images/PineappleExpress.png",
             "name": "Pineapple Express",
-            "type": "Sativa",
+            "type": "sativa",
             "eighth": "1/8 oz",
             "fourth": "1/4 oz",
             "half": "1/2 oz",
@@ -80,9 +80,9 @@ var menu = {
         },
         {
             "id": "1",
-            "url": "../images/BabyBlue.png",
+            "url": "images/BabyBlue.png",
             "name": "Baby Blue",
-            "type": "Sativa",
+            "type": "sativa",
             "eighth": "1/8 oz",
             "fourth": "1/4 oz",
             "half": "1/2 oz",
@@ -95,9 +95,9 @@ var menu = {
         },
         {
             "id": "2",
-            "url": "../images/BananaSplit.png",
+            "url": "images/BananaSplit.png",
             "name": "Banana Split",
-            "type": "Sativa",
+            "type": "sativa",
             "eighth": "1/8 oz",
             "fourth": "1/4 oz",
             "half": "1/2 oz",
@@ -110,9 +110,9 @@ var menu = {
         },
         {
             "id": "3",
-            "url": "../images/StrawberryBanana.png",
+            "url": "images/StrawberryBanana.png",
             "name": "Strawberry Banana",
-            "type": "Sativa",
+            "type": "sativa",
             "eighth": "1/8 oz",
             "fourth": "1/4 oz",
             "half": "1/2 oz",
@@ -125,9 +125,9 @@ var menu = {
         },
         {
             "id": "4",
-            "url": "../images/SupremeBlueDream.png",
+            "url": "images/SupremeBlueDream.png",
             "name": "Supreme Blue Dream",
-            "type": "Sativa",
+            "type": "sativa",
             "eighth": "1/8 oz",
             "fourth": "1/4 oz",
             "half": "1/2 oz",
@@ -139,12 +139,12 @@ var menu = {
             "description": "No product description available"
         }
     ],
-    "Hybrid": [
+    "hybrid": [
         {
             "id": "0",
-            "url": "../images/ThinMint.png",
+            "url": "images/ThinMint.png",
             "name": "Thin Mint",
-            "type": "Hybrid",
+            "type": "hybrid",
             "eighth": "1/8 oz",
             "fourth": "1/4 oz",
             "half": "1/2 oz",
@@ -157,9 +157,9 @@ var menu = {
         },
         {
             "id": "1",
-            "url": "../images/SunsetSherbet.png",
+            "url": "images/SunsetSherbet.png",
             "name": "Sunset Sherbet",
-            "type": "Hybrid",
+            "type": "hybrid",
             "eighth": "1/8 oz",
             "fourth": "1/4 oz",
             "half": "1/2 oz",
@@ -172,9 +172,9 @@ var menu = {
         },
         {
             "id": "2",
-            "url": "../images/PurpleKryptonite.png",
+            "url": "images/PurpleKryptonite.png",
             "name": "Purple Kryptonite",
-            "type": "Hybrid",
+            "type": "hybrid",
             "eighth": "1/8 oz",
             "fourth": "1/4 oz",
             "half": "1/2 oz",
@@ -186,10 +186,10 @@ var menu = {
             "description": "No product description available"
         }
     ],
-    "Concentrate": [
+    "concentrate": [
         {
             "id": "0",
-            "url": "../images/shatter.png",
+            "url": "images/shatter.png",
             "name": "Nug Run - White Walker (Shatter)",
             "type": "concentrate",
             "half": "0.5 g",
@@ -202,7 +202,7 @@ var menu = {
         },
         {
             "id": "1",
-            "url": "../images/shatter.png",
+            "url": "images/shatter.png",
             "name": "Skywalker OG Shatter",
             "type": "concentrate",
             "half": "0.5 g",
@@ -215,7 +215,7 @@ var menu = {
         },
         {
             "id": "2",
-            "url": "../images/shatter.png",
+            "url": "images/shatter.png",
             "name": "Green Crack Shatter",
             "type": "concentrate",
             "half": "0.5 g",
@@ -264,7 +264,7 @@ var menu = {
         },
         {
             "id": "6",
-            "url": "../images/shatter.png",
+            "url": "images/shatter.png",
             "name": "Blue Dream Shatter",
             "type": "concentrate",
             "half": "0.5 g",
@@ -432,10 +432,10 @@ var menu = {
             "description": "Indica"
         }
     ],
-    "Edible": [
+    "edible": [
         {
             "id": "0",
-            "url": "../images/KivaBar.png",
+            "url": "images/KivaBar.png",
             "name": "Kiva - Ginger Dark Chocolate",
             "type": "edible",
             "per": "each",
@@ -444,7 +444,7 @@ var menu = {
         },
         {
             "id": "1",
-            "url": "../images/KivaBar.png",
+            "url": "images/KivaBar.png",
             "name": "Kiva Bar - 4 Flavors",
             "type": "edible",
             "per": "each",
@@ -453,7 +453,7 @@ var menu = {
         },
         {
             "id": "2",
-            "url": "../images/KivaBar.png",
+            "url": "images/KivaBar.png",
             "name": "Kiva - Expresso Dark Chocolate",
             "type": "edible",
             "per": "each",
@@ -462,7 +462,7 @@ var menu = {
         },
         {
             "id": "3",
-            "url": "../images/TerraBitesEspresso.png",
+            "url": "images/TerraBitesEspresso.png",
             "name": "Kiva - Terra Bites - Expresso Beans",
             "type": "edible",
             "per": "each",
@@ -471,7 +471,7 @@ var menu = {
         },
         {
             "id": "4",
-            "url": "../images/TerraBitesBlueberry.png",
+            "url": "images/TerraBitesBlueberry.png",
             "name": "Kiva - Terra Bites - Blueberries",
             "type": "edible",
             "per": "each",
@@ -480,7 +480,7 @@ var menu = {
         },
         {
             "id": "5",
-            "url": "../images/KivaBar.png",
+            "url": "images/KivaBar.png",
             "name": "Kiva Bar",
             "type": "edible",
             "per": "each",
@@ -496,7 +496,7 @@ var menu = {
             "description": "No product description available"
         }
     ],
-    "Gear": [
+    "gear": [
         {
             "id": "0",
             "name": "Brass Knuckes - Adjustable Voltage Gold Battery",
@@ -544,6 +544,8 @@ function openProductModal(id, event) {
     var name = $('#product-modal-name');
 
     name.html(item.name);
+
+    $('#product-modal-img').attr("src", item.url);
 
     if (item.description) {
         $('#product-modal-desc').html(item.description);
