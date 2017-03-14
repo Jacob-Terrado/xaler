@@ -9,41 +9,41 @@
 </head>
 <body>
 {{> navbar}}
-
+<div id="first-time-patient">
 <div class="container">
   <div class="row">
-    <div class="col l6 s12">
+    <div class="col l6 m6 s12">
       <h3 class="center title-text" id="FTPH"> FIRST-TIME PATIENT GUIDELINES</h3>
       <ul>
-        <li>1. Explore the menu!</li>
-        <li>2. Contact us to place your order
+        <li><span class="main-step">1. Explore the menu!</span></li>
+        <li><span class="main-step">2. Contact us to place your order</span>
           <ul>
             <li>*Feel free to call/text/email us about any questions or comments. We are here to serve you!</li>
             <li>a. Please text us a picture of your California ID and doctor’s recommendation</li>
             <li>b. In a separate text message - please send us your delivery address.</li>
-            <li>**Alternatively to steps a and b, fill out and submit the form below**</li>
+            <li>**Alternatively to steps a and b, fill out and submit the First-Time Patient Form**</li>
             <li>c. We will confirm our receipt of your messages. If you don't hear from us - please call because technology is not perfect.</li>
             <li>d. We will ask you for your order and help you along the way!</li>
           </ul>
         </li>
-        <li>3. Time for your delivery!<br>We will give you an accurate ETA time and we'll update you along the process at your request.
+        <li><span class="main-step">3. Time for your delivery!</span><br>We will give you an accurate ETA time and we'll update you along the process at your request.
         If you would like to see our products before you donate, let us know! We offer a full presentation or a simple product viewing, the choice is yours!</li>
-        <li>4. Enjoy your cannabis products!<br>*If there are products that you would like that are not on the menu - please help us by texting us to let us know what it is so we can try to carry it in the future!</li>
+        <li><span class="main-step">4. Enjoy your cannabis products!</span><br>*If there are products that you would like that are not on the menu - please help us by texting us to let us know what it is so we can try to carry it in the future!</li>
       </ul>
       <h3 class="center title-text" id="FTPH"> FIRST-TIME PATIENT DEAL</h3>
       <ul>
-        <li>1. FTP will receive a gift box:
+        <li><span class="main-step">1. FTP will receive a gift box:</span>
           <ul>
             <li>a. XALER Hemp Wick</li>
             <li>b. Raw cone (unfilled)</li>
           </ul>
         </li>
-        <li>2. 10% off entire order</li>
-        <li>3. FTP deal cannot be combined with any other deal or credits.</li>
-        <li>4. Minimum donation: $35</li>
+        <li><span class="main-step">2. 10% off entire order</span></li>
+        <li><span class="main-step">3. FTP deal cannot be combined with any other deal or credits.</span></li>
+        <li><span class="main-step">4. Minimum donation: $35</span></li>
       </ul>
     </div>
-    <div class="col l6 s12">
+    <div class="col l6 ml6 s12">
       <h3 class="center title-text" id="FTPH"> FIRST-TIME PATIENT FORM</h3>
       <form id="ftp-form" novalidate="novalidate" onsubmit="console.log(3);">
         <div class="input-field">
@@ -71,29 +71,31 @@
           <input id="email" name="email" type="email" data-error=".emailError">
           <div class="emailError"></div>
         </div>
-        <div class="file-field input-field">
+        <div class="file-field input-field" id="uploadID">
            <div class="btn">
-             <span>UPLOAD IDENTIFICATION</span>
+             <span>UPLOAD IDENTIFICATION*</span>
              <input type="file">
            </div>
            <p>*Only Accepts Passport or Driver’s License</p>
          </div>
-         <div class="file-field input-field">
+         <div class="file-field input-field" id="uploadDoctor">
            <div class="btn">
              <span>UPLOAD DOCTOR'S RECOMMENDATION</span>
              <input type="file">
            </div>
          </div>
-          <button id="ftp-submit-button" class="btn" type="submit" name="action">Submit</button>
+          <button id="ftp-submit-button" class="btn" type="submit" name="action">Submit Form</button>
         </form>
       </div>
   </div>
+</div>
 </div>
 
 {{> email-sub-modal}}
 {{> contactus}}
 {{> footer}}
 {{> scripts}}
+
 
 <script type="text/javascript" src="js/jquery.validate.js"></script>
 <script>
