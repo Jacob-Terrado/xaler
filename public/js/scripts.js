@@ -775,31 +775,31 @@ $(document).ready(function () {
 
     $("#indica-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#indica").offset().top - 150
+            scrollTop: $("#indica").offset().top - 120
         }, 500);
     });
 
     $("#sativa-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#sativa").offset().top - 150
+            scrollTop: $("#sativa").offset().top - 120
         }, 500);
     });
 
     $("#hybrid-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#hybrid").offset().top - 150
+            scrollTop: $("#hybrid").offset().top - 120
         }, 500);
     });
 
     $("#concentrate-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#concentrate").offset().top - 150
+            scrollTop: $("#concentrate").offset().top - 120
         }, 500);
     });
 
     $("#edible-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#edible").offset().top - 150
+            scrollTop: $("#edible").offset().top - 120
         }, 500);
     });
 
