@@ -23,6 +23,17 @@
     <a class="carousel-item" href="#three!"><img src="../images/MilitaryStudent iPhone Version.png"></a>
   </div>
 </div>
+<div id="tabs-anchor"></div>
+
+<div id="xaler-menu-tabs" class="row grey darken-4">
+  <div class="col s12">
+    <ul class="tabs">
+      {{#each menu}}
+        <li class="tab col l2 s3 grey darken-4" style="display: table;"><a class="white-text" href="#" id="{{type}}-label">{{type}}</a></li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
 
 <div class="container" id="indexProduct">
   <h2 class="display-text center" id="menu">Menu</h2>
@@ -34,7 +45,7 @@
         <div class="col l4 m8 s12">
           <div class="card product" onclick="openProductModal({{id}}, event)">
             <div class="card-image">
-              <img class="responsive-img {{type}}" src="images/skywalker-og.jpg" alt="itemImage">
+              <img class="responsive-img {{type}}" src="{{url}}" alt="itemImage">
             </div>
             <div class="card-content item-content">
               <h5 class="product-names-text {{type}}">{{name}}</h5>
@@ -63,7 +74,6 @@
 {{> product-modal}}
 {{> cart-modal}}
 {{> email-sub-modal}}
-{{> delivery-area-modal}}
 {{> contactus}}
 {{> contact-us-modal}}
 {{> footer}}

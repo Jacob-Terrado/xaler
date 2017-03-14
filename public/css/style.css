@@ -1,3 +1,6 @@
+#test{
+  padding: 100px 0;
+}
 /* Navigation Bar */
 nav {
     padding-left: 15px;
@@ -240,18 +243,6 @@ footer a{
     border: 0 !important;
 }
 
-/* Delivery Area Modal*/
-#delivery-area-modal {
-    transform: translateY(-50%) !important;
-}
-
-.delivery-area-image {
-    position: absolute !important;
-    width: 100% !important;;
-    height: 300px;
-    bottom: 0 !important;;
-}
-
 .column {
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   -moz-column-count: 2; /* Firefox */
@@ -261,7 +252,7 @@ footer a{
 
 /* Product Modal */
 #product-modal img {
-    width: 50%;
+    width: 100%;
     height: 80%;
 }
 
@@ -460,14 +451,6 @@ footer a{
         border: 2px solid #000000 !important;
     }
 
-    #delivery-area-modal {
-        width: 375px !important;
-        height: 60% !important;
-        max-height: 100% !important;
-        overflow-y: hidden !important;
-        overflow-x: hidden !important;
-    }
-
     #email-sub-modal {
         width: 375px !important;
         height: 275px !important;
@@ -476,24 +459,26 @@ footer a{
         overflow-x: hidden !important;
     }
 
-    #delivery-area-modal img {
-        width: 400px !important;
-        max-width: 95% !important;
+    #delivery_img {
+      max-height: 100%;
+      max-width: 100%;
     }
 }
 
 @media (min-width: 701px) {
-    #delivery-area-modal {
-        width: 500px !important;
-        height: 500px !important;
+    #delivery_img {
+      max-height: 80%;
+      max-width: 80%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    #email-sub-modal {
+        width: 375px !important;
+        height: 300px !important;
         max-height: 100% !important;
         overflow-y: hidden !important;
         overflow-x: hidden !important;
-    }
-
-    #delivery-area-modal img {
-        width: 500px !important;
-        max-width: 95% !important;
     }
 }
 
@@ -515,4 +500,28 @@ footer a{
         font-size: 12pt;
     }
 
+}
+
+/* Menu Tab */
+#xaler-menu-tabs {
+    width: 100% !important;
+    z-index: 99 !important;
+    overflow-x: hidden;
+}
+
+.tab >  {
+    text-overflow: clip;
+    overflow-x: visible !important;
+}
+
+@media (min-width: 300px) {
+    .xaler-menu-top {
+        top: 56px !important;
+    }
+}
+
+@media (min-width: 700px) {
+    .xaler-menu-top {
+        top: 64px !important;
+    }
 }
