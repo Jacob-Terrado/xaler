@@ -512,3 +512,27 @@ footer {
     }
 
 }
+
+/* Menu Tab */
+#xaler-menu-tabs {
+    width: 100% !important;
+    z-index: 99 !important;
+    overflow-x: hidden;
+}
+
+.tab >  {
+    text-overflow: clip;
+    overflow-x: visible !important;
+}
+
+@media (min-width: 300px) {
+    .xaler-menu-top {
+        top: 56px !important;
+    }
+}
+
+@media (min-width: 700px) {
+    .xaler-menu-top {
+        top: 64px !important;
+    }
+}

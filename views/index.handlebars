@@ -23,6 +23,17 @@
     <a class="carousel-item" href="#three!"><img src="../images/MilitaryStudent iPhone Version.png"></a>
   </div>
 </div>
+<div id="tabs-anchor"></div>
+
+<div id="xaler-menu-tabs" class="row grey darken-4">
+  <div class="col s12">
+    <ul class="tabs">
+      {{#each menu}}
+        <li class="tab col l2 s3 grey darken-4"><a class="white-text" href="#" id="{{type}}-label">{{type}}</a></li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
 
 <div class="container" id="indexProduct">
   <h2 class="display-text center" id="menu">Menu</h2>
