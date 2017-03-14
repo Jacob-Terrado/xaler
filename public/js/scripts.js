@@ -775,37 +775,37 @@ $(document).ready(function () {
 
     $("#indica-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#indica").offset().top - 200
+            scrollTop: $("#indica").offset().top - 180
         }, 500);
     });
 
     $("#sativa-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#sativa").offset().top - 200
+            scrollTop: $("#sativa").offset().top - 180
         }, 500);
     });
 
     $("#hybrid-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#hybrid").offset().top - 200
+            scrollTop: $("#hybrid").offset().top - 180
         }, 500);
     });
 
     $("#concentrate-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#concentrate").offset().top - 200
+            scrollTop: $("#concentrate").offset().top - 180
         }, 500);
     });
 
     $("#edible-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#edible").offset().top - 200
+            scrollTop: $("#edible").offset().top - 180
         }, 500);
     });
 
     $("#gear-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#gear").offset().top - 200
+            scrollTop: $("#gear").offset().top - 180
         }, 500);
     });
 
