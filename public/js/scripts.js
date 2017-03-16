@@ -749,6 +749,13 @@ $(document).ready(function () {
         outDuration: 200,
         endingTop: '50%'
     });
+  
+    $('#delivery-area-modal').modal({
+        dismissible: true,
+        inDuration: 300,
+        outDuration: 200,
+        endingTop: '20%'
+    });
 
     $("#xaler-nav").click(function () {
         $('html, body').animate({
