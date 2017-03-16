@@ -3,8 +3,8 @@ var menu = {
     "indica": [
         {
             "id": "0",
-            "url": "images/PlatinumGirlScoutCookies.png",
-            "name": "Mulholland OG",
+            "url": "images/WhiteFireOG.jpg",
+            "name": "White Fire OG",
             "type": "indica",
             "eighth": "1/8 oz",
             "fourth": "1/4 oz",
@@ -531,6 +531,7 @@ function home() {
 
 /* Opens Product Modal */
 function openProductModal(id, event) {
+
     var classNames = event.target.className.split(" ");
     var type;
 
@@ -542,6 +543,8 @@ function openProductModal(id, event) {
 
     var item = menu[type][id];
     var name = $('#product-modal-name');
+    // name.css('cursor', 'pointer');
+
 
     name.html(item.name);
 
@@ -733,13 +736,6 @@ $(document).ready(function () {
         endingTop: '50%'
     });
 
-    $('#student-discount-modal').modal({
-        dismissible: true,
-        inDuration: 300,
-        outDuration: 200,
-        endingTop: '50%'
-    });
-
     $('#ftp-discount-modal').modal({
         dismissible: true,
         inDuration: 300,
@@ -747,14 +743,7 @@ $(document).ready(function () {
         endingTop: '50%'
     });
 
-    $('#military-discount-modal').modal({
-        dismissible: true,
-        inDuration: 300,
-        outDuration: 200,
-        endingTop: '50%'
-    });
-
-    $('#referral-discount-modal').modal({
+    $('#thankyou-modal').modal({
         dismissible: true,
         inDuration: 300,
         outDuration: 200,
