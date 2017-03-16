@@ -427,11 +427,6 @@ footer a{
     box-shadow: 0 0 0 0 !important;
 }
 
-#service {
-  font: 'Open Sans';
-  font-size: 14px;
-}
-
 /* Contact Us Modal */
 #contact-us-modal {
     transform: translateY(-50%) !important;
@@ -476,6 +471,10 @@ footer a{
   padding: 20px 0px 50px;
 }
 
+#service {
+  font: 'Open Sans';
+  font-size: 14px;
+}
 
 /* Mobile */
 @media (max-width: 700px) {
@@ -511,14 +510,14 @@ footer a{
         overflow-x: hidden !important;
     }
 
-    #delivery_img {
+    #delivery-img {
       max-height: 100%;
       max-width: 100%;
     }
 }
 
 @media (min-width: 701px) {
-    #delivery_img {
+    #delivery-img {
       max-height: 80%;
       max-width: 80%;
       display: block;
