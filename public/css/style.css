@@ -57,31 +57,68 @@ footer {
     margin-top: 0 !important;
 }
 
+.footer-header-text {
+    font-family: 'Nunito', sans-serif !important;;
+    font-style: normal !important;
+    font-weight: 200;
+    font-size: 18pt !important;
+}
+
+footer a{
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  color: #FFFFFF;
+}
+
 /* FTP */
+#first-time-patient{
+  padding: 20px 0px 50px;
+}
+
+#first-time-patient .main-step{
+  color: #0076BD;
+  font-size: 12pt;
+}
+
+#first-time-patient ul{
+  line-height: 25px;
+}
+
+#first-time-patient form input:focus{
+  border-bottom: 1px solid #0076BD !important;
+  box-shadow: 0 1px 0 0 #0076BD !important;
+}
+
+#first-time-patient .btn{
+  background-color: #0076BD;
+}
+
 #FTPH {
   font: 'Nunito';
   font-size: 18px;
   font-weight: 200;
   font-style: normal !important;
 }
-
-#FTPSub {
-  font: 'Open Sans';
+#uploadID .btn{
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
   font-size: 14px;
 }
-
-#FTPBut {
+#uploadDoctor .btn{
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
   font-size: 14px;
 }
-
 #ftp-submit-button {
-    width: 300px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
     text-align: center;
     vertical-align: middle;
     font-size: 14px;
+    background-color: #000000 !important;
 }
 
 /* Carousel */
@@ -239,18 +276,6 @@ footer {
     border: 0 !important;
 }
 
-/* Delivery Area Modal*/
-#delivery-area-modal {
-    transform: translateY(-50%) !important;
-}
-
-.delivery-area-image {
-    position: absolute !important;
-    width: 100% !important;;
-    height: 200px;
-    bottom: 0 !important;;
-}
-
 .column {
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   -moz-column-count: 2; /* Firefox */
@@ -260,7 +285,7 @@ footer {
 
 /* Product Modal */
 #product-modal img {
-    width: 50%;
+    width: 100%;
     height: 80%;
 }
 
@@ -315,6 +340,10 @@ footer {
     color: #000000 !important;
 }
 
+#product-modal-desc{
+  font-size: 12pt !important;
+  text-transform: none !important;
+}
 /* Menu Style */
 .strains-text {
     font-family: 'Open Sans', sans-serif !important;;
@@ -459,14 +488,6 @@ footer {
         border: 2px solid #000000 !important;
     }
 
-    #delivery-area-modal {
-        width: 375px !important;
-        height: 60% !important;
-        max-height: 100% !important;
-        overflow-y: hidden !important;
-        overflow-x: hidden !important;
-    }
-
     #email-sub-modal {
         width: 375px !important;
         height: 275px !important;
@@ -475,11 +496,6 @@ footer {
         overflow-x: hidden !important;
     }
 
-    #delivery-area-modal img {
-        width: 400px !important;
-        max-width: 95% !important;
-    }
-  
     #delivery_img {
       max-height: 100%;
       max-width: 100%;
@@ -487,35 +503,30 @@ footer {
 }
 
 @media (min-width: 701px) {
-    #delivery-area-modal {
-        width: 500px !important;
-        height: 500px !important;
-        max-height: 100% !important;
-        overflow-y: hidden !important;
-        overflow-x: hidden !important;
-    }
-
-    #delivery-area-modal img {
-        width: 500px !important;
-        max-width: 95% !important;
-    }
-  
     #delivery_img {
       max-height: 80%;
       max-width: 80%;
       display: block;
       margin: 0 auto;
     }
+
+    #email-sub-modal {
+        width: 375px !important;
+        height: 300px !important;
+        max-height: 100% !important;
+        overflow-y: hidden !important;
+        overflow-x: hidden !important;
+    }
 }
 
 @media (min-width: 300px) {
     .add-cart-btn {
         width: 100%;
-        font-size: 7.5pt;
+        font-size: 12pt;
     }
 
     .measurements {
-        font-size: 9pt;
+        font-size: 12pt;
     }
 
     .product-names-text {
@@ -523,7 +534,31 @@ footer {
     }
 
     #per {
-        font-size: 7.5pt;
+        font-size: 12pt;
     }
 
+}
+
+/* Menu Tab */
+#xaler-menu-tabs {
+    width: 100% !important;
+    z-index: 99 !important;
+    overflow-x: hidden;
+}
+
+.tab >  {
+    text-overflow: clip;
+    overflow-x: visible !important;
+}
+
+@media (min-width: 300px) {
+    .xaler-menu-top {
+        top: 56px !important;
+    }
+}
+
+@media (min-width: 700px) {
+    .xaler-menu-top {
+        top: 64px !important;
+    }
 }

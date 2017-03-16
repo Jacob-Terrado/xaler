@@ -6,7 +6,8 @@
       "item": [
         {
           "id": "0",
-          "name": "Mulholland OG",
+          "url": "../images/WhiteFireOG.jpg",
+          "name": "White Fire OG",
           "type": "indica",
           "eighth": "1/8 oz",
           "fourth": "1/4 oz",
@@ -15,53 +16,11 @@
           "eighthprice": "$55",
           "fourthprice": "$110",
           "halfprice": "- - -",
-          "ozprice": "- - -",
-          "description": "hella dank"
+          "ozprice": "- - -"
         },
         {
           "id": "1",
-          "name": "Girl Scout Cookies",
-          "type": "indica",
-          "eighth": "1/8 oz",
-          "fourth": "1/4 oz",
-          "half": "1/2 oz",
-          "oz": "1 oz",
-          "eighthprice": "$45",
-          "fourthprice": "$90",
-          "halfprice": "- - -",
-          "ozprice": "- - -",
-          "description": "hella dank"
-        },
-        {
-          "id": "2",
-          "name": "White Walker",
-          "type": "indica",
-          "eighth": "1/8 oz",
-          "fourth": "1/4 oz",
-          "half": "1/2 oz",
-          "oz": "1 oz",
-          "eighthprice": "$40",
-          "fourthprice": "$80",
-          "halfprice": "- - -",
-          "ozprice": "- - -",
-          "description": "hella dank"
-        },
-        {
-          "id": "3",
-          "name": "Sunset Sherbet",
-          "type": "indica",
-          "eighth": "1/8 oz",
-          "fourth": "1/4 oz",
-          "half": "1/2 oz",
-          "oz": "1 oz",
-          "eighthprice": "$35",
-          "fourthprice": "$65",
-          "halfprice": "$120",
-          "ozprice": "$200",
-          "description": "hella dank"
-        },
-        {
-          "id": "4",
+          "url": "../images/KushcoOG.png",
           "name": "KushCo OG",
           "type": "indica",
           "eighth": "1/8 oz",
@@ -71,38 +30,11 @@
           "eighthprice": "$55",
           "fourthprice": "$110",
           "halfprice": "- - -",
-          "ozprice": "- - -",
-          "description": "hella dank"
-        },
-        {
-          "id": "5",
-          "name": "Skywalker OG",
-          "type": "indica",
-          "eighth": "1/8 oz",
-          "fourth": "1/4 oz",
-          "half": "1/2 oz",
-          "oz": "1 oz",
-          "eighthprice": "$45",
-          "fourthprice": "$90",
-          "halfprice": "- - -",
-          "ozprice": "- - -",
-          "description": "hella dank"
-        },
-        {
-          "id": "6",
-          "name": "Holy Grail OG",
-          "type": "indica",
-          "eighth": "1/8 oz",
-          "fourth": "1/4 oz",
-          "half": "1/2 oz",
-          "oz": "1 oz",
-          "eighthprice": "$40",
-          "fourthprice": "$80",
-          "halfprice": "- - -",
           "ozprice": "- - -"
         },
         {
-          "id": "7",
+          "id": "2",
+          "url": "../images/PureOG.png",
           "name": "Pure OG",
           "type": "indica",
           "eighth": "1/8 oz",
@@ -113,6 +45,20 @@
           "fourthprice": "$65",
           "halfprice": "$120",
           "ozprice": "$200"
+        },
+        {
+          "id": "3",
+          "url": "../images/SkywalkerOG.png",
+          "name": "Skywalker OG",
+          "type": "indica",
+          "eighth": "1/8 oz",
+          "fourth": "1/4 oz",
+          "half": "1/2 oz",
+          "oz": "1 oz",
+          "eighthprice": "$45",
+          "fourthprice": "$90",
+          "halfprice": "- - -",
+          "ozprice": "- - -"
         }
       ]
     },
@@ -122,6 +68,7 @@
       "item": [
         {
           "id": "0",
+          "url": "../images/PineappleExpress.png",
           "name": "Pineapple Express",
           "type": "sativa",
           "eighth": "1/8 oz",
@@ -135,6 +82,7 @@
         },
         {
           "id": "1",
+          "url": "../images/BabyBlue.png",
           "name": "Baby Blue",
           "type": "sativa",
           "eighth": "1/8 oz",
@@ -148,6 +96,7 @@
         },
         {
           "id": "2",
+          "url": "../images/BananaSplit.png",
           "name": "Banana Split",
           "type": "sativa",
           "eighth": "1/8 oz",
@@ -161,6 +110,7 @@
         },
         {
           "id": "3",
+          "url": "../images/StrawberryBanana.png",
           "name": "Strawberry Banana",
           "type": "sativa",
           "eighth": "1/8 oz",
@@ -174,6 +124,7 @@
         },
         {
           "id": "4",
+          "url": "../images/SupremeBlueDream.png",
           "name": "Supreme Blue Dream",
           "type": "sativa",
           "eighth": "1/8 oz",
@@ -193,6 +144,7 @@
       "item": [
         {
           "id": "0",
+          "url": "../images/ThinMint.png",
           "name": "Thin Mint",
           "type": "hybrid",
           "eighth": "1/8 oz",
@@ -206,7 +158,8 @@
         },
         {
           "id": "1",
-          "name": "Forum Cookies",
+          "url": "../images/SunsetSherbet.png",
+          "name": "Sunset Sherbet",
           "type": "hybrid",
           "eighth": "1/8 oz",
           "fourth": "1/4 oz",
@@ -219,6 +172,7 @@
         },
         {
           "id": "2",
+          "url": "../images/PurpleKryptonite.png",
           "name": "Purple Kryptonite",
           "type": "hybrid",
           "eighth": "1/8 oz",
@@ -238,6 +192,7 @@
       "item": [
         {
           "id": "0",
+          "url": "../images/shatter.png",
           "name": "Nug Run - White Walker (Shatter)",
           "type": "concentrate",
           "half": "0.5 g",
@@ -249,6 +204,7 @@
         },
         {
           "id": "1",
+          "url": "../images/shatter.png",
           "name": "Skywalker OG Shatter",
           "type": "concentrate",
           "half": "0.5 g",
@@ -260,6 +216,7 @@
         },
         {
           "id": "2",
+          "url": "../images/shatter.png",
           "name": "Green Crack Shatter",
           "type": "concentrate",
           "half": "0.5 g",
@@ -304,6 +261,7 @@
         },
         {
           "id": "6",
+          "url": "../images/shatter.png",
           "name": "Blue Dream Shatter",
           "type": "concentrate",
           "half": "0.5 g",
@@ -464,6 +422,7 @@
       "item": [
         {
           "id": "0",
+          "url": "../images/KivaBar.png",
           "name": "Kiva - Ginger Dark Chocolate",
           "type": "edible",
           "per": "each",
@@ -471,6 +430,7 @@
         },
         {
           "id": "1",
+          "url": "../images/KivaBar.png",
           "name": "Kiva Bar - 4 Flavors",
           "type": "edible",
           "per": "each",
@@ -478,6 +438,7 @@
         },
         {
           "id": "2",
+          "url": "../images/KivaBar.png",
           "name": "Kiva - Expresso Dark Chocolate",
           "type": "edible",
           "per": "each",
@@ -485,6 +446,7 @@
         },
         {
           "id": "3",
+          "url": "../images/TerraBitesEspresso.png",
           "name": "Kiva - Terra Bites - Expresso Beans",
           "type": "edible",
           "per": "each",
@@ -492,6 +454,7 @@
         },
         {
           "id": "4",
+          "url": "../images/TerraBitesBlueberry.png",
           "name": "Kiva - Terra Bites - Blueberries",
           "type": "edible",
           "per": "each",
@@ -499,6 +462,7 @@
         },
         {
           "id": "5",
+          "url": "../images/KivaBar.png",
           "name": "Kiva Bar",
           "type": "edible",
           "per": "each",
@@ -519,21 +483,21 @@
       "item": [
         {
           "id": "0",
-          "name": "Brass Knuckes - Adjustable Voltage Gold Battery",
+          "name": "Brass Knuckles - Adjustable Voltage Gold Battery",
           "type": "gear",
           "per": "each",
           "price": "$30"
         },
         {
           "id": "1",
-          "name": "Brass Knuckes - Gold Vape Battery",
+          "name": "Brass Knuckles - Gold Vape Battery",
           "type": "gear",
           "per": "each",
           "price": "$25"
         },
         {
           "id": "2",
-          "name": "Brass Knuckes - Woodgrain Battery",
+          "name": "Brass Knuckles - Woodgrain Battery",
           "type": "gear",
           "per": "each",
           "price": "$25"
