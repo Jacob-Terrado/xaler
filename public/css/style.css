@@ -276,13 +276,6 @@ footer a{
     border: 0 !important;
 }
 
-.column {
-  -webkit-column-count: 2; /* Chrome, Safari, Opera */
-  -moz-column-count: 2; /* Firefox */
-  column-count: 2;
-  text-align: center;
-}
-
 /* Product Modal */
 #product-modal img {
     width: 100%;
@@ -434,6 +427,10 @@ footer a{
     box-shadow: 0 0 0 0 !important;
 }
 
+#service {
+  font: 'Open Sans';
+  font-size: 14px;
+}
 
 /* Contact Us Modal */
 #contact-us-modal {
