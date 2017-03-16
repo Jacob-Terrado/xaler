@@ -435,19 +435,31 @@ footer a{
 /* Contact Us Modal */
 #contact-us-modal {
     transform: translateY(-50%) !important;
+    height: 61%;
 }
 
-#contact-us-modal #call-btn{
+#contact-us-modal p{
+  color: #9e9e9e;
+}
+
+#contact-us-modal .modal-content{
+  overflow: hidden;
+}
+
+#contact-us-modal #contact-us-title{
   text-align: center;
-  float: none !important;
-  display: block;
-  margin: auto;
-  line-height: 50px;
-
 }
 
-#contact-us-modal .modal-footer{
-  background: gray;
+#contact-us-modal .contact-us-subtitle{
+  color: #0076BD;
+  text-align:center;
+  margin: 0;
+}
+
+#contact-us-modal .contact-us-info{
+  text-align:center;
+  margin: 0 !important;
+  padding-bottom: 10px !important;
 }
 
 .xaler-blue {
