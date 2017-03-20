@@ -2,7 +2,7 @@
   "menu": [
     {
       "type": "indica",
-      "description": "Some description",
+      "description": "Indicas alleviate stress and are perfect for tranquil evenings.",
       "item": [
         {
           "id": "0",
@@ -66,7 +66,7 @@
     },
     {
       "type": "sativa",
-      "description": "Some description",
+      "description": "Sativas energize the mind and are excellent for daytime activities.",
       "item": [
         {
           "id": "0",
@@ -142,7 +142,7 @@
     },
     {
       "type": "hybrid",
-      "description": "Some description",
+      "description": "Hybrids provide the best of both sativas and indicas.",
       "item": [
         {
           "id": "0",
@@ -190,7 +190,7 @@
     },
     {
       "type": "concentrate",
-      "description": "Some description",
+      "description": "Concentrates are highly potent and produces a more elevated experience.",
       "item": [
         {
           "id": "0",
@@ -437,7 +437,7 @@
     },
     {
       "type": "edible",
-      "description": "Some description",
+      "description": "Edibles are consumables infused with marijuana oils.",
       "item": [
         {
           "id": "0",
@@ -499,7 +499,7 @@
     },
     {
       "type": "accessories",
-      "description": "Some description",
+      "description": "Accessories are gears that can enhance your smoking experience.",
       "item": [
         {
           "id": "0",
