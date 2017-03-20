@@ -576,6 +576,7 @@ footer a{
 /* Menu Tab */
 #xaler-menu-tabs {
     width: 100% !important;
+    padding: 0 !important;
     z-index: 99 !important;
     overflow-x: hidden;
 }
