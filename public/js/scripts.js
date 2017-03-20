@@ -499,11 +499,11 @@ var menu = {
             "description": "No product description available"
         }
     ],
-    "gear": [
+    "accessories": [
         {
             "id": "0",
             "name": "Brass Knuckes - Adjustable Voltage Gold Battery",
-            "type": "gear",
+            "type": "accessories",
             "per": "each",
             "price": "$30",
             "description": "No product description available"
@@ -511,7 +511,7 @@ var menu = {
         {
             "id": "1",
             "name": "Brass Knuckes - Gold Vape Battery",
-            "type": "gear",
+            "type": "accessories",
             "per": "each",
             "price": "$25",
             "description": "No product description available"
@@ -519,7 +519,7 @@ var menu = {
         {
             "id": "2",
             "name": "Brass Knuckes - Woodgrain Battery",
-            "type": "gear",
+            "type": "accessories",
             "per": "each",
             "price": "$25",
             "description": "No product description available"
@@ -678,9 +678,6 @@ function stickyMenuBar() {
     var divTop = $('#tabs-anchor').offset().top;
     var tabs = $('#xaler-menu-tabs');
 
-    // console.log("windowTop = " + windowTop);
-    // console.log("divTop = " + divTop);
-
     if (windowTop > divTop) {
         tabs.addClass('sticky');
         tabs.addClass('xaler-menu-top');
@@ -689,6 +686,36 @@ function stickyMenuBar() {
         tabs.addClass('not-sticky');
         tabs.removeClass('xaler-menu-top');
         tabs.removeClass('sticky');
+    }
+}
+
+function activeMenuTab() {
+    var windowTop = $(window).scrollTop();
+    var indicaTop = $('#indica').offset().top;
+    var sativaTop = $('#sativa').offset().top;
+    var hybridTop = $('#hybrid').offset().top;
+    var concentrateTop = $('#concentrate').offset().top;
+    var accessoriesTop = $('#accessories').offset().top;
+
+    if (windowTop < sativaTop) {
+        // console.log('ind');
+        $('ul.tabs').tabs('select_tab', 'indica-label');
+        $('#indica-label').addClass("active");
+        $('#sativa-label').removeClass("active");
+    } else if (windowTop < hybridTop && windowTop > sativaTop) {
+        console.log('sat');
+        $('#sativa-label').addClass("active");
+        $('#indica-label').removeClass("active");
+        // $('ul.tabs').tabs('select_tab', 'sativa-label');
+    } else if (windowTop < concentrateTop && windowTop > accessoriesTop) {
+        console.log('hybr');
+        // $('ul.tabs').tabs('select_tab', 'hybrid-label');
+    } else if (windowTop < accessoriesTop) {
+        console.log('con');
+        // $('ul.tabs').tabs('select_tab', 'concentrate-label');
+    } else {
+        console.log('acc');
+        // $('ul.tabs').tabs('select_tab', 'accessories-label');
     }
 }
 
@@ -760,51 +787,57 @@ $(document).ready(function () {
         endingTop: '20%'
     });
 
-    $("#xaler-nav").click(function () {
+    $("#deals-side-nav").click(function () {
         $('html, body').animate({
-            scrollTop: $("#xaler-grown").offset().top - 40
+            scrollTop: $("#deals").offset().top - 60
+        }, 500);
+    });
+
+    $("#deals-nav").click(function () {
+        $('html, body').animate({
+            scrollTop: $("#deals").offset().top - 60
         }, 500);
     });
 
     $("#menu-nav").click(function () {
         $('html, body').animate({
-            scrollTop: $("#menu").offset().top - 40
+            scrollTop: $("#menu").offset().top - 300
         }, 500);
     });
 
     $("#indica-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#indica").offset().top - 165
+            scrollTop: $("#indica").offset().top - 130
         }, 500);
     });
 
     $("#sativa-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#sativa").offset().top - 165
+            scrollTop: $("#sativa").offset().top - 160
         }, 500);
     });
 
     $("#hybrid-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#hybrid").offset().top - 165
+            scrollTop: $("#hybrid").offset().top - 160
         }, 500);
     });
 
     $("#concentrate-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#concentrate").offset().top - 165
+            scrollTop: $("#concentrate").offset().top - 160
         }, 500);
     });
 
     $("#edible-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#edible").offset().top - 165
+            scrollTop: $("#edible").offset().top - 160
         }, 500);
     });
 
-    $("#gear-label").click(function () {
+    $("#accessories-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#gear").offset().top - 150
+            scrollTop: $("#accessories").offset().top - 160
         }, 500);
     });
 
@@ -822,11 +855,12 @@ $(document).ready(function () {
 
     // Contact Us Stickied
     $(window).scroll(stickyContactUs);
-    stickyContactUs();
 
     // Menu Tab Stickied
     $(window).scroll(stickyMenuBar);
-    stickyMenuBar();
+
+    // Menu Tab Active
+    $(window).scroll(activeMenuTab);
 
     $('.item-quantity').click(function(e) {
         e.stopPropagation();
