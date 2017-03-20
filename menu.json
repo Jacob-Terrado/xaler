@@ -478,27 +478,27 @@
       ]
     },
     {
-      "type": "gear",
+      "type": "accessories",
       "description": "Some description",
       "item": [
         {
           "id": "0",
           "name": "Brass Knuckles - Adjustable Voltage Gold Battery",
-          "type": "gear",
+          "type": "accessories",
           "per": "each",
           "price": "$30"
         },
         {
           "id": "1",
           "name": "Brass Knuckles - Gold Vape Battery",
-          "type": "gear",
+          "type": "accessories",
           "per": "each",
           "price": "$25"
         },
         {
           "id": "2",
           "name": "Brass Knuckles - Woodgrain Battery",
-          "type": "gear",
+          "type": "accessories",
           "per": "each",
           "price": "$25"
         }
