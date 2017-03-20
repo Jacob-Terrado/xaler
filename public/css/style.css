@@ -54,31 +54,68 @@ footer {
     margin-top: 0 !important;
 }
 
+.footer-header-text {
+    font-family: 'Nunito', sans-serif !important;;
+    font-style: normal !important;
+    font-weight: 200;
+    font-size: 18pt !important;
+}
+
+footer a{
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  color: #FFFFFF;
+}
+
 /* FTP */
+#first-time-patient{
+  padding: 20px 0px 50px;
+}
+
+#first-time-patient .main-step{
+  color: #0076BD;
+  font-size: 12pt;
+}
+
+#first-time-patient ul{
+  line-height: 25px;
+}
+
+#first-time-patient form input:focus{
+  border-bottom: 1px solid #0076BD !important;
+  box-shadow: 0 1px 0 0 #0076BD !important;
+}
+
+#first-time-patient .btn{
+  background-color: #0076BD;
+}
+
 #FTPH {
   font: 'Nunito';
   font-size: 18px;
   font-weight: 200;
   font-style: normal !important;
 }
-
-#FTPSub {
-  font: 'Open Sans';
+#uploadID .btn{
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
   font-size: 14px;
 }
-
-#FTPBut {
+#uploadDoctor .btn{
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
   font-size: 14px;
 }
-
 #ftp-submit-button {
-    width: 300px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
     text-align: center;
     vertical-align: middle;
     font-size: 14px;
+    background-color: #000000 !important;
 }
 
 /* Carousel */
@@ -243,13 +280,6 @@ footer {
     border: 0 !important;
 }
 
-.column {
-  -webkit-column-count: 2; /* Chrome, Safari, Opera */
-  -moz-column-count: 2; /* Firefox */
-  column-count: 2;
-  text-align: center;
-}
-
 /* Product Modal */
 #product-modal img {
     width: 100%;
@@ -307,6 +337,10 @@ footer {
     color: #000000 !important;
 }
 
+#product-modal-desc{
+  font-size: 12pt !important;
+  text-transform: none !important;
+}
 /* Menu Style */
 .strains-text {
     font-family: 'Open Sans', sans-serif !important;;
@@ -397,23 +431,34 @@ footer {
     box-shadow: 0 0 0 0 !important;
 }
 
-
 /* Contact Us Modal */
 #contact-us-modal {
     transform: translateY(-50%) !important;
+    height: 61%;
 }
 
-#contact-us-modal #call-btn{
+#contact-us-modal p{
+  color: #9e9e9e;
+}
+
+#contact-us-modal .modal-content{
+  overflow: hidden;
+}
+
+#contact-us-modal #contact-us-title{
   text-align: center;
-  float: none !important;
-  display: block;
-  margin: auto;
-  line-height: 50px;
-
 }
 
-#contact-us-modal .modal-footer{
-  background: gray;
+#contact-us-modal .contact-us-subtitle{
+  color: #0076BD;
+  text-align:center;
+  margin: 0;
+}
+
+#contact-us-modal .contact-us-info{
+  text-align:center;
+  margin: 0 !important;
+  padding-bottom: 10px !important;
 }
 
 .xaler-blue {
@@ -423,6 +468,16 @@ footer {
 .tabs .indicator {
     background-color: #0076BD !important;
     height: 8px;
+}
+
+/* Service Page*/
+#service-page{
+  padding: 20px 0px 50px;
+}
+
+#service {
+  font: 'Open Sans';
+  font-size: 14px;
 }
 
 /* Mobile */
@@ -459,14 +514,14 @@ footer {
         overflow-x: hidden !important;
     }
 
-    #delivery_img {
+    #delivery-img {
       max-height: 100%;
       max-width: 100%;
     }
 }
 
 @media (min-width: 701px) {
-    #delivery_img {
+    #delivery-img {
       max-height: 80%;
       max-width: 80%;
       display: block;
@@ -485,11 +540,11 @@ footer {
 @media (min-width: 300px) {
     .add-cart-btn {
         width: 100%;
-        font-size: 7.5pt;
+        font-size: 12pt;
     }
 
     .measurements {
-        font-size: 9pt;
+        font-size: 12pt;
     }
 
     .product-names-text {
@@ -497,7 +552,7 @@ footer {
     }
 
     #per {
-        font-size: 7.5pt;
+        font-size: 12pt;
     }
 
 }
