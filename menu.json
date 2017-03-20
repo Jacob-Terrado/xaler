@@ -30,7 +30,8 @@
           "eighthprice": "$55",
           "fourthprice": "$110",
           "halfprice": "- - -",
-          "ozprice": "- - -"
+          "ozprice": "- - -",
+          "thc": "19-26%"
         },
         {
           "id": "2",
@@ -58,7 +59,8 @@
           "eighthprice": "$45",
           "fourthprice": "$90",
           "halfprice": "- - -",
-          "ozprice": "- - -"
+          "ozprice": "- - -",
+          "thc": "18-30%"
         }
       ]
     },
@@ -246,7 +248,8 @@
           "two": "2 g",
           "halfprice": "$25",
           "oneprice": "$40",
-          "twoprice": "- - -"
+          "twoprice": "- - -",
+          "thc": "17-28%"
         },
         {
           "id": "5",

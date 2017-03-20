@@ -29,6 +29,7 @@ var menu = {
             "fourthprice": "$110",
             "halfprice": "- - -",
             "ozprice": "- - -",
+            "thc": "19-26%",
             "description": "OG Kush is cherished for its ability to crush stress under the weight of its heavy euphoria. It carries an earthy pine and sour lemon scent with woody undertones, an aroma that has become the signature of OG Kush varieties and descendants. With OG Kush, patients most commonly cite improvements in migraines, ADD/ADHD, and stress disorders. (Source: Leafly.com)"
         },
         {
@@ -59,6 +60,7 @@ var menu = {
             "fourthprice": "$90",
             "halfprice": "- - -",
             "ozprice": "- - -",
+            "thc": "18-30", 
             "description": "Skywalker OG is a potent indica-dominant hybrid strain that may just take you to a galaxy far, far away. No Sith genetics here—this plant is a cross between Skywalker and OG Kush and has the strong aroma characteristic to kush strains that includes a spicy herbal scent tinged with jet fuel. This strain makes relaxation your only mission, and some users report strong body effects that include mild tingling and numbness. If pain and physical limitations are the issue, Skywalker OG is here to rescue you. The galaxy also holds a sativa dominant variety of Skywalker that is also often referred to as Skywalker OG or Sativa OG. (Source: Leafly.com)"
         }
     ],
@@ -153,6 +155,7 @@ var menu = {
             "fourthprice": "$80",
             "halfprice": "$140",
             "ozprice": "- - -",
+            "thc": "17-28%",
             "description": "Thin Mint, a hybrid cross containing Durban Poison and OG Kush genetics, is a phenotype of the legendary Girl Scout Cookies strain. Dark green and royal purple hues peek through a heavy coat of crystals, with a sweet minty smell that gives a full explanation of this strain’s name. Thin Mint calls upon the powers of its indica, sativa, and hybrid ancestors for a powerful full-body effect that gives this strain its sterling reputation. The high psychoactivity of this strain is not for novice consumers, but patients with a variety of symptoms are giving Thin Mint their seal of approval: severe pain, nausea, swelling, insomnia, and appetite loss are no match for the potency of Thin Mint. (Source: Leafly.com)"
         },
         {
