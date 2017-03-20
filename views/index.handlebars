@@ -35,12 +35,12 @@
   </div>
 </div>
 
+<div class="center" id="menu"></div>
 <div class="container" id="indexProduct">
-  <h2 class="display-text center" id="menu">Menu</h2>
   {{#each menu}}
     <div class="row">
-      <h3 id="{{type}}" class="menu-header-text center">{{type}}</h3>
-      <h4 class="sub-header-text center">{{description}}</h4>
+      <h3 id="{{type}}" class="display-text center">{{type}}</h3>
+      <h4 class="menu-header-text center">{{description}}</h4>
       {{#each item}}
         <div class="col l4 m8 s12">
           <div class="card product" onclick="openProductModal({{id}}, event)">

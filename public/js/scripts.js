@@ -698,7 +698,7 @@ function activeMenuTab() {
     var accessoriesTop = $('#accessories').offset().top;
 
     if (windowTop < sativaTop) {
-        console.log('ind');
+        // console.log('ind');
         $('ul.tabs').tabs('select_tab', 'indica-label');
         $('#indica-label').addClass("active");
         $('#sativa-label').removeClass("active");
