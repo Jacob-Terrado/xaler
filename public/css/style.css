@@ -90,6 +90,16 @@ footer a{
   background-color: #0076BD;
 }
 
+#form-content{
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+#ftp-form{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 #FTPH {
   font: 'Nunito';
   font-size: 18px;
@@ -480,6 +490,12 @@ footer a{
   font-size: 14px;
 }
 
+#service-content,
+#delivery-content{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /* Mobile */
 @media (max-width: 700px) {
     /* Carousel */
@@ -522,8 +538,8 @@ footer a{
 
 @media (min-width: 701px) {
     #delivery-img {
-      max-height: 80%;
-      max-width: 80%;
+      max-height: 100%;
+      max-width: 100%;
       display: block;
       margin: 0 auto;
     }
