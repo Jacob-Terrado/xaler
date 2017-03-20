@@ -801,7 +801,7 @@ $(document).ready(function () {
 
     $("#menu-nav").click(function () {
         $('html, body').animate({
-            scrollTop: $("#menu").offset().top - 40
+            scrollTop: $("#menu").offset().top - 300
         }, 500);
     });
 
@@ -813,31 +813,31 @@ $(document).ready(function () {
 
     $("#sativa-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#sativa").offset().top - 130
+            scrollTop: $("#sativa").offset().top - 160
         }, 500);
     });
 
     $("#hybrid-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#hybrid").offset().top - 130
+            scrollTop: $("#hybrid").offset().top - 160
         }, 500);
     });
 
     $("#concentrate-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#concentrate").offset().top - 130
+            scrollTop: $("#concentrate").offset().top - 160
         }, 500);
     });
 
     $("#edible-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#edible").offset().top - 130
+            scrollTop: $("#edible").offset().top - 160
         }, 500);
     });
 
     $("#accessories-label").click(function () {
         $('html, body').animate({
-            scrollTop: $("#accessories").offset().top - 150
+            scrollTop: $("#accessories").offset().top - 160
         }, 500);
     });
 
