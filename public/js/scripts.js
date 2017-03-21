@@ -60,7 +60,7 @@ var menu = {
             "fourthprice": "$90",
             "halfprice": "- - -",
             "ozprice": "- - -",
-            "thc": "18-30", 
+            "thc": "18-30",
             "description": "Skywalker OG is a potent indica-dominant hybrid strain that may just take you to a galaxy far, far away. No Sith genetics here—this plant is a cross between Skywalker and OG Kush and has the strong aroma characteristic to kush strains that includes a spicy herbal scent tinged with jet fuel. This strain makes relaxation your only mission, and some users report strong body effects that include mild tingling and numbness. If pain and physical limitations are the issue, Skywalker OG is here to rescue you. The galaxy also holds a sativa dominant variety of Skywalker that is also often referred to as Skywalker OG or Sativa OG. (Source: Leafly.com)"
         }
     ],
@@ -801,7 +801,7 @@ $(document).ready(function () {
         outDuration: 200,
         endingTop: '50%'
     });
-  
+
     $('#delivery-area-modal').modal({
         dismissible: true,
         inDuration: 300,
@@ -872,19 +872,20 @@ $(document).ready(function () {
         // }
     }
 
-    //close Modal when add to cart
-    $('#product-modal .add-cart-btn').click(closeModal);
-
     // Contact Us Stickied
     $(window).scroll(stickyContactUs);
 
-    // Menu Tab Stickied
-    $(window).scroll(stickyMenuBar);
+    //close Modal when add to cart
+    $('#product-modal .add-cart-btn').click(closeModal);
 
-    // Menu Tab Active
-    $(window).scroll(activeMenuTab);
+    if (location.pathname.split("/")[1] == "") {
+        // Menu Tab Stickied
+        $(window).scroll(stickyMenuBar);
 
-    $('.item-quantity').click(function(e) {
+        // Menu Tab Active
+        $(window).scroll(activeMenuTab);
+    }
+    $('.item-quantity').click(function (e) {
         e.stopPropagation();
     });
 });
