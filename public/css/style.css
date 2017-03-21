@@ -308,6 +308,9 @@ footer a {
     overflow: auto;
 }
 
+#emailP {
+  text-align: center;
+}
 /* Contact Us Modal */
 #contact-us-modal {
     width: 375px !important;
