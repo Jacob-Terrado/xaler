@@ -972,7 +972,7 @@ $(document).ready(function () {
                 required: "Please upload your Government ID"
             },
             docRec: {
-                required: "Please enter your Doctor's Recommendation"
+                required: "Please upload your Doctor's Recommendation"
             }
         },
         errorElement: 'div',
