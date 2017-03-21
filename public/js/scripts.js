@@ -60,7 +60,7 @@ var menu = {
             "fourthprice": "$90",
             "halfprice": "- - -",
             "ozprice": "- - -",
-            "thc": "18-30", 
+            "thc": "18-30",
             "description": "Skywalker OG is a potent indica-dominant hybrid strain that may just take you to a galaxy far, far away. No Sith genetics here—this plant is a cross between Skywalker and OG Kush and has the strong aroma characteristic to kush strains that includes a spicy herbal scent tinged with jet fuel. This strain makes relaxation your only mission, and some users report strong body effects that include mild tingling and numbness. If pain and physical limitations are the issue, Skywalker OG is here to rescue you. The galaxy also holds a sativa dominant variety of Skywalker that is also often referred to as Skywalker OG or Sativa OG. (Source: Leafly.com)"
         }
     ],
@@ -770,7 +770,7 @@ $(document).ready(function () {
         ready: function (modal) {
             setTimeout(function () {
                 $('#cart-modal').modal('close');
-            }, 800); // slightly buggy, click add to cart, then click out, then click another one; it'll be hidden
+            }, 800);
         }
     });
 
@@ -801,7 +801,7 @@ $(document).ready(function () {
         outDuration: 200,
         endingTop: '50%'
     });
-  
+
     $('#delivery-area-modal').modal({
         dismissible: true,
         inDuration: 300,
@@ -867,9 +867,6 @@ $(document).ready(function () {
     var quantityButton = document.querySelectorAll('#indexProduct .quantity');
     for (var i = 0; i < quantityButton.length; i++) {
         quantityButton[i].addEventListener('click', selectQuantity);
-        // if(quantityButton[i].textContent == ''){
-        //   quantityButton[i].style.display = 'none';
-        // }
     }
 
     //close Modal when add to cart
@@ -887,4 +884,100 @@ $(document).ready(function () {
     $('.item-quantity').click(function(e) {
         e.stopPropagation();
     });
+
+    // Validity of FTP Form
+    $("#ftp-form").validate({
+      rules: {
+        firstName: {
+          required: true,
+          minlength: 1
+        },
+        lastName: {
+          required: true,
+          minlength: 1
+        },
+        phoneNumber: {
+          required: true,
+          minlength: 10
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        address: {
+          required: true,
+          address: true
+        },
+        govId: {
+          required: true,
+          govId: true
+        },
+        docRec: {
+          required: true,
+          docRec: true
+        }
+      },
+      messages: {
+        firstName: {
+          required: "Please enter your first name"
+        },
+        lastName: {
+          required: "Please enter your last name"
+        },
+        phoneNumber: {
+          required: "Please enter your phone number"
+        },
+        email: {
+          required: "Please enter your email",
+          email: "Please enter a valid email"
+        },
+        address: {
+          required: "Please enter your address"
+        },
+        govId: {
+          required: "Please upload your Government ID"
+        },
+        docRec: {
+          required: "Please enter your Doctor's Recommendation"
+        }
+      },
+      errorElement: 'div',
+      errorPlacement: function (error, element) {
+        var placement = $(element).data('error');
+        if (placement) {
+          $(placement).append(error)
+        } else {
+          error.insertAfter(element);
+        }
+      }
+    });
+
+    //Submit FTP, Thank you modal-footer
+    $('#ftp-submit-button').click(function(){
+      console.log('hello');
+      var fields = $('.inputText').toArray();
+      var counter = 0;
+      for(i=0; i<fields.length; i++){
+        if(fields[i].value == ""){
+          counter++;
+          continue;
+        }
+      }
+      if(counter == 0){
+        $('#ftp-submit-button').attr('data-target', 'thankyou-modal');
+        $('#thankyou-modal').modal({
+            dismissible: true,
+            inDuration: 300,
+            outDuration: 200,
+            endingTop: '20%'
+        });
+        for(i=0; i<fields.length; i++){
+          fields[i].value = '';
+        }
+        $('.validateId').replaceWith($('.validateId').val('').clone(true));
+        $('.validateRec').replaceWith($('.validateId').val('').clone(true));
+      }else{
+        $('#ftp-submit-button').attr('data-target') = '';
+      }
+    })
 });
