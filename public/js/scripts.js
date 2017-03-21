@@ -553,7 +553,7 @@ function home() {
 }
 
 function ftp() {
-    window.location.href = "/ftp";
+
 }
 
 /* Opens Product Modal */
@@ -697,57 +697,56 @@ function stickyContactUs() {
 }
 
 function stickyMenuBar() {
-    var windowTop = $(window).scrollTop() + 80;
+    var windowTop = $(window).scrollTop() + 55;
     var divTop = $('#tabs-anchor').offset().top;
     var tabs = $('#xaler-menu-tabs');
+    var placeholder = $('#temp-menu-tabs');
 
     if (windowTop > divTop) {
         tabs.addClass('sticky');
         tabs.addClass('xaler-menu-top');
         tabs.removeClass('not-sticky');
+        placeholder.css('display', 'block');
     } else {
         tabs.addClass('not-sticky');
         tabs.removeClass('xaler-menu-top');
         tabs.removeClass('sticky');
+        placeholder.css('display', 'none');
     }
 }
 
 function activeMenuTab() {
     var windowTop = $(window).scrollTop();
-    var indicaTop = $('#indica').offset().top - 130;
-    var sativaTop = $('#sativa').offset().top - 130;
-    var hybridTop = $('#hybrid').offset().top - 130;
-    var edibleTop = $('#edible').offset().top - 130;
-    var concentrateTop = $('#concentrate').offset().top - 130;
-    var accessoriesTop = $('#accessories').offset().top - 130;
+    var indicaTop = $('#indica').offset().top - 180;
+    var sativaTop = $('#sativa').offset().top - 180;
+    var hybridTop = $('#hybrid').offset().top - 180;
+    var edibleTop = $('#edible').offset().top - 180;
+    var concentrateTop = $('#concentrate').offset().top - 180;
+    var accessoriesTop = $('#accessories').offset().top - 180;
 
-    if (windowTop < sativaTop) {
-        console.log('ind');
-        // $('ul.tabs').tabs('select_tab', 'indica-label');
-        // $('#indica-label').addClass("active");
-        // $('#sativa-label').removeClass("active");
-    } else if (windowTop < hybridTop && windowTop > sativaTop) {
-        console.log('sat');
-        // $('#sativa-label').addClass("active");
-        // $('#indica-label').removeClass("active");
-        // $('ul.tabs').tabs('select_tab', 'sativa-label');
-    } else if (windowTop < concentrateTop && windowTop > hybridTop) {
-        console.log('hybr');
-        // $('ul.tabs').tabs('select_tab', 'hybrid-label');
-    } else if (windowTop < edibleTop && windowTop > concentrateTop) {
-        console.log('con');
-        // $('ul.tabs').tabs('select_tab', 'concentrate-label');
-    } else if (windowTop < accessoriesTop && windowTop > edibleTop) {
-        console.log('edible');
-    } else {
-        console.log('acc');
-        // $('ul.tabs').tabs('select_tab', 'accessories-label');
+    if (windowTop < sativaTop && windowTop > (indicaTop - 50)) {
+        $('#indica-label').trigger("click");
+    } else if (windowTop < hybridTop && windowTop > (sativaTop - 50)) {
+        $('#sativa-label').trigger("click");
+    } else if (windowTop < concentrateTop && windowTop > (hybridTop - 50)) {
+        $('#hybrid-label').trigger("click");
+    } else if (windowTop < edibleTop && windowTop > (concentrateTop - 50)) {
+        $('#concentrate-label').trigger("click");
+    } else if (windowTop < accessoriesTop && windowTop > (edibleTop - 50)) {
+        $('#edible-label').trigger("click");
+    } else if (windowTop > (accessoriesTop - 50)) {
+        $('#accessories-label').trigger("click");
     }
+}
+
+function test(index) {
+    console.log(index);
 }
 
 $(document).ready(function () {
     /* Tabs */
     $('ul.tabs').tabs();
+    $('#menu-tabs').tabs();
 
     /* Carousel */
     $('.carousel.carousel-slider').carousel({fullWidth: true});
@@ -832,40 +831,40 @@ $(document).ready(function () {
     });
 
     $("#indica-label").click(function () {
-        $('html, body').animate({
-            scrollTop: $("#indica").offset().top - 130
-        }, 500);
+    //     $('html, body').animate({
+    //         scrollTop: $("#indica").offset().top - 130
+    //     }, 500);
     });
-
-    $("#sativa-label").click(function () {
-        $('html, body').animate({
-            scrollTop: $("#sativa").offset().top - 160
-        }, 500);
-    });
-
-    $("#hybrid-label").click(function () {
-        $('html, body').animate({
-            scrollTop: $("#hybrid").offset().top - 160
-        }, 500);
-    });
-
-    $("#concentrate-label").click(function () {
-        $('html, body').animate({
-            scrollTop: $("#concentrate").offset().top - 160
-        }, 500);
-    });
-
-    $("#edible-label").click(function () {
-        $('html, body').animate({
-            scrollTop: $("#edible").offset().top - 160
-        }, 500);
-    });
-
-    $("#accessories-label").click(function () {
-        $('html, body').animate({
-            scrollTop: $("#accessories").offset().top - 160
-        }, 500);
-    });
+    //
+    // $("#sativa-label").click(function () {
+    //     $('html, body').animate({
+    //         scrollTop: $("#sativa").offset().top - 160
+    //     }, 500);
+    // });
+    //
+    // $("#hybrid-label").click(function () {
+    //     $('html, body').animate({
+    //         scrollTop: $("#hybrid").offset().top - 160
+    //     }, 500);
+    // });
+    //
+    // $("#concentrate-label").click(function () {
+    //     $('html, body').animate({
+    //         scrollTop: $("#concentrate").offset().top - 160
+    //     }, 500);
+    // });
+    //
+    // $("#edible-label").click(function () {
+    //     $('html, body').animate({
+    //         scrollTop: $("#edible").offset().top - 160
+    //     }, 500);
+    // });
+    //
+    // $("#accessories-label").click(function () {
+    //     $('html, body').animate({
+    //         scrollTop: $("#accessories").offset().top - 160
+    //     }, 500);
+    // });
 
     // Remove blank labeled buttons
     var quantityButton = document.querySelectorAll('#indexProduct .quantity');

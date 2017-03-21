@@ -598,6 +598,10 @@ footer a{
     overflow-x: visible !important;
 }
 
+#temp-menu-tabs {
+    display: none;
+}
+
 @media (min-width: 300px) {
     .xaler-menu-top {
         top: 56px !important;
