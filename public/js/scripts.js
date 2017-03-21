@@ -231,6 +231,7 @@ var menu = {
         },
         {
             "id": "3",
+            "url": "images/placeholderimage.png",
             "name": "Animal Spirits - Holy Grail OG Vape Cartridge",
             "type": "concentrate",
             "half": "0.5 g",
@@ -243,6 +244,7 @@ var menu = {
         },
         {
             "id": "4",
+            "url": "images/placeholderimage.png",
             "name": "Animal Spirits - Girl Scout Cookies Vape Cartridge",
             "type": "concentrate",
             "half": "0.5 g",
@@ -255,6 +257,7 @@ var menu = {
         },
         {
             "id": "5",
+            "url": "images/placeholderimage.png",
             "name": "Animal Spirits - Blue Dream Vape Cartridge",
             "type": "concentrate",
             "half": "0.5 g",
@@ -280,6 +283,7 @@ var menu = {
         },
         {
             "id": "7",
+            "url": "images/placeholderimage.png",
             "name": "Brass Knuckles - Jack Herer",
             "type": "concentrate",
             "half": "0.5 g",
@@ -292,6 +296,7 @@ var menu = {
         },
         {
             "id": "8",
+            "url": "images/placeholderimage.png",
             "name": "Brass Knuckles - Strawberry Cough",
             "type": "concentrate",
             "half": "0.5 g",
@@ -304,6 +309,7 @@ var menu = {
         },
         {
             "id": "9",
+            "url": "images/placeholderimage.png",
             "name": "Brass Knuckles - Candy Apple",
             "type": "concentrate",
             "half": "0.5 g",
@@ -316,6 +322,7 @@ var menu = {
         },
         {
             "id": "10",
+            "url": "images/placeholderimage.png",
             "name": "Brass Knuckles - Blue Dream",
             "type": "concentrate",
             "half": "0.5 g",
@@ -328,6 +335,7 @@ var menu = {
         },
         {
             "id": "11",
+            "url": "images/placeholderimage.png",
             "name": "Brass Knuckles - Gorilla Glue",
             "type": "concentrate",
             "half": "0.5 g",
@@ -340,6 +348,7 @@ var menu = {
         },
         {
             "id": "12",
+            "url": "images/placeholderimage.png",
             "name": "Brass Knuckles - Girl Scout Cookies",
             "type": "concentrate",
             "half": "0.5 g",
@@ -352,6 +361,7 @@ var menu = {
         },
         {
             "id": "13",
+            "url": "images/placeholderimage.png",
             "name": "Brass Knuckles - Raw",
             "type": "concentrate",
             "half": "0.5 g",
@@ -364,6 +374,7 @@ var menu = {
         },
         {
             "id": "14",
+            "url": "images/placeholderimage.png",
             "name": "Brass Knuckles - Abracadabra",
             "type": "concentrate",
             "half": "0.5 g",
@@ -376,6 +387,7 @@ var menu = {
         },
         {
             "id": "15",
+            "url": "images/placeholderimage.png",
             "name": "Brass Knuckles - Blueberry",
             "type": "concentrate",
             "half": "0.5 g",
@@ -388,6 +400,7 @@ var menu = {
         },
         {
             "id": "16",
+            "url": "images/placeholderimage.png",
             "name": "Brass Knuckles - Grape Ape",
             "type": "concentrate",
             "half": "0.5 g",
@@ -400,6 +413,7 @@ var menu = {
         },
         {
             "id": "17",
+            "url": "images/placeholderimage.png",
             "name": "Brass Knuckles - Purple Haze",
             "type": "concentrate",
             "half": "0.5 g",
@@ -412,6 +426,7 @@ var menu = {
         },
         {
             "id": "18",
+            "url": "images/placeholderimage.png",
             "name": "Brass Knuckles - SFV OG",
             "type": "concentrate",
             "half": "0.5 g",
@@ -424,6 +439,7 @@ var menu = {
         },
         {
             "id": "19",
+            "url": "images/placeholderimage.png",
             "name": "Brass Knuckles - Skywalker OG",
             "type": "concentrate",
             "half": "0.5 g",
@@ -492,6 +508,7 @@ var menu = {
         },
         {
             "id": "6",
+            "url": "images/placeholderimage.png",
             "name": "HealthCare Bar - Vegan",
             "type": "edible",
             "per": "each",
@@ -502,6 +519,7 @@ var menu = {
     "accessories": [
         {
             "id": "0",
+            "url": "images/placeholderimage.png",
             "name": "Brass Knuckes - Adjustable Voltage Gold Battery",
             "type": "accessories",
             "per": "each",
@@ -510,6 +528,7 @@ var menu = {
         },
         {
             "id": "1",
+            "url": "images/placeholderimage.png",
             "name": "Brass Knuckes - Gold Vape Battery",
             "type": "accessories",
             "per": "each",
@@ -518,6 +537,7 @@ var menu = {
         },
         {
             "id": "2",
+            "url": "images/placeholderimage.png",
             "name": "Brass Knuckes - Woodgrain Battery",
             "type": "accessories",
             "per": "each",
@@ -534,7 +554,6 @@ function home() {
 
 /* Opens Product Modal */
 function openProductModal(id, event) {
-
     var classNames = event.target.className.split(" ");
     var type;
 
