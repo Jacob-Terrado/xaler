@@ -730,22 +730,54 @@ function activeMenuTab() {
     var accessoriesTop = $('#accessories').offset().top - 180;
 
     if (windowTop < sativaTop && windowTop > (indicaTop - 50)) {
-        $('#indica-label').trigger("click");
+        $('#indica-label').trigger('click', [true]);
     } else if (windowTop < hybridTop && windowTop > (sativaTop - 50)) {
-        $('#sativa-label').trigger("click");
+        $('#sativa-label').trigger('click', [true]);
     } else if (windowTop < concentrateTop && windowTop > (hybridTop - 50)) {
-        $('#hybrid-label').trigger("click");
+        $('#hybrid-label').trigger('click', [true]);
     } else if (windowTop < edibleTop && windowTop > (concentrateTop - 50)) {
-        $('#concentrate-label').trigger("click");
+        $('#concentrate-label').trigger('click', [true]);
     } else if (windowTop < accessoriesTop && windowTop > (edibleTop - 50)) {
-        $('#edible-label').trigger("click");
+        $('#edible-label').trigger('click', [true]);
     } else if (windowTop > (accessoriesTop - 50)) {
-        $('#accessories-label').trigger("click");
+        $('#accessories-label').trigger('click', [true]);
     }
 }
 
-function test(index) {
-    console.log(index);
+function helperMenu(index) {
+    var htmlBody = $('html, body');
+    switch (index) {
+        case 0:
+            htmlBody.animate({
+                scrollTop: $("#indica").offset().top - 130
+            }, 700);
+            break;
+        case 1:
+            htmlBody.animate({
+                scrollTop: $("#sativa").offset().top - 160
+            }, 700);
+            break;
+        case 2:
+            htmlBody.animate({
+                scrollTop: $("#hybrid").offset().top - 160
+            }, 700);
+            break;
+        case 3:
+            htmlBody.animate({
+                scrollTop: $("#concentrate").offset().top - 160
+            }, 700);
+            break;
+        case 4:
+            htmlBody.animate({
+                scrollTop: $("#edible").offset().top - 160
+            }, 700);
+            break;
+        case 5:
+            htmlBody.animate({
+                scrollTop: $("#accessories").offset().top - 160
+            }, 700);
+            break;
+    }
 }
 
 $(document).ready(function () {
@@ -835,41 +867,35 @@ $(document).ready(function () {
         }, 500);
     });
 
-    $("#indica-label").click(function () {
-        //     $('html, body').animate({
-        //         scrollTop: $("#indica").offset().top - 130
-        //     }, 500);
+    $("#indica-label").on("click", function (event, isScroll) {
+        if (isScroll) return;
+        helperMenu(0, false);
     });
-    //
-    // $("#sativa-label").click(function () {
-    //     $('html, body').animate({
-    //         scrollTop: $("#sativa").offset().top - 160
-    //     }, 500);
-    // });
-    //
-    // $("#hybrid-label").click(function () {
-    //     $('html, body').animate({
-    //         scrollTop: $("#hybrid").offset().top - 160
-    //     }, 500);
-    // });
-    //
-    // $("#concentrate-label").click(function () {
-    //     $('html, body').animate({
-    //         scrollTop: $("#concentrate").offset().top - 160
-    //     }, 500);
-    // });
-    //
-    // $("#edible-label").click(function () {
-    //     $('html, body').animate({
-    //         scrollTop: $("#edible").offset().top - 160
-    //     }, 500);
-    // });
-    //
-    // $("#accessories-label").click(function () {
-    //     $('html, body').animate({
-    //         scrollTop: $("#accessories").offset().top - 160
-    //     }, 500);
-    // });
+
+    $("#sativa-label").on("click", function (event, isScroll) {
+        if (isScroll) return;
+        helperMenu(1, false);
+    });
+
+    $("#hybrid-label").on("click", function (event, isScroll) {
+        if (isScroll) return;
+        helperMenu(2, false);
+    });
+
+    $("#concentrate-label").on("click", function (event, isScroll) {
+        if (isScroll) return;
+        helperMenu(3, false);
+    });
+
+    $("#edible-label").on("click", function (event, isScroll) {
+        if (isScroll) return;
+        helperMenu(4, false);
+    });
+
+    $("#accessories-label").on("click", function (event, isScroll) {
+        if (isScroll) return;
+        helperMenu(5, false);
+    });
 
     // Remove blank labeled buttons
     var quantityButton = document.querySelectorAll('#indexProduct .quantity');
@@ -987,5 +1013,5 @@ $(document).ready(function () {
             // noinspection JSAnnotator
             // $('#ftp-submit-button').attr('data-target') = '';
         }
-    })
+    });
 });
