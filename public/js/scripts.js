@@ -937,7 +937,8 @@ $(document).ready(function () {
           email: "Please enter a valid email"
         },
         address: {
-          required: "Please enter your address"
+          required: "Please enter your address",
+          address: "Please enter a valid address"
         },
         govId: {
           required: "Please upload your Government ID"
