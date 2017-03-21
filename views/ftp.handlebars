@@ -98,18 +98,17 @@
 {{> footer}}
 {{> scripts}}
 
-
 <script type="text/javascript" src="js/jquery.validate.js"></script>
 <script>
   $("#ftp-form").validate({
     rules: {
       firstName: {
         required: true,
-        minlength: 3
+        minlength: 1
       },
       lastName: {
         required: true,
-        minlength: 3
+        minlength: 1
       },
       phoneNumber: {
         required: true,

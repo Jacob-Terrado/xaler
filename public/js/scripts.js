@@ -691,28 +691,31 @@ function stickyMenuBar() {
 
 function activeMenuTab() {
     var windowTop = $(window).scrollTop();
-    var indicaTop = $('#indica').offset().top;
-    var sativaTop = $('#sativa').offset().top;
-    var hybridTop = $('#hybrid').offset().top;
-    var concentrateTop = $('#concentrate').offset().top;
-    var accessoriesTop = $('#accessories').offset().top;
+    var indicaTop = $('#indica').offset().top - 130;
+    var sativaTop = $('#sativa').offset().top - 130;
+    var hybridTop = $('#hybrid').offset().top - 130;
+    var edibleTop = $('#edible').offset().top - 130;
+    var concentrateTop = $('#concentrate').offset().top - 130;
+    var accessoriesTop = $('#accessories').offset().top - 130;
 
     if (windowTop < sativaTop) {
-        // console.log('ind');
-        $('ul.tabs').tabs('select_tab', 'indica-label');
-        $('#indica-label').addClass("active");
-        $('#sativa-label').removeClass("active");
+        console.log('ind');
+        // $('ul.tabs').tabs('select_tab', 'indica-label');
+        // $('#indica-label').addClass("active");
+        // $('#sativa-label').removeClass("active");
     } else if (windowTop < hybridTop && windowTop > sativaTop) {
         console.log('sat');
-        $('#sativa-label').addClass("active");
-        $('#indica-label').removeClass("active");
+        // $('#sativa-label').addClass("active");
+        // $('#indica-label').removeClass("active");
         // $('ul.tabs').tabs('select_tab', 'sativa-label');
-    } else if (windowTop < concentrateTop && windowTop > accessoriesTop) {
+    } else if (windowTop < concentrateTop && windowTop > hybridTop) {
         console.log('hybr');
         // $('ul.tabs').tabs('select_tab', 'hybrid-label');
-    } else if (windowTop < accessoriesTop) {
+    } else if (windowTop < edibleTop && windowTop > concentrateTop) {
         console.log('con');
         // $('ul.tabs').tabs('select_tab', 'concentrate-label');
+    } else if (windowTop < accessoriesTop && windowTop > edibleTop) {
+        console.log('edible');
     } else {
         console.log('acc');
         // $('ul.tabs').tabs('select_tab', 'accessories-label');
