@@ -45,7 +45,7 @@
       </ul>
     </div>
     </div>
-    <div class="col l6 ml6 s12">
+    <div class="col l6 ml6 s12" id="first-time-patient">
       <h3 class="center title-text" id="FTPH"> FIRST-TIME PATIENT FORM</h3>
       <form id="ftp-form" novalidate="novalidate" onsubmit="console.log(3);">
         <div class="input-field">
@@ -74,18 +74,24 @@
           <div class="emailError"></div>
         </div>
         <div class="file-field input-field" id="uploadID">
-           <div class="btn">
-             <span>UPLOAD IDENTIFICATION*</span>
-             <input type="file">
-           </div>
-           <p>*Only Accepts Passport or Driver’s License</p>
+          <div class="btn">
+            <span>UPLOAD IDENTIFICATION*</span>
+            <input type="file">
+          </div>
+          <p>*Only Accepts Passport or Driver’s License</p>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+          </div>
          </div>
          <div class="file-field input-field" id="uploadDoctor">
            <div class="btn">
              <span>UPLOAD DOCTOR'S RECOMMENDATION</span>
              <input type="file">
            </div>
-         </div>
+           <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+          </div>
+        </div>
           <button id="ftp-submit-button" class="btn" type="submit" name="action">Submit Form</button>
         </form>
       </div>
