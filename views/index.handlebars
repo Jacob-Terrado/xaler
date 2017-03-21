@@ -28,16 +28,20 @@
 
 <div id="temp-menu-tabs" class="row grey darken-4">
   <ul class="tabs">
-    <li class="tab col l2 s3 grey darken-4" style="display: table;"><a href="#" id="temp" class="white-text">Temp</a></li>
+    <li class="tab col l2 s3 grey darken-4" style="display: table;"><a href="#" id="temp" class="white-text">Temp</a>
+    </li>
   </ul>
 </div>
 
 <div id="xaler-menu-tabs" class="row grey darken-4">
   <ul class="tabs" id="menu-tabs">
     {{#each menu}}
-      <li class="tab col l2 s3 grey darken-4" style="display: table;" onclick="test({{{index}}});"><a href="#" id="{{type}}-label" class="white-text">{{type}}</a></li>
+      <li class="tab col l2 s3 grey darken-4" style="display: table;" onclick="test({{{index}}});"><a href="#"
+                                                                                                      id="{{type}}-label"
+                                                                                                      class="white-text">{{type}}</a>
+      </li>
     {{/each}}
-    </ul>
+  </ul>
 </div>
 
 <div class="center" id="menu"></div>
@@ -45,7 +49,7 @@
   {{#each menu}}
     <div class="row">
       <h3 id="{{type}}" class="display-text center">{{type}}</h3>
-      <h4 class="menu-header-text center">{{description}}</h4>
+      <h4 class="body-text center">{{description}}</h4>
       {{#each item}}
         <div class="col l4 m8 s12">
           <div class="card product" onclick="openProductModal({{id}}, event)">

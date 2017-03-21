@@ -61,63 +61,78 @@ footer {
     font-size: 18pt !important;
 }
 
-footer a{
-  font-family: "Open Sans", sans-serif;
-  font-size: 1em;
-  color: #FFFFFF;
+footer a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    color: #FFFFFF;
 }
 
 /* FTP */
-#first-time-patient{
-  padding: 20px 0px 50px;
+#first-time-patient {
+    padding: 20px 0px 50px;
 }
 
-#first-time-patient .main-step{
-  color: #0076BD;
-  font-size: 12pt;
+#first-time-patient .main-step {
+    color: #0076BD;
+    font-size: 12pt;
 }
 
-#first-time-patient ul{
-  line-height: 25px;
+#first-time-patient ul {
+    line-height: 25px;
 }
 
-#first-time-patient form input:focus{
-  border-bottom: 1px solid #0076BD !important;
-  box-shadow: 0 1px 0 0 #0076BD !important;
+#first-time-patient form input:focus,
+#first-time-patient form input.valid {
+    border-bottom: 1px solid #0076BD !important;
+    box-shadow: 0 1px 0 0 #0076BD !important;
 }
 
-#first-time-patient .btn{
-  background-color: #0076BD;
+#first-time-patient form input.error {
+    border-bottom: 1px solid red !important;
+    box-shadow: 0 1px 0 0 red !important;
 }
 
-#form-content{
-  padding-left: 20px !important;
-  padding-right: 20px !important;
+#first-time-patient .btn {
+    background-color: #0076BD;
 }
 
-#ftp-form{
-  padding-left: 20px;
-  padding-right: 20px;
+#form-content {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+#ftp-form {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #FTPH {
-  font: 'Nunito';
-  font-size: 18px;
-  font-weight: 200;
-  font-style: normal !important;
+    font: 'Nunito';
+    font-size: 18px;
+    font-weight: 200;
+    font-style: normal !important;
 }
-#uploadID .btn{
-  width: 100%;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 14px;
+
+#FTPH-instruction {
+    color: #0076BD;
+    font-size: 12pt;
+    text-align: center;
 }
-#uploadDoctor .btn{
-  width: 100%;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 14px;
+
+#uploadID .btn {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
 }
+
+#uploadDoctor .btn {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
 #ftp-submit-button {
     width: 100%;
     height: 45px;
@@ -128,12 +143,31 @@ footer a{
     background-color: #000000 !important;
 }
 
-/* Carousel */
-.desktop{
-  display: block;
+#validId {
+    margin-top: -10px;
 }
-.mobile{
-  display: none;
+
+.validate::-webkit-input-placeholder {
+    color: #9e9e9e;
+}
+
+.firstNameError, .lastNameError, .emailError, .phoneNumberError, .addressError,
+.recError, .idError {
+    color: red;
+    font-size: 12px;
+}
+
+#thankyou-modal p {
+    color: #9e9e9e;
+}
+
+/* Carousel */
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
 }
 
 /* All but index */
@@ -191,7 +225,13 @@ footer a{
     font-style: normal !important;
     font-weight: 500;
     font-size: 14pt !important;
-    text-transform: uppercase;
+}
+
+#done {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 30px;
 }
 
 .card {
@@ -257,10 +297,19 @@ footer a{
 
 /* Legal Page */
 #legal {
-    padding-left: 30px;
+    padding: 20px 30px 50px;
+    text-align: justify;
 }
 
 /* Contact Us Modal */
+#contact-us-modal {
+    width: 375px !important;
+    height: 420px !important;
+    max-height: 100% !important;
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+}
+
 .contact-us-footer {
     margin-bottom: 0 !important;
     padding: 0 !important;
@@ -278,14 +327,8 @@ footer a{
 .contact-us-text {
     font-family: 'Nunito', sans-serif !important;
     font-weight: 200;
-    /*position: absolute;*/
-    /*left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);*/
     text-align: center;
-    /*vertical-align: middle;*/
     margin: 0 auto !important;
-    /*padding: 5px !important;*/
     line-height: 50px;
 }
 
@@ -294,12 +337,31 @@ footer a{
 }
 
 /* Email Modal */
+
+#email-sub-modal {
+    width: 375px !important;
+    height: 350px !important;
+    max-height: 100% !important;
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+}
+
 #email-sub-modal {
     transform: translateY(-50%) !important;
 }
 
 .modal-footer {
     border: 0 !important;
+}
+
+/* email */
+.email form input:focus {
+    border-bottom: 1px solid #0076BD !important;
+    box-shadow: 0 1px 0 0 #0076BD !important;
+}
+
+.email .btn {
+    background-color: #0076BD;
 }
 
 /* Product Modal */
@@ -359,10 +421,11 @@ footer a{
     color: #000000 !important;
 }
 
-#product-modal-desc{
-  font-size: 12pt !important;
-  text-transform: none !important;
+#product-modal-desc {
+    font-size: 12pt !important;
+    text-transform: none !important;
 }
+
 /* Menu Style */
 .strains-text {
     font-family: 'Open Sans', sans-serif !important;;
@@ -459,28 +522,28 @@ footer a{
     height: 61%;
 }
 
-#contact-us-modal p{
-  color: #9e9e9e;
+#contact-us-modal p {
+    color: #9e9e9e;
 }
 
-#contact-us-modal .modal-content{
-  overflow: hidden;
+#contact-us-modal .modal-content {
+    overflow: hidden;
 }
 
-#contact-us-modal #contact-us-title{
-  text-align: center;
+#contact-us-modal #contact-us-title {
+    text-align: center;
 }
 
-#contact-us-modal .contact-us-subtitle{
-  color: #0076BD;
-  text-align:center;
-  margin: 0;
+#contact-us-modal .contact-us-subtitle {
+    color: #0076BD;
+    text-align: center;
+    margin: 0;
 }
 
-#contact-us-modal .contact-us-info{
-  text-align:center;
-  margin: 0 !important;
-  padding-bottom: 10px !important;
+#contact-us-modal .contact-us-info {
+    text-align: center;
+    margin: 0 !important;
+    padding-bottom: 10px !important;
 }
 
 .xaler-blue {
@@ -493,29 +556,54 @@ footer a{
 }
 
 /* Service Page*/
-#service-page{
-  padding: 20px 0px 50px;
+#service-page {
+    padding: 20px 0px 50px;
 }
 
 #service {
-  font: 'Open Sans';
-  font-size: 14px;
+    font: 'Open Sans';
+    font-size: 14px;
 }
 
 #service-content,
-#delivery-content{
-  padding-left: 20px;
-  padding-right: 20px;
+#delivery-content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#delivery-img {
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#delivery-area-modal .modal-content {
+    padding: 0 !important;
+}
+
+/* Menu Tab */
+#xaler-menu-tabs {
+    width: 100% !important;
+    padding: 0 !important;
+    z-index: 99 !important;
+    overflow-x: hidden;
+}
+
+.tab > {
+    text-overflow: clip;
+    overflow-x: visible !important;
 }
 
 /* Mobile */
 @media (max-width: 700px) {
     /* Carousel */
-    .desktop{
-      display: none;
+    .desktop {
+        display: none;
     }
-    .mobile{
-      display: block;
+
+    .mobile {
+        display: block;
     }
 
     #product-modal img {
@@ -532,36 +620,6 @@ footer a{
         background-color: #000000 !important;
         color: #FFFFFF !important;
         border: 2px solid #000000 !important;
-    }
-
-    #email-sub-modal {
-        width: 375px !important;
-        height: 275px !important;
-        max-height: 100% !important;
-        overflow-y: hidden !important;
-        overflow-x: hidden !important;
-    }
-
-    #delivery-img {
-      max-height: 100%;
-      max-width: 100%;
-    }
-}
-
-@media (min-width: 701px) {
-    #delivery-img {
-      max-height: 100%;
-      max-width: 100%;
-      display: block;
-      margin: 0 auto;
-    }
-
-    #email-sub-modal {
-        width: 375px !important;
-        height: 350px !important;
-        max-height: 100% !important;
-        overflow-y: hidden !important;
-        overflow-x: hidden !important;
     }
 }
 
@@ -582,7 +640,6 @@ footer a{
     #per {
         font-size: 12pt;
     }
-
 }
 
 /* Menu Tab */
@@ -593,7 +650,7 @@ footer a{
     overflow-x: hidden;
 }
 
-.tab >  {
+.tab > {
     text-overflow: clip;
     overflow-x: visible !important;
 }
@@ -612,15 +669,4 @@ footer a{
     .xaler-menu-top {
         top: 64px !important;
     }
-}
-
-/* email */
-
-.email form input:focus{
-  border-bottom: 1px solid #0076BD !important;
-  box-shadow: 0 1px 0 0 #0076BD !important;
-}
-
-.email .btn{
-  background-color: #0076BD;
 }
