@@ -199,6 +199,13 @@ footer a {
     font-size: 14pt !important;
 }
 
+.cart-text {
+    font-family: 'Nunito', sans-serif !important;;
+    font-style: normal !important;
+    font-weight: 300;
+    font-size: 12pt !important;
+}
+
 /* Index */
 .container {
     width: 90% !important;
@@ -280,9 +287,8 @@ footer a {
 }
 
 .cart-content {
-    padding-left: 15px;
-    padding-right: 15px;
-
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .cart-table {
