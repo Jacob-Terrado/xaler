@@ -70,8 +70,8 @@
         </div>
         <div class="input-field">
           <label for="email">Your Delivery Address</label>
-          <input id="email" name="email" type="email" data-error=".emailError">
-          <div class="emailError"></div>
+          <input id="address" name="address" type="text" data-error=".addressError">
+          <div class="addressError"></div>
         </div>
         <div class="file-field input-field" id="uploadID">
            <div class="btn">
@@ -117,6 +117,9 @@
       email: {
         required: true,
         email: true
+      },
+      address: {
+        required: true
       }
     },
     messages: {
@@ -132,6 +135,9 @@
       email: {
         required: "Please enter your email",
         email: "Please enter a valid email"
+      },
+      address: {
+        required: "Please enter your delivery address",
       }
     },
     errorElement: 'div',
@@ -146,9 +152,11 @@
   });
 </script>
 <style>
-  .firstNameError, .lastNameError, .emailError, .phoneNumberError {
+  .firstNameError, .lastNameError, .emailError, .phoneNumberError, .addressError {
     color: red;
     font-size: 12px;
+    font: 'Nunito';
+    font-weight: 400;
   }
 </style>
 </body>
