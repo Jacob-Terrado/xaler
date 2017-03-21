@@ -678,6 +678,11 @@ function closeModal() {
     $('#cart-modal').modal('open');
 }
 
+// close product modal by clicking done icon
+function closeSimpleModal() {
+    $('#product-modal').modal('close');
+}
+
 function stickyContactUs() {
     var windowBottom = $(window).scrollTop() + $(window).height();
     var divBottom = $('#footer-anchor').offset().top;

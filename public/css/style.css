@@ -220,9 +220,14 @@ footer a{
     font-style: normal !important;
     font-weight: 500;
     font-size: 14pt !important;
-    text-transform: uppercase;
 }
 
+#done {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 30px;
+}
 .card {
     box-shadow: 0 0 0 0 !important;
 }
