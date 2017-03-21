@@ -597,3 +597,14 @@ footer a{
         top: 64px !important;
     }
 }
+
+/* email */
+
+.email form input:focus{
+  border-bottom: 1px solid #0076BD !important;
+  box-shadow: 0 1px 0 0 #0076BD !important;
+}
+
+.email .btn{
+  background-color: #0076BD;
+}
