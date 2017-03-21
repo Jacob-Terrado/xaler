@@ -227,6 +227,13 @@ footer a {
     text-transform: uppercase;
 }
 
+.display-a-text {
+    font-style: normal !important;
+    font-weight: 200;
+    font-size: 20pt !important;
+    text-transform: uppercase;
+}
+
 .menu-header-text {
     font-family: 'Nunito', sans-serif !important;;
     font-style: normal !important;
