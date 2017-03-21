@@ -304,7 +304,8 @@ footer a {
 /* Legal Page */
 #legal {
     padding: 20px 30px 50px;
-    text-align: justify;
+    text-align: left;
+    overflow: auto;
 }
 
 /* Contact Us Modal */
