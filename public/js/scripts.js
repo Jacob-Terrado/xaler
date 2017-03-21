@@ -552,6 +552,10 @@ function home() {
     window.location.href = "/";
 }
 
+function ftp() {
+    window.location.href = "/ftp";
+}
+
 /* Opens Product Modal */
 function openProductModal(id, event) {
     var classNames = event.target.className.split(" ");

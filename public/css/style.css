@@ -218,6 +218,10 @@ footer a{
     vertical-align: middle;
 }
 
+#ftp-cart-link:hover {
+    cursor: pointer;
+}
+
 #cart-icon-mobile {
     padding: 0 !important;
 }
