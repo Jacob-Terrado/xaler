@@ -218,6 +218,14 @@ footer a{
     vertical-align: middle;
 }
 
+.checkout-cart-button {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    bottom: 60px;
+}
+
 #ftp-cart-link:hover {
     cursor: pointer;
 }
