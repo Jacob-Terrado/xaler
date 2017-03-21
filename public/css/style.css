@@ -397,9 +397,6 @@ footer a {
     font-weight: 200;
     font-size: 17pt !important;
     margin: 0 !important;
-    /*white-space: wrap;*/
-    /*overflow: hidden;*/
-    /*text-overflow: ellipsis;*/
     text-transform: uppercase;
 }
 
